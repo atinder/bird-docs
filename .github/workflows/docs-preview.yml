@@ -47,6 +47,9 @@ jobs:
           PR_NUMBER=${{ github.event.pull_request.number }}
           echo "Building site for PR #${PR_NUMBER}"
           
+          # Clean any existing build
+          rm -rf _site
+          
           # Create temporary config file with PR-specific settings
           cat > _config_preview.yml << EOL
           title: Bird Docs
@@ -83,7 +86,7 @@ jobs:
           EOL
           
           # Build with PR-specific config
-          bundle exec jekyll build --config _config_preview.yml
+          bundle exec jekyll build --config _config_preview.yml --trace
           
           # Verify build output
           echo "Contents of _site directory:"
@@ -94,6 +97,10 @@ jobs:
             echo "Error: index.html not found in build output"
             exit 1
           fi
+          
+          # Debug: Check the content of a built file
+          echo "Content of the pickup rates page:"
+          cat _site/docs/uncategorized/general/configure-pickup-rates_nitin-b98ff675-af78-4b26-ac84-250a455f040f/index.html
         env:
           JEKYLL_ENV: production
 
