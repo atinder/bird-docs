@@ -4,7 +4,7 @@ title: "Configure Pickup Rates_Nitin"
 category: uncategorized
 section: general
 slug: configure-pickup-rates_nitin
-crisp_updated_at: 1740485971000
+crisp_updated_at: 1746089315000
 ---
 
 # Configure Pickup Rates:
