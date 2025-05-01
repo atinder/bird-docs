@@ -38,10 +38,10 @@ jobs:
           PR_NUMBER=${{ github.event.pull_request.number }}
           echo "Building site for PR #${PR_NUMBER}"
           
-          # Create PR-specific config
+          # Create PR-specific config with proper date format
           cat > _config.pr.yml << EOF
           baseurl: "/bird-docs"
-          time: "$(date +%s)"
+          build_time: "$(date -u +"%Y-%m-%d %H:%M:%S %z")"
           pr_number: "${PR_NUMBER}"
           EOF
           
