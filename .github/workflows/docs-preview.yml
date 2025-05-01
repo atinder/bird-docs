@@ -52,29 +52,37 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: Deploy to Preview Branch
+      - name: Deploy to gh-pages Branch
         run: |
           PR_NUMBER=${{ github.event.pull_request.number }}
-          PREVIEW_BRANCH="preview/pr-${PR_NUMBER}"
+          PREVIEW_DIR="preview/pr-${PR_NUMBER}"
           
           # Configure git
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           
-          # Create and switch to a new orphan branch
-          git checkout --orphan $PREVIEW_BRANCH
+          # Fetch and checkout gh-pages branch, creating it if it doesn't exist
+          git fetch origin gh-pages || true
+          if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf .
+          fi
           
-          # Clear the working directory except _site and .git
-          git rm -rf .
+          # Ensure preview directory exists
+          mkdir -p $PREVIEW_DIR
           
-          # Move _site contents to root and clean up
-          cp -r _site/* .
-          rm -rf _site
+          # Remove old preview content if it exists
+          rm -rf $PREVIEW_DIR/*
           
-          # Stage and commit all files
+          # Copy new preview content
+          cp -r _site/* $PREVIEW_DIR/
+          
+          # Stage and commit
           git add -A
-          git commit -m "Deploy preview for PR #${PR_NUMBER}"
-          git push origin $PREVIEW_BRANCH --force
+          git commit -m "Deploy preview for PR #${PR_NUMBER}" || echo "No changes to commit"
+          git push origin gh-pages
 
       - name: Comment PR
         uses: actions/github-script@v6
