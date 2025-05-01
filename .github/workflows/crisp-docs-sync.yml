@@ -16,6 +16,9 @@ jobs:
         with:
           ruby-version: '3.2'
 
+      - name: Install dependencies
+        run: gem install dotenv
+
       - name: Sync to Crisp
         run: ruby _scripts/sync_to_crisp.rb
         env:
