@@ -11,6 +11,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  pull-requests: write
 
 jobs:
   build-and-preview:
@@ -21,14 +22,8 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
-
-      - name: Install Jekyll
-        run: |
-          gem install bundler
-          bundle init
-          echo 'gem "github-pages", group: :jekyll_plugins' >> Gemfile
-          bundle install
+          ruby-version: '3.4.3'
+          bundler-cache: true
 
       - name: Build site
         run: bundle exec jekyll build --baseurl "/${{ github.event.pull_request.number }}"
