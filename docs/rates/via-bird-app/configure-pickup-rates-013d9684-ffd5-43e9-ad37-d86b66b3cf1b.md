@@ -7,69 +7,98 @@ slug: configure-pickup-rates
 crisp_updated_at: 1740705645000
 ---
 
-You can configure the pickup rates for a single location and multiple locations.
+# Configure Store Pickup Rates
 
-### How to Add Rates for a Single Location:
+This guide explains how to set up and manage pickup rates in the Bird App. Whether you have a single store or multiple locations, you can create flexible pickup rates based on various conditions like order value, day of the week, or urgency.
 
-1. Select the "I have the same rates for all my locations" option, then click Add Rate.
+## Quick Start Guide
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-14-175700_13kuovj.png)
+1. Navigate to **Bird App Settings > Rates**
+2. Select **Pickup Rates**
+3. Choose your location configuration:
+   - Single location: "I have the same rates for all my locations"
+   - Multiple locations: Configure rates per location
 
-For **multiple locations**, add rates for each specific location.
+## Setting Up Pickup Rates
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-14-175839_1kmmvms.png)
+### Step 1: Choose Location Configuration
 
-2. Enter the rate name and condition.
+Select whether you want to apply the same rates across all locations or set different rates for each location.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/ratenamecondition_g2718c.png)
+* **Single Location Setup**: Choose "I have the same rates for all my locations"
+* **Multiple Locations**: Rates can be configured individually for each store
 
-3. Setting up the Pickup rate based on the below conditions.
+![Location Configuration](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-14-175700_13kuovj.png)
 
-* Based on **Price**. Enter the minimum order price and maximum order price on which you want to apply rates. For a Free Pickup, leave the Rate Amount section blank.
+### Step 2: Create a New Rate
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122439_1k5kf7c.png)
+1. Click the "Add Rate" button
+2. Enter a descriptive rate name
+3. Select the condition(s) that will trigger this rate
 
-* If you have selected **Day**, enter the start and end day.
-Example: Create a weekday rate ($10, Monday- Friday) and weekend rate ($15, Saturday- Sunday) by setting different start/end days.
+![Rate Creation](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/ratenamecondition_g2718c.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122508_rzwl5n.png)
+## Available Rate Conditions
 
-* To configure rates based on **Rush/Urgency**, enter the Min days and Max days.
-For example, if you want to charge rush fees based on urgency—such as a **higher rate for same-day or next-day delivery**—set Min Days to 0 (Today) and Max Days to 1 (Tomorrow) and the Rate Amount.
+### 1. Price-Based Rates
+Set rates based on the order total value.
+* **Example**: Free pickup for orders over $100
+* **Configuration**:
+  - Minimum Order Price: $100
+  - Maximum Order Price: No limit
+  - Rate Amount: Leave blank for free pickup
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122552_5va36d.png)
+![Price Based Rate](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122439_1k5kf7c.png)
 
-* The rate can also be set based on **Weight, Product, Date, and Time**. Select the appropriate option from the dropdown and create the rates accordingly.
+### 2. Day-Based Rates
+Different rates for different days of the week.
+* **Example**: Weekday vs Weekend Pricing
+  - Weekdays (Mon-Fri): $10
+  - Weekends (Sat-Sun): $15
+* **Configuration**:
+  - Create two separate rates with different day ranges
 
+![Day Based Rate](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122508_rzwl5n.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1hv5x92.png)
+### 3. Rush/Urgency Rates
+Charge premium rates for expedited pickup.
+* **Example**: Same-day or next-day pickup premium
+  - Same day (0 days): $20
+  - Next day (1 day): $15
+* **Configuration**:
+  - Min Days: 0 (Today)
+  - Max Days: 1 (Tomorrow)
 
-*  Based on **Multiple conditions** As an example, if you want to set rates based on day and price, you can select multiple conditions.
+![Rush Based Rate](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122552_5va36d.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122639_1vcvw6n.png)
+### 4. Additional Conditions
+* **Weight-based**: Set rates by order weight (in grams)
+* **Product-specific**: Apply rates to specific SKUs
+* **Date-range**: Special rates for specific dates
+* **Time-based**: Different rates for different times of day
 
-Click on **Add condition**, then select one of the conditions mentioned in the example.
-Now click on Add condition to add another condition under Multiple conditions.
+![Additional Conditions](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1hv5x92.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122655_13ygahs.png)
+### 5. Multiple Conditions
+Combine different conditions for more specific rate rules.
+* **Example**: Weekend + Order Value
+  - Weekend orders over $200: Free pickup
+  - Weekend orders under $200: $15 pickup fee
 
-**Define values for conditions:**
-****
-* For Price, set min and max order prices.
-* For Weight, set min and max order weights(gms).
-* For Day, specify start and end days.
-* For Products, add SKUs.
-* For Urgency, enter min and max rush days.
-* For Date, set the Date range over the calendar
-* For Time, set min and max delivery times.
-* For Multiple Conditions, combine criteria.
+![Multiple Conditions](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122639_1vcvw6n.png)
 
-| Note: Modify rates anytime to suit your requirements.
+## Best Practices
 
-## To configure rates from our app:
+1. **Name Your Rates Clearly**: Use descriptive names that indicate the condition and rate (e.g., "Weekend Premium Rate", "Free Pickup Over $100")
+2. **Test Your Rates**: After setting up rates, test them with different scenarios to ensure they work as expected
+3. **Regular Review**: Periodically review and adjust your rates based on business needs
+4. **Consider Peak Times**: Set special rates for busy periods or holidays
+5. **Clear Communication**: Ensure your pickup rates are clearly communicated to customers
 
-1. [Configure delivery rates](https://help.birdchime.com/en-us/article/configure-delivery-rates-1xbrder/)
+| Note: You can modify rates at any time to adapt to your business needs.
 
-2. [Configure shipping rates](https://help.birdchime.com/en-us/article/configure-shipping-rates-llsy16/)
+## Related Guides
 
-3. [Rates Control](https://help.birdchime.com/en-us/article/rates-control-jjcrrp/)
+* [Configure Delivery Rates](https://help.birdchime.com/en-us/article/configure-delivery-rates-1xbrder/)
+* [Configure Shipping Rates](https://help.birdchime.com/en-us/article/configure-shipping-rates-llsy16/)
+* [Rates Control Overview](https://help.birdchime.com/en-us/article/rates-control-jjcrrp/)
