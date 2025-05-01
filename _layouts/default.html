@@ -23,12 +23,24 @@
             max-width: 100%;
             height: auto;
         }
+        .home-link {
+            text-decoration: none;
+            color: inherit;
+        }
+        .home-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1>{{ page.title }}</h1>
+            <a href="{{ site.baseurl }}/" class="home-link">
+                <h1>{{ site.title }}</h1>
+            </a>
+            {% if page.title != site.title %}
+            <h2>{{ page.title }}</h2>
+            {% endif %}
         </header>
         <main class="content">
             {{ content }}
