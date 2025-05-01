@@ -3,35 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <style>
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
+        body {
+            margin: 0;
+            padding: 0;
         }
-        .header {
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #eee;
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
         }
         .content {
             line-height: 1.6;
+            flex: 1;
+            padding: 2rem;
+            max-width: 100%;
         }
         .content img {
             max-width: 100%;
             height: auto;
         }
+<<<<<<< Updated upstream
+=======
+        .home-link {
+            text-decoration: none;
+            color: inherit;
+            padding: 1rem;
+            display: block;
+        }
+        .home-link:hover {
+            text-decoration: underline;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background: #f5f5f5;
+            border-right: 1px solid #eee;
+            height: 100vh;
+            overflow-y: auto;
+            position: sticky;
+            top: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            margin: 0;
+        }
+        .sidebar li a {
+            padding: 0.5rem 1rem;
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+        .sidebar li a:hover {
+            background: #e5e5e5;
+        }
+        .sidebar h3 {
+            margin: 0;
+            padding: 1rem;
+            font-size: 1.2rem;
+            background: #e5e5e5;
+        }
+        .sidebar h4 {
+            margin: 0;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            color: #666;
+            background: #efefef;
+        }
+        .breadcrumbs {
+            margin-bottom: 2rem;
+            color: #666;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .breadcrumbs a {
+            color: #666;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: static;
+                border-right: none;
+                border-bottom: 1px solid #eee;
+            }
+            .content {
+                padding: 1rem;
+            }
+        }
+>>>>>>> Stashed changes
     </style>
 </head>
 <body>
     <div class="container">
+<<<<<<< Updated upstream
         <header class="header">
             <h1>{{ page.title }}</h1>
         </header>
+=======
+        <nav class="sidebar">
+            <a href="{{ site.baseurl }}/" class="home-link">
+                <h1>{{ site.title }}</h1>
+            </a>
+            {% assign docs_by_category = site.pages | where_exp: "item", "item.path contains 'docs/'" | group_by_exp: "item", "item.path | split: '/' | slice: 1 | first" %}
+            {% for category in docs_by_category %}
+            <h3>{{ category.name | capitalize | replace: "-", " " }}</h3>
+            {% assign docs_by_section = category.items | group_by_exp: "item", "item.path | split: '/' | slice: 2 | first" %}
+            {% for section in docs_by_section %}
+            <h4>{{ section.name | capitalize | replace: "-", " " }}</h4>
+            <ul>
+                {% for doc in section.items %}
+                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+            {% endfor %}
+        </nav>
+        
+>>>>>>> Stashed changes
         <main class="content">
-            {{ content }}
+            <div class="main-content">
+                <div class="breadcrumbs">
+                    <a href="{{ site.baseurl }}/">Home</a>
+                    {% assign path_parts = page.path | split: '/' %}
+                    {% if path_parts[1] %} / <a href="{{ site.baseurl }}/#{{ path_parts[1] }}">{{ path_parts[1] | capitalize | replace: "-", " " }}</a>{% endif %}
+                    {% if path_parts[2] %} / <a href="{{ site.baseurl }}/#{{ path_parts[2] }}">{{ path_parts[2] | capitalize | replace: "-", " " }}</a>{% endif %}
+                    {% if page.title != "Bird Documentation" %} / {{ page.title }}{% endif %}
+                </div>
+                
+                {{ content }}
+                
+                <footer>
+                    <p><small>This is a preview version. For the official documentation, please visit <a href="https://help.birdchime.com">help.birdchime.com</a></small></p>
+                </footer>
+            </div>
         </main>
     </div>
 </body>

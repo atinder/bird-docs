@@ -11,13 +11,13 @@ permalink: pretty
 collections:
   docs:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:path/
+    source: docs
 
 # Default front matter
 defaults:
   - scope:
-      path: ""
-      type: "docs"
+      path: "docs"
     values:
       layout: "default"
 
