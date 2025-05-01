@@ -7,7 +7,7 @@ slug: configure-pickup-rates_nitin
 crisp_updated_at: 1740485971000
 ---
 
-> **Note**: Testing preview with corrected file structure and build path. This note will be removed after testing.
+> **Note**: Testing preview with clean gh-pages branch. This note will be removed after testing.
 
 # Configure Pickup Rates:
 
