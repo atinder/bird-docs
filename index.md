@@ -3,6 +3,12 @@ layout: default
 title: Bird Documentation
 ---
 
+# Bird Documentation
+
+Welcome to the Bird documentation. This site contains comprehensive guides and documentation for the Bird app.
+
+## Documentation Sections
+
 {% assign docs_by_category = site.pages | where_exp: "item", "item.path contains 'docs/'" | group_by_exp: "item", "item.path | split: '/' | slice: 1 | first" %}
 {% for category in docs_by_category %}
 
