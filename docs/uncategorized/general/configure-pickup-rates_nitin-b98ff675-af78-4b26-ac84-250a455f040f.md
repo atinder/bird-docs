@@ -7,7 +7,7 @@ slug: configure-pickup-rates_nitin
 crisp_updated_at: 1740485971000
 ---
 
-> **Note**: This is a test change to verify the PR preview system. This note will be removed after testing.
+> **Note**: This is an updated test change to verify the PR preview system with fixed breadcrumbs and cache busting. This note will be removed after testing.
 
 # Configure Pickup Rates:
 
