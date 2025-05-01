@@ -9,7 +9,7 @@ crisp_updated_at: 1740485971000
 
 # Configure Pickup Rates:
 
-You can configure the pickup rates for a single location as well as for multiple locations.
+You can configure the pickup rates for a single location as well as for multiple locations.....
 
 ### How to Add Rates for a Single Location:
 
