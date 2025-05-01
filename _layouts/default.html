@@ -133,7 +133,7 @@
             <h4>{{ section.name | capitalize | replace: "-", " " }}</h4>
             <ul>
                 {% for doc in section.items %}
-                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+                <li><a href="{{ site.baseurl | append: doc.url | relative_url }}">{{ doc.title }}</a></li>
                 {% endfor %}
             </ul>
             {% endfor %}
@@ -143,10 +143,10 @@
         <main class="content">
             <div class="main-content">
                 <div class="breadcrumbs">
-                    <a href="{{ site.baseurl }}/">Home</a>
+                    <a href="{{ site.baseurl | relative_url }}/">Home</a>
                     {% assign path_parts = page.path | split: '/' %}
-                    {% if path_parts[1] %} / <a href="{{ site.baseurl }}/#{{ path_parts[1] }}">{{ path_parts[1] | capitalize | replace: "-", " " }}</a>{% endif %}
-                    {% if path_parts[2] %} / <a href="{{ site.baseurl }}/#{{ path_parts[2] }}">{{ path_parts[2] | capitalize | replace: "-", " " }}</a>{% endif %}
+                    {% if path_parts[1] %} / <a href="{{ site.baseurl | relative_url }}/#{{ path_parts[1] }}">{{ path_parts[1] | capitalize | replace: "-", " " }}</a>{% endif %}
+                    {% if path_parts[2] %} / <a href="{{ site.baseurl | relative_url }}/#{{ path_parts[2] }}">{{ path_parts[2] | capitalize | replace: "-", " " }}</a>{% endif %}
                     {% if page.title != "Bird Documentation" %} / {{ page.title }}{% endif %}
                 </div>
                 
