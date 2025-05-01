@@ -46,8 +46,17 @@ jobs:
         run: |
           PR_NUMBER=${{ github.event.pull_request.number }}
           echo "Building site for PR #${PR_NUMBER}"
-          # Override baseurl for preview deployment
-          bundle exec jekyll build --config _config.yml --baseurl "/bird-docs/preview/pr-${PR_NUMBER}"
+          
+          # Create PR-specific config with proper baseurl
+          cat > _config.pr.yml << EOF
+          baseurl: "/bird-docs/preview/pr-${PR_NUMBER}"
+          build_time: "$(date -u +"%Y-%m-%d %H:%M:%S %z")"
+          pr_number: "${PR_NUMBER}"
+          EOF
+          
+          # Build using both configs
+          bundle exec jekyll build --config _config.yml,_config.pr.yml
+          
           # Verify build output
           echo "Contents of _site directory:"
           ls -la _site/
