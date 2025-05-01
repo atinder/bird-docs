@@ -46,9 +46,16 @@ jobs:
         run: |
           PR_NUMBER=${{ github.event.pull_request.number }}
           echo "Building site for PR #${PR_NUMBER}"
+          # Override baseurl for preview deployment
           bundle exec jekyll build --config _config.yml --baseurl "/bird-docs/preview/pr-${PR_NUMBER}"
+          # Verify build output
           echo "Contents of _site directory:"
           ls -la _site/
+          # Check if index.html exists
+          if [ ! -f "_site/index.html" ]; then
+            echo "Error: index.html not found in build output"
+            exit 1
+          fi
         env:
           JEKYLL_ENV: production
 
@@ -61,23 +68,22 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           
-          # Fetch and checkout gh-pages branch, creating it if it doesn't exist
-          git fetch origin gh-pages || true
-          if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
-            git checkout gh-pages
-          else
-            git checkout --orphan gh-pages
-            git rm -rf .
-          fi
+          # Fetch and checkout gh-pages branch
+          git fetch origin gh-pages
+          git checkout gh-pages
           
-          # Ensure preview directory exists
+          # Create preview directory
           mkdir -p $PREVIEW_DIR
           
-          # Remove old preview content if it exists
+          # Remove old preview content
           rm -rf $PREVIEW_DIR/*
           
           # Copy new preview content
           cp -r _site/* $PREVIEW_DIR/
+          
+          # Debug: List contents after copy
+          echo "Contents of preview directory:"
+          ls -la $PREVIEW_DIR/
           
           # Stage and commit
           git add -A
