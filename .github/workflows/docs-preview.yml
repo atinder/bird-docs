@@ -46,11 +46,49 @@ jobs:
         run: |
           PR_NUMBER=${{ github.event.pull_request.number }}
           echo "Building site for PR #${PR_NUMBER}"
-          # Override baseurl for preview deployment
-          bundle exec jekyll build --config _config.yml --baseurl "/bird-docs/preview/pr-${PR_NUMBER}"
+          
+          # Create temporary config file with PR-specific settings
+          cat > _config_preview.yml << EOL
+          title: Bird Docs
+          description: Documentation for Bird
+          url: "https://atinder.github.io"
+          baseurl: "/bird-docs/preview/pr-${PR_NUMBER}"
+          
+          # Build settings
+          markdown: kramdown
+          permalink: pretty
+          
+          # Collections
+          collections:
+            docs:
+              output: true
+              permalink: /:path/
+              source: docs
+          
+          # Default front matter
+          defaults:
+            - scope:
+                path: "docs"
+              values:
+                layout: "default"
+          
+          # Exclude from processing
+          exclude:
+            - Gemfile
+            - Gemfile.lock
+            - node_modules
+            - vendor
+            - .git
+            - .github
+          EOL
+          
+          # Build with PR-specific config
+          bundle exec jekyll build --config _config_preview.yml
+          
           # Verify build output
           echo "Contents of _site directory:"
           ls -la _site/
+          
           # Check if index.html exists
           if [ ! -f "_site/index.html" ]; then
             echo "Error: index.html not found in build output"
