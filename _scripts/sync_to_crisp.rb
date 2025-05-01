@@ -27,7 +27,7 @@ end
 
 def get_changed_files
   # For testing - return only the test article
-  return ['docs/uncategorized/general/configure-pickup-rates_nitin-b98ff675-af78-4b26-ac84-250a455f040f.md']
+  # return ['docs/uncategorized/general/configure-pickup-rates_nitin-b98ff675-af78-4b26-ac84-250a455f040f.md']
   
   # Check if we're running in GitHub Actions
   if ENV['GITHUB_SHA']
