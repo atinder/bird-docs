@@ -11,7 +11,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -37,11 +37,35 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --baseurl "/bird-docs"
         env:
           JEKYLL_ENV: production
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+
+      - name: Deploy to gh-pages Branch
+        run: |
+          # Configure git
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          
+          # Fetch and checkout gh-pages branch, creating it if it doesn't exist
+          git fetch origin gh-pages || true
+          if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf .
+          fi
+          
+          # Remove old content but preserve preview directory
+          find . -maxdepth 1 ! -name '.git' ! -name 'preview' -exec rm -rf {} +
+          
+          # Copy new content
+          cp -r _site/* .
+          
+          # Stage and commit
+          git add -A
+          git commit -m "Deploy main site" || echo "No changes to commit"
+          git push origin gh-pages
 
   # Deployment job
   deploy:
