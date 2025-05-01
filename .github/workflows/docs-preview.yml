@@ -31,7 +31,7 @@ jobs:
         run: |
           PR_NUMBER=${{ github.event.pull_request.number }}
           echo "Building site for PR #${PR_NUMBER}"
-          bundle exec jekyll build --baseurl "/bird-docs/pr-preview/${PR_NUMBER}"
+          bundle exec jekyll build --baseurl "/bird-docs/pr-${PR_NUMBER}"
         env:
           JEKYLL_ENV: production
 
@@ -40,7 +40,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          destination_dir: pr-preview/${{ github.event.pull_request.number }}
+          destination_dir: pr-${{ github.event.pull_request.number }}
           keep_files: true
           enable_jekyll: true
 
@@ -52,7 +52,7 @@ jobs:
             const repo = context.repo.repo;
             const owner = context.repo.owner;
             const prNumber = context.issue.number;
-            const previewUrl = `https://${owner}.github.io/${repo}/pr-preview/${prNumber}/`;
+            const previewUrl = `https://${owner}.github.io/${repo}/pr-${prNumber}/`;
             
             github.rest.issues.createComment({
               owner: owner,
