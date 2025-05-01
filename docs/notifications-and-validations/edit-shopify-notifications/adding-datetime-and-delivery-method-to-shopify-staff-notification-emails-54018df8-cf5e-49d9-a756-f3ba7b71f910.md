@@ -7,7 +7,7 @@ slug: adding-datetime-and-delivery-method-to-shopify-staff-notification-emails
 crisp_updated_at: 1729253194000
 ---
 
-When a new order is placed, it's essential that staff members receive an email with all the necessary details, including the customer's selected slot date, time, and delivery method.
+When a new order is placed, it’s essential that staff members receive an email with all the necessary details, including the customer’s selected slot date, time, and delivery method.
 
 
 1. **Access Staff Notification Settings:**
@@ -22,21 +22,30 @@ When a new order is placed, it's essential that staff members receive an email w
 
 2. **Modify the New Order Notification Template:**
 
-* Insert the Bird App's code snippet for slot date, time, and method into the existing template. Make sure to place the code in a visible section, such as above the order summary table.
+* Insert the Bird App’s code snippet for slot date, time, and method into the existing template. Make sure to place the code in a visible section, such as above the order summary table.
 
 Below code you can edit as per your store language.
 
-```liquid
-{% raw %}
-{# Below code you can edit as per your store language #}
+```html
+{% 
+
+  ###################################
+
+  # Below code you can edit as per your store language
+  ###################################
+%}
 
 {% assign translated_method = "Delivery,Pick Up,Shipping"  | split: "," %}
 {% assign translated_days = "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday"  | split: "," %}
 
-{# Don't change below code #}
+{% 
+  ###################################
+  # Don't change below code
+  ###################################
+%}
   
-{% assign keyValuePairs = nil %}
-{% assign Bird_flag = true %}
+  {% assign keyValuePairs = nil %}
+  {% assign Bird_flag = true %}
         
 {% for line_item in line_items %}
   {% for property in line_item.properties %}
@@ -89,11 +98,17 @@ Below code you can edit as per your store language.
   {% assign Bird_Day =  translated_days[bird_index] %}
 {% endif %}
         
+
 {% if order.attributes['Translated Delivery Time'] %}
   {% assign Bird_Time = order.attributes['Translated Delivery Time'] %} 
 {% endif %}
 
-{# Below code you can edit as per your need #}
+
+{% 
+  ###################################
+  # Below code you can edit as per your need
+  ###################################
+%}
 
 {% if Bird_Method %}
   <table class="container">
@@ -118,7 +133,6 @@ Below code you can edit as per your store language.
     </tr>
   </table>
 {% endif %}
-{% endraw %}
 ```
 
 We recommend to paste the entire code above the Order Summary table as shown below. You have the right to paste the code at any place.
