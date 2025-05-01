@@ -3,7 +3,7 @@ name: Sync Docs to Crisp
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   sync-crisp:
@@ -16,6 +16,9 @@ jobs:
         with:
           ruby-version: '3.4.3'
           bundler-cache: true
+
+      - name: Install dependencies
+        run: gem install dotenv
 
       - name: Sync to Crisp
         run: bundle exec ruby _scripts/sync_to_crisp.rb
