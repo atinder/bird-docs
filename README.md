@@ -1,6 +1,120 @@
 # Bird Documentation
 
-This repository contains the documentation for Bird, with a preview system for pull requests.
+Welcome to the Bird documentation. This site contains comprehensive guides and documentation for the Bird app.
+
+## Documentation Sections
+
+### Notifications and validations
+
+#### Validations
+
+* Abandoned Cart and Checkout Validation
+* How to add a minimum order value validation message?
+* How to validate Local Delivery postal code in widget?
+
+#### General
+
+* Add Date/Time in packaging slip or invoice.
+* How to Verify DKIM and Return-Path_Nitin
+
+#### Customer notifications
+
+* Add Date/Time to draft order Invoice
+* Ready for pickup and dispatch email notification
+
+#### Staff notifications
+
+* Enable Internal Staff Notifications via BirdApp
+
+### Calendar and time configuration
+
+#### Global settings
+
+* Configure Availability Settings
+* Configure Order Preparation Times
+* How to set a limit for orders?
+* Product Override
+
+### Rates
+
+#### Via bird app
+
+* Configure Delivery Rates
+* Configure Pickup Rates
+
+#### General
+
+* Discounts for Shipping, Delivery, or Pickup_Nitin
+
+#### Common
+
+* Rates control
+
+### Uncategorized
+
+#### General
+
+* Configure Local Delivery Rates based on Postal Code
+* Configure Pickup Rates_Nitin
+* Product Override_Nitin (Title has to be thought through)
+* Rates Control_draft
+* Sorting and Filtering Orders_Nitin
+
+### Order management
+
+#### General
+
+* Create draft order with date and time.
+* How to change the date and time after the order has been placed?
+* How to sort orders by date?
+
+### Shopify settings
+
+#### General
+
+* Disable Shopify's built-in store pickup
+* Modify checkout page language
+
+### Popular use cases
+
+#### General
+
+* Enable Same Day/Next Day delivery for specific products
+* Hide or Show widget for certain products only
+
+### Design and customizations
+
+#### General
+
+* How to customize the widget look?
+* How to enable or disable the app in themes
+* How to show link below the widget?
+* Remove the Ship and Pickup selection on the checkout page
+
+### Integrations
+
+#### General
+
+* How to Integrate the Bird app with Shopify POS
+* How to Integrate the Bird app with Shopify POS_Lokesh
+* How to track orders on google calendar?
+* Integrating Bird App Widget in Your Shopify Headless Theme
+* Working with subscription apps
+
+### Advanced settings
+
+#### General
+
+* Setup checkout locales files
+* Widget Reinitialize
+
+### Shipping
+
+#### General
+
+* Shipping
+
+This is a preview version. For the official documentation, please visit help.birdchime.com
 
 ## Documentation Structure
 
