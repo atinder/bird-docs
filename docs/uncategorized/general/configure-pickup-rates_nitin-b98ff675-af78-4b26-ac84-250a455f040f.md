@@ -7,8 +7,6 @@ slug: configure-pickup-rates_nitin
 crisp_updated_at: 1740485971000
 ---
 
-> **Note**: Testing preview with clean gh-pages branch. This note will be removed after testing.
-
 # Configure Pickup Rates:
 
 You can configure the pickup rates for a single location as well as for multiple locations.
