@@ -13,15 +13,17 @@ permissions:
 
 # Allow concurrent deployments for different PRs
 concurrency:
-  group: "preview-${{ github.event.pull_request.number }}"
+  group: "pages-pr-${{ github.event.pull_request.number }}"
   cancel-in-progress: true
 
 jobs:
-  build-and-preview:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -29,27 +31,37 @@ jobs:
           ruby-version: '3.4.3'
           bundler-cache: true
 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+
+      - name: Debug Info
+        run: |
+          echo "PR Number: ${{ github.event.pull_request.number }}"
+          echo "Repository: ${{ github.repository }}"
+          echo "Actor: ${{ github.actor }}"
+          echo "Base Path: ${{ steps.pages.outputs.base_path }}"
+
       - name: Build with Jekyll
         run: |
           PR_NUMBER=${{ github.event.pull_request.number }}
           echo "Building site for PR #${PR_NUMBER}"
-          
-          # Create PR-specific config with proper date format
-          cat > _config.pr.yml << EOF
-          baseurl: ""
-          build_time: "$(date -u +"%Y-%m-%d %H:%M:%S %z")"
-          pr_number: "${PR_NUMBER}"
-          EOF
-          
-          # Build using both configs
-          JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config.pr.yml
+          # Override baseurl for preview deployment
+          bundle exec jekyll build --config _config.yml --baseurl "/bird-docs/preview/pr-${PR_NUMBER}"
+          # Verify build output
+          echo "Contents of _site directory:"
+          ls -la _site/
+          # Check if index.html exists
+          if [ ! -f "_site/index.html" ]; then
+            echo "Error: index.html not found in build output"
+            exit 1
+          fi
         env:
           JEKYLL_ENV: production
 
-      - name: Deploy Preview
+      - name: Deploy to gh-pages Branch
         run: |
           PR_NUMBER=${{ github.event.pull_request.number }}
-          PREVIEW_BRANCH="gh-pages"
           PREVIEW_DIR="preview/pr-${PR_NUMBER}"
           
           # Configure git
@@ -57,23 +69,25 @@ jobs:
           git config --global user.email "actions@github.com"
           
           # Fetch and checkout gh-pages branch
-          git fetch origin gh-pages || git fetch origin main
+          git fetch origin gh-pages || git fetch origin master
           git checkout gh-pages || git checkout -b gh-pages
           
           # Create preview directory
-          mkdir -p "$PREVIEW_DIR"
+          mkdir -p $PREVIEW_DIR
           
           # Remove old preview content
-          rm -rf "$PREVIEW_DIR"/*
+          rm -rf $PREVIEW_DIR/*
           
           # Copy new preview content
-          cp -r _site/* "$PREVIEW_DIR/"
+          cp -r _site/* $PREVIEW_DIR/
           
-          # Add and commit changes
+          # Debug: List contents after copy
+          echo "Contents of preview directory:"
+          ls -la $PREVIEW_DIR/
+          
+          # Stage and commit
           git add -A
-          git commit -m "Deploy preview for PR #${PR_NUMBER} ($(date +%s))" || echo "No changes to commit"
-          
-          # Push to gh-pages branch
+          git commit -m "Deploy preview for PR #${PR_NUMBER}" || echo "No changes to commit"
           git push origin gh-pages
 
       - name: Comment PR
@@ -85,21 +99,11 @@ jobs:
             const owner = context.repo.owner;
             const prNumber = context.issue.number;
             const previewUrl = `https://${owner}.github.io/${repo}/preview/pr-${prNumber}/`;
-            const timestamp = new Date().toISOString();
-            
-            const message = [
-              `📚 Documentation preview is ready! (Updated at: ${timestamp})`,
-              '',
-              'Preview URLs:',
-              `- GitHub Pages: ${previewUrl}`,
-              `- Raw Files: https://github.com/${owner}/${repo}/tree/gh-pages/preview/pr-${prNumber}`,
-              '',
-              'This preview will be updated automatically when you push new changes to the PR.'
-            ].join('\n');
+            const rawFilesUrl = `https://github.com/${owner}/${repo}/tree/gh-pages/preview/pr-${prNumber}`;
             
             github.rest.issues.createComment({
               owner: owner,
               repo: repo,
               issue_number: prNumber,
-              body: message
+              body: `📚 Documentation preview is ready!\n\nPreview URLs:\n- GitHub Pages: ${previewUrl}\n- Raw Files: ${rawFilesUrl}\n\nThis preview will be updated automatically when you push new changes to the PR.`
             }); 
