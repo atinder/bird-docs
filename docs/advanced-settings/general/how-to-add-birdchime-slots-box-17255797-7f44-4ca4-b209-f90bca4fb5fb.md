@@ -5,6 +5,7 @@ category: advanced-settings
 section: general
 slug: how-to-add-birdchime-slots-box
 crisp_updated_at: 1701695698000
+crisp_url: https://help.birdchime.com/en-us/article/how-to-add-birdchime-slots-box-s7gd76/
 ---
 
 1. Select **Online Store **

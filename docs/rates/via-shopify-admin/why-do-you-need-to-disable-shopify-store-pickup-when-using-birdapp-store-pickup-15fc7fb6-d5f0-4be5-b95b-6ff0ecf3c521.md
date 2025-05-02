@@ -5,6 +5,7 @@ category: rates
 section: via-shopify-admin
 slug: why-do-you-need-to-disable-shopify-store-pickup-when-using-birdapp-store-pickup
 crisp_updated_at: 1736510358000
+crisp_url: https://help.birdchime.com/en-us/article/why-do-you-need-to-disable-shopify-store-pickup-when-using-birdapp-store-pickup-7a6noz/
 ---
 
 When setting up store pickup in Shopify and integrating BirdApp, it's important to **disable Shopify's store pickup** to avoid customer confusion.

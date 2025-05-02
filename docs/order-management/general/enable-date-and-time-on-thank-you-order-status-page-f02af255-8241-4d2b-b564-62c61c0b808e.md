@@ -5,6 +5,7 @@ category: order-management
 section: general
 slug: enable-date-and-time-on-thank-you-order-status-page
 crisp_updated_at: 1733143419000
+crisp_url: https://help.birdchime.com/en-us/article/enable-date-and-time-on-thank-you-order-status-page-1mvhech/
 ---
 
 You can show selected date-time and method to re-assure your customers about the selection they made by displaying these details on thank you / order status page.

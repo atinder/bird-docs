@@ -5,6 +5,7 @@ category: integrations
 section: general
 slug: integrating-bird-app-widget-in-your-shopify-headless-theme
 crisp_updated_at: 1741922929000
+crisp_url: https://help.birdchime.com/en-us/article/integrating-bird-app-widget-in-your-shopify-headless-theme-2vb8hr/
 ---
 
 # Follow the below steps to integrate the widget into the headless theme 

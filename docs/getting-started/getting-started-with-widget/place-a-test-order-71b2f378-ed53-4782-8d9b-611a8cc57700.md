@@ -5,6 +5,7 @@ category: getting-started
 section: getting-started-with-widget
 slug: place-a-test-order
 crisp_updated_at: 1730976557000
+crisp_url: https://help.birdchime.com/en-us/article/place-a-test-order-13fhz0a/
 ---
 
 1. Goto a product page in your store and click on add to cart

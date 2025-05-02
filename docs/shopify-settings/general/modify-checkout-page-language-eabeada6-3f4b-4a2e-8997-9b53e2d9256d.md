@@ -5,6 +5,7 @@ category: shopify-settings
 section: general
 slug: modify-checkout-page-language
 crisp_updated_at: 1737568283000
+crisp_url: https://help.birdchime.com/en-us/article/modify-checkout-page-language-1l5y8h7/
 ---
 
 If you are not on Advance Shopify or above plan, this article can be useful to you.

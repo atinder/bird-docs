@@ -5,6 +5,7 @@ category: design-and-customizations
 section: general
 slug: how-to-hide-express-checkout-options-from-cart
 crisp_updated_at: 1737567892000
+crisp_url: https://help.birdchime.com/en-us/article/how-to-hide-express-checkout-options-from-cart-aj6pyf/
 ---
 
 The Express checkout options in the cart can bypass the Bird App Date & Time selection. This leads to orders without the date and time data.

@@ -5,6 +5,7 @@ category: getting-started
 section: general
 slug: faq-frequently-asked-questions
 crisp_updated_at: 1735050308000
+crisp_url: https://help.birdchime.com/en-us/article/faq-frequently-asked-questions-1xx5rjd/
 ---
 
 ###### 1. What are Birdchime products and services?

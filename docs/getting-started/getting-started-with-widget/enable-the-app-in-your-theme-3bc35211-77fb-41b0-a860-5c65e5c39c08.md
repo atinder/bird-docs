@@ -5,6 +5,7 @@ category: getting-started
 section: getting-started-with-widget
 slug: enable-the-app-in-your-theme
 crisp_updated_at: 1737567574000
+crisp_url: https://help.birdchime.com/en-us/article/enable-the-app-in-your-theme-450cbp/
 ---
 
 ${youtube}[Enable app onboarding video](ill_E6Rg1uA)

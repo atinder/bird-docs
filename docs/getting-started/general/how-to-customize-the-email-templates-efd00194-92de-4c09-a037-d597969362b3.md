@@ -5,6 +5,7 @@ category: getting-started
 section: general
 slug: how-to-customize-the-email-templates
 crisp_updated_at: 1737567672000
+crisp_url: https://help.birdchime.com/en-us/article/how-to-customize-the-email-templates-kezxwj/
 ---
 
 ### How to customize the email templates?

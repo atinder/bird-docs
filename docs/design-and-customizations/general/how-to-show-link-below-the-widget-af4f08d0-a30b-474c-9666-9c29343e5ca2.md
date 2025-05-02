@@ -5,6 +5,7 @@ category: design-and-customizations
 section: general
 slug: how-to-show-link-below-the-widget
 crisp_updated_at: 1737568245000
+crisp_url: https://help.birdchime.com/en-us/article/how-to-show-link-below-the-widget-1v7vc8v/
 ---
 
 1. Go to Design settings.

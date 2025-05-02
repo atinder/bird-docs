@@ -5,6 +5,7 @@ category: calendar-and-time-configuration
 section: global-settings
 slug: block-shipping-local-delivery-pickup-using-product-availability
 crisp_updated_at: 1736253527000
+crisp_url: https://help.birdchime.com/en-us/article/block-shipping-local-delivery-pickup-using-product-availability-t1zg9b/
 ---
 
 ###### What is the Product Availability Feature?

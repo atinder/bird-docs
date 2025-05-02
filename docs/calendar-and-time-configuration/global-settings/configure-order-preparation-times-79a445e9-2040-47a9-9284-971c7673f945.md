@@ -5,6 +5,7 @@ category: calendar-and-time-configuration
 section: global-settings
 slug: configure-order-preparation-times
 crisp_updated_at: 1737999888000
+crisp_url: https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/
 ---
 
 This guide helps you set up and customize order preparation times, ensuring customers can only select delivery slots based on your store’s availability.

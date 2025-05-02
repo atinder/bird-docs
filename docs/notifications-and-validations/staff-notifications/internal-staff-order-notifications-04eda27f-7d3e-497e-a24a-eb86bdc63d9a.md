@@ -5,6 +5,7 @@ category: notifications-and-validations
 section: staff-notifications
 slug: internal-staff-order-notifications
 crisp_updated_at: 1729270462000
+crisp_url: https://help.birdchime.com/en-us/article/internal-staff-order-notifications-1jqlavz/
 ---
 
 To ensure smooth order management, it's important for staff to receive email notifications with key order details, including the customer's selected date, time, and delivery method.

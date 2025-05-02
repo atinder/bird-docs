@@ -5,6 +5,7 @@ category: getting-started
 section: getting-started-with-widget
 slug: get-started-with-app-setup
 crisp_updated_at: 1729252645000
+crisp_url: https://help.birdchime.com/en-us/article/get-started-with-app-setup-1tra0ra/
 ---
 
 **How to start using Birdchime Pickup and Delivery App**

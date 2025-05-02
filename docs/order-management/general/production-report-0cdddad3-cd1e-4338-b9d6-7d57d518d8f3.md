@@ -5,6 +5,7 @@ category: order-management
 section: general
 slug: production-report
 crisp_updated_at: 1737567831000
+crisp_url: https://help.birdchime.com/en-us/article/production-report-1xr9iam/
 ---
 
 # Production Report :

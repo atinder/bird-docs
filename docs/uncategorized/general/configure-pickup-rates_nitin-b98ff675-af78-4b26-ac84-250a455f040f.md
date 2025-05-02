@@ -5,6 +5,7 @@ category: uncategorized
 section: general
 slug: configure-pickup-rates_nitin
 crisp_updated_at: 1746089315000
+crisp_url: 
 ---
 
 # Configure Pickup Rates:

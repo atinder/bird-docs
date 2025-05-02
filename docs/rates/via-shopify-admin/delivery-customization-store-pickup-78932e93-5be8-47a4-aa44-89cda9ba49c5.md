@@ -5,6 +5,7 @@ category: rates
 section: via-shopify-admin
 slug: delivery-customization-store-pickup
 crisp_updated_at: 1736510284000
+crisp_url: 
 ---
 
 # What exactly is delivery customization?

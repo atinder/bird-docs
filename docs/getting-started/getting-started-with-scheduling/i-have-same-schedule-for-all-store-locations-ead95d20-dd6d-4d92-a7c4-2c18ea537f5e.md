@@ -5,6 +5,7 @@ category: getting-started
 section: getting-started-with-scheduling
 slug: i-have-same-schedule-for-all-store-locations
 crisp_updated_at: 1736248429000
+crisp_url: https://help.birdchime.com/en-us/article/i-have-same-schedule-for-all-store-locations-13ukhrg/
 ---
 
 Follow this document if all your locations share the same **Delivery** or **Pickup Schedule**. This ensures consistent operations across one or more locations while simplifying schedule management. For unique schedules per location, refer to [I have different schedules for different store locations](https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/) document.

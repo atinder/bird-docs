@@ -5,6 +5,7 @@ category: integrations
 section: general
 slug: how-to-integrate-the-bird-app-with-shopify-pos
 crisp_updated_at: 1741093270000
+crisp_url: https://help.birdchime.com/en-us/article/how-to-integrate-the-bird-app-with-shopify-pos-v6ni4l/
 ---
 
 # 2-Step Process

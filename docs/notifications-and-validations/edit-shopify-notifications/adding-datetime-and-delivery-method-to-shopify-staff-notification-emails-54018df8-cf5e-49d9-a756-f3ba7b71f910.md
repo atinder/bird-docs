@@ -5,6 +5,7 @@ category: notifications-and-validations
 section: edit-shopify-notifications
 slug: adding-datetime-and-delivery-method-to-shopify-staff-notification-emails
 crisp_updated_at: 1746159339000
+crisp_url: https://help.birdchime.com/en-us/article/adding-datetime-and-delivery-method-to-shopify-staff-notification-emails-ozlh06/
 ---
 
 When a new order is placed, it’s essential that staff members receive an email with all the necessary details, including the customer’s selected slot date, time, and delivery method.

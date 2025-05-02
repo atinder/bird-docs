@@ -5,6 +5,7 @@ category: getting-started
 section: getting-started-with-scheduling
 slug: i-have-different-schedule-for-different-store-locations
 crisp_updated_at: 1736245720000
+crisp_url: https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/
 ---
 
 To manage different schedules or calendars for multiple locations, configure **Preparation Times**, **Blockout Dates**, and **Available Dates** individually in the **Configure** **Location **Settings. This allows each location to operate with its own unique schedule.

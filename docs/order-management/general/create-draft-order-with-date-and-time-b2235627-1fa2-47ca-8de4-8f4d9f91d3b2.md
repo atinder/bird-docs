@@ -5,6 +5,7 @@ category: order-management
 section: general
 slug: create-draft-order-with-date-and-time
 crisp_updated_at: 1737568379000
+crisp_url: https://help.birdchime.com/en-us/article/create-draft-order-with-date-and-time-1i8tjop/
 ---
 
 1. Go to the Orders setting in the app and click on **Create Draft Order**.

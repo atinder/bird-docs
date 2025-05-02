@@ -5,6 +5,7 @@ category: uncategorized
 section: general
 slug: configure-local-delivery-rates-based-on-postal-code
 crisp_updated_at: 1743084518000
+crisp_url: https://help.birdchime.com/en-us/article/configure-local-delivery-rates-based-on-postal-code-16da0ew/
 ---
 
 ### We will create rates based on postal codes, this is useful when we want to have different delivery rates for different parts of your city.

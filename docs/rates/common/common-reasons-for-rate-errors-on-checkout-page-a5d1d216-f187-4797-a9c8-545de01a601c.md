@@ -5,6 +5,7 @@ category: rates
 section: common
 slug: common-reasons-for-rate-errors-on-checkout-page
 crisp_updated_at: 1724333668000
+crisp_url: https://help.birdchime.com/en-us/article/common-reasons-for-rate-errors-on-checkout-page-1iekz2h/
 ---
 
 ### If you are facing the following error message in the checkout. This document will help you resolve it.

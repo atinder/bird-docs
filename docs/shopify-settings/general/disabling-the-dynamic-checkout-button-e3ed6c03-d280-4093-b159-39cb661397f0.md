@@ -5,6 +5,7 @@ category: shopify-settings
 section: general
 slug: disabling-the-dynamic-checkout-button
 crisp_updated_at: 1730789981000
+crisp_url: https://help.birdchime.com/en-us/article/disabling-the-dynamic-checkout-button-19tjvsl/
 ---
 
 It is essential to disable the dynamic checkout as the Date picker widget is shown on the cart page.

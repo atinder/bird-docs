@@ -5,6 +5,7 @@ category: notifications-and-validations
 section: general
 slug: hide-shopify-estimated-delivery-from-order-confirmation-email
 crisp_updated_at: 1729825721000
+crisp_url: https://help.birdchime.com/en-us/article/hide-shopify-estimated-delivery-from-order-confirmation-email-1vq7vfc/
 ---
 
 This document will help you hide the Estimated Delivery date from the Order Confirmation email incase the Shopify in-built pickup is enabled. The order confirmation email will not show the default Estimated Delivery date that can cause confusion to the customer.

@@ -5,6 +5,7 @@ category: advanced-settings
 section: general
 slug: ajax-cart-widget-re-rendering---optional
 crisp_updated_at: 1730790185000
+crisp_url: https://help.birdchime.com/en-us/article/ajax-cart-widget-re-rendering-optional-1dkfbf0/
 ---
 
 If your cart contents are re-rendered because of Ajax Cart or some similar reason, this guide will help you.

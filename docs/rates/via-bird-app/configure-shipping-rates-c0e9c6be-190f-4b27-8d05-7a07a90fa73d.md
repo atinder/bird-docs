@@ -5,6 +5,7 @@ category: rates
 section: via-bird-app
 slug: configure-shipping-rates
 crisp_updated_at: 1736421861000
+crisp_url: https://help.birdchime.com/en-us/article/configure-shipping-rates-llsy16/
 ---
 
 # Configure Shipping Rates

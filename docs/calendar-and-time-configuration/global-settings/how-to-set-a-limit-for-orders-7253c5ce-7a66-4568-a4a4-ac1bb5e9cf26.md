@@ -5,6 +5,7 @@ category: calendar-and-time-configuration
 section: global-settings
 slug: how-to-set-a-limit-for-orders
 crisp_updated_at: 1738586180000
+crisp_url: https://help.birdchime.com/en-us/article/how-to-set-a-limit-for-orders-1dkllfq/
 ---
 
 The limit can be applied to a day or time slot. To limit orders for a day or specific time slots, follow the steps below.

@@ -5,6 +5,7 @@ category: order-management
 section: general
 slug: how-to-sort-orders-by-date
 crisp_updated_at: 1743085676000
+crisp_url: https://help.birdchime.com/en-us/article/how-to-sort-orders-by-date-18rou3t/
 ---
 
 When managing multiple orders, you can quickly sort and filter them by date, location, and delivery method to prioritize and organize your workflow. This is particularly useful for ensuring timely deliveries and efficient order processing. To sort orders by date in the Bird App, navigate to the order management section, select the Sort by option, and choose "Delivery Date." 

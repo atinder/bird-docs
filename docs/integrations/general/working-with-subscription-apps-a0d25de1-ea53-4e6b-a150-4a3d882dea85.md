@@ -5,6 +5,7 @@ category: integrations
 section: general
 slug: working-with-subscription-apps
 crisp_updated_at: 1740460338000
+crisp_url: https://help.birdchime.com/en-us/article/working-with-subscription-apps-1sze0s7/
 ---
 
 The following are the action items to take when using our app with any subscription apps.

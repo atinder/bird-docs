@@ -5,6 +5,7 @@ category: integrations
 section: general
 slug: integrate-bird-pickup-delivery-date-with-easyroutes
 crisp_updated_at: 1724750149000
+crisp_url: https://help.birdchime.com/en-us/article/integrate-bird-pickup-delivery-date-with-easyroutes-7e5vmm/
 ---
 
 Bird Pickup Delivery Date lets customers schedule pickups or deliveries at their preferred time during checkout. EasyRoutes optimizes delivery routes and provides real-time tracking, ensuring a seamless and efficient post-purchase experience.

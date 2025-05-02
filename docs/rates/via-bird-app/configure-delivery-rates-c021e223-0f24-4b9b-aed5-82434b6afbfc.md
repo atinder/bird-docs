@@ -5,6 +5,7 @@ category: rates
 section: via-bird-app
 slug: configure-delivery-rates
 crisp_updated_at: 1744633342000
+crisp_url: https://help.birdchime.com/en-us/article/configure-delivery-rates-1xbrder/
 ---
 
 # Configure Delivery Rates

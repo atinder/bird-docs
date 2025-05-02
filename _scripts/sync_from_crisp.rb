@@ -4,6 +4,9 @@ require 'fileutils'
 require 'uri'
 require 'dotenv'
 require 'base64'
+require 'byebug'
+require 'yaml'
+require 'find'
 
 # Load environment variables from .env file
 Dotenv.load
@@ -118,15 +121,17 @@ def write_article(category_slug, section_slug, article)
   content.gsub!(/{% raw %}[\s\n]*{% endraw %}/, '')
 
   # Write article to markdown file
-  file_path = File.join(dir, "#{article['slug']}-#{article['id']}.md")
+  file_path = File.join(dir, "#{slugify(article['title'])}-#{article['article_id']}.md")
+
   content = <<~MARKDOWN
     ---
-    id: #{article['id']}
+    id: #{article['article_id']}
     title: "#{article['title']}"
     category: #{category_slug}
     section: #{section_slug}
-    slug: #{article['slug']}
+    slug: #{slugify(article['title'])}
     crisp_updated_at: #{article['updated_at']}
+    crisp_url: #{article['url']}
     ---
 
     #{content}
@@ -189,6 +194,25 @@ def sync_all
   all_articles = get_all_articles(locale)
   puts "Articles response: #{all_articles.inspect}"
   return unless all_articles.is_a?(Array)
+
+  # --- Begin: Remove local files for deleted Crisp articles ---
+  crisp_ids = all_articles.map { |a| a['article_id'] || a['id'] }.compact.to_set
+  Find.find(BASE_DIR) do |path|
+    next unless path.end_with?('.md')
+    begin
+      content = File.read(path)
+      if content =~ /\Aid: (.+)/
+        local_id = $1.strip.gsub('"', '').gsub("'", '')
+        unless crisp_ids.include?(local_id)
+          puts "Deleting local file for missing Crisp article: #{path}"
+          File.delete(path)
+        end
+      end
+    rescue => e
+      puts "Error reading #{path}: #{e}"
+    end
+  end
+  # --- End: Remove local files for deleted Crisp articles ---
   
   puts "\n=== Article Counts ==="
   puts "Total articles from API: #{all_articles.length}"
@@ -219,13 +243,9 @@ def sync_all
       full_article = get_article_content(locale, art['article_id'])
       next unless full_article
 
-      write_article(category_slug, 'general', {
-        'id' => art['article_id'],
-        'title' => art['title'],
-        'slug' => slugify(art['title']),
-        'updated_at' => art['updated_at'],
-        'content' => full_article['content'] || ''
-      })
+      # Merge all keys from art and full_article, with full_article taking precedence
+      merged_article = art.merge(full_article)
+      write_article(category_slug, 'general', merged_article)
     end
     
     # Handle articles in sections
@@ -252,13 +272,9 @@ def sync_all
         full_article = get_article_content(locale, art['article_id'])
         next unless full_article
 
-        write_article(category_slug, section_slug, {
-          'id' => art['article_id'],
-          'title' => art['title'],
-          'slug' => slugify(art['title']),
-          'updated_at' => art['updated_at'],
-          'content' => full_article['content'] || ''
-        })
+        # Merge all keys from art and full_article, with full_article taking precedence
+        merged_article = art.merge(full_article)
+        write_article(category_slug, section_slug, merged_article)
       end
     end
   end
@@ -275,13 +291,9 @@ def sync_all
     full_article = get_article_content(locale, art['article_id'])
     next unless full_article
 
-    write_article('uncategorized', 'general', {
-      'id' => art['article_id'],
-      'title' => art['title'],
-      'slug' => slugify(art['title']),
-      'updated_at' => art['updated_at'],
-      'content' => full_article['content'] || ''
-    })
+    # Merge all keys from art and full_article, with full_article taking precedence
+    merged_article = art.merge(full_article)
+    write_article('uncategorized', 'general', merged_article)
   end
 end
 

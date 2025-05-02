@@ -5,6 +5,7 @@ category: design-and-customizations
 section: general
 slug: add-delivery-datetime-in-customer-dashboard
 crisp_updated_at: 1701699716000
+crisp_url: https://help.birdchime.com/en-us/article/add-delivery-datetime-in-customer-dashboard-d7g9gd/
 ---
 
 In order to show delivery date and time in customer dashboard you will need to edit 2 files described below.

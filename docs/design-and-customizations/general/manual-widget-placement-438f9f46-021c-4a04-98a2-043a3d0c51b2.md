@@ -5,6 +5,7 @@ category: design-and-customizations
 section: general
 slug: manual-widget-placement
 crisp_updated_at: 1737568028000
+crisp_url: https://help.birdchime.com/en-us/article/manual-widget-placement-1iq0zmb/
 ---
 
 || This is somewhat technical. Feel free to ask us for help if you get stuck

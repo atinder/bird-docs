@@ -5,6 +5,7 @@ category: design-and-customizations
 section: general
 slug: how-to-enable-or-disable-the-app-in-themes
 crisp_updated_at: 1743124107000
+crisp_url: https://help.birdchime.com/en-us/article/how-to-enable-or-disable-the-app-in-themes-pjqygb/
 ---
 
 ${frame}[Enable app in the theme](https://www.loom.com/embed/a17117c783694617a5900b6dbe86a835?sid=37145a50-45a4-4528-a9f8-dd9c3beaeaf3)

@@ -5,6 +5,7 @@ category: notifications-and-validations
 section: validations
 slug: abandoned-cart-and-checkout-validation
 crisp_updated_at: 1740503265000
+crisp_url: https://help.birdchime.com/en-us/article/abandoned-cart-and-checkout-validation-ikfjdc/
 ---
 
 **

@@ -5,6 +5,7 @@ category: notifications-and-validations
 section: validations
 slug: how-to-validate-local-delivery-postal-code-in-widget
 crisp_updated_at: 1739204749000
+crisp_url: https://help.birdchime.com/en-us/article/how-to-validate-local-delivery-postal-code-in-widget-1fi7kha/
 ---
 
 ### Follow this document if you want to validate the customer zip code or postal code in our widget as shown below

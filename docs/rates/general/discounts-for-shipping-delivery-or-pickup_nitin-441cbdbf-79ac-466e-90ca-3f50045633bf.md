@@ -5,6 +5,7 @@ category: rates
 section: general
 slug: discounts-for-shipping-delivery-or-pickup_nitin
 crisp_updated_at: 1745933998000
+crisp_url: 
 ---
 
 The **Bird App** allows you to automatically apply Shopify discount codes during checkout based on the selected delivery method—**Shipping**, **Local Delivery**, or **Pickup**. This helps streamline promotional offers and ensures customers see the right discount without having to manually enter a code.

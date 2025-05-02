@@ -5,6 +5,7 @@ category: shipping
 section: general
 slug: shipping
 crisp_updated_at: 1739113783000
+crisp_url: https://help.birdchime.com/en-us/article/shipping-198gsjt/
 ---
 
 Navigate to **Bird App Settings > Shipping**

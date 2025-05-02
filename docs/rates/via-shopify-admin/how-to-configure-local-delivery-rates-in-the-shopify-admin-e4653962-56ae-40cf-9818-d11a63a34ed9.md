@@ -5,6 +5,7 @@ category: rates
 section: via-shopify-admin
 slug: how-to-configure-local-delivery-rates-in-the-shopify-admin
 crisp_updated_at: 1727305383000
+crisp_url: https://help.birdchime.com/en-us/article/how-to-configure-local-delivery-rates-in-the-shopify-admin-513tmv/
 ---
 
 1. Goto Shopify Settings -> Shipping & Delivery 
