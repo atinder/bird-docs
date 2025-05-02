@@ -60,7 +60,7 @@ jobs:
           fi
           
           # Remove old content but preserve preview directory
-          find . -maxdepth 1 ! -name '.git' ! -name 'preview' -exec rm -rf {} +
+          find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name 'preview' -exec rm -rf {} +
           
           # Copy new content
           cp -r _site/* .
