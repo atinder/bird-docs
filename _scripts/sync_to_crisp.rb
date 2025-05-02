@@ -169,6 +169,7 @@ changed_files = get_changed_files
 puts "Found #{changed_files.length} changed markdown files in the latest commit"
 
 # Process only changed files
+updated_crisp_urls = []
 changed_files.each do |path|
   puts "Processing #{path}..."
   meta, body_md = extract_frontmatter_and_content(path)
@@ -176,4 +177,29 @@ changed_files.each do |path|
   
   success = put_article(meta['id'], body_md, meta['title'], meta['crisp_updated_at'], path)
   puts success ? "Successfully updated #{path}" : "Failed to update #{path}"
+
+  # Collect crisp_url if update was successful
+  if success && meta['crisp_url']
+    updated_crisp_urls << meta['crisp_url']
+  end
+end
+
+# Post a single Slack message with all updated URLs
+if updated_crisp_urls.any? && ENV['SLACK_WEBHOOK']
+  slack_message = {
+    channel: '#product-support',
+    text: "Articles updated:\n" + updated_crisp_urls.map { |url| "<#{url}>" }.join("\n")
+  }
+  uri = URI(ENV['SLACK_WEBHOOK'])
+  http = Net::HTTP.new(uri.host, uri.port)
+  http.use_ssl = (uri.scheme == 'https')
+  req = Net::HTTP::Post.new(uri.path)
+  req['Content-Type'] = 'application/json'
+  req.body = slack_message.to_json
+  begin
+    res = http.request(req)
+    puts "Posted to Slack: #{res.code}"
+  rescue => e
+    puts "Error posting to Slack: #{e}"
+  end
 end
