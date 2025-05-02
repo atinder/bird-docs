@@ -8,6 +8,9 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <style>
+        body, main {
+            max-width: none !important;
+        }
         body {
             margin: 0;
             padding: 0;
@@ -39,7 +42,7 @@
             text-decoration: underline;
         }
         .sidebar {
-            width: 300px;
+            width: 250px;
             flex-shrink: 0;
             background: #f5f5f5;
             border-right: 1px solid #eee;
@@ -92,9 +95,9 @@
             text-decoration: underline;
         }
         .main-content {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 0 1rem;
+            padding: 0 3rem;
         }
         footer {
             margin-top: 3rem;
