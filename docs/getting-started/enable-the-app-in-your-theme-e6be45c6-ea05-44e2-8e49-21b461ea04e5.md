@@ -71,3 +71,5 @@ To provide a more comprehensive guide, we recommend creating the following artic
 - Set up delivery time slots
 - Configure order preparation times
 - Manage multiple pickup locations
+- Integrate Bird with third-party delivery services
+- Optimize delivery routes and scheduling
