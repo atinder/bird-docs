@@ -27,18 +27,22 @@ crisp_updated_at: 1740215624000
 Replace the following code
 
 ```html
+{% raw %}
 <p class="notes-details">
    {{ order.note }}
 </p>
+{% endraw %}
 ```
 
 with
 
 ```html
+{% raw %}
 {% assign note_array = order.note | split: " | " %}
 {% for note_item in note_array %}
    <p class="notes-details">{{ note_item }}</p>
 {% endfor %}
+{% endraw %}
 ```
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-04-12-at-12555_1aqcc6.png)
@@ -50,16 +54,19 @@ Translate the date/time on packaging slip and get it printed.
 1. Replace the code you added before following the above steps:
 
 ```html
+{% raw %}
 {% assign note_array = order.note | split: " | " %}
 
 {% for note_item in note_array %}
    <p class="notes-details">{{ note_item }}</p>
 {% endfor %}
+{% endraw %}
 ```
 
 with
 
 ```html
+{% raw %}
 {% assign note_array = order.note | split: " | " %}
 
 {% for note_item in note_array %}
@@ -78,6 +85,7 @@ with
    {% endif %}
    <p class="notes-details">{{ translated_item }}</p>
 {% endfor %}
+{% endraw %}
 ```
 
 | **Note:** Make sure to replace the words "Delivery Method,"  "Delivery Date,"  "Delivery Time," and "Delivery Location" as shown in the below screenshot with the translated words.
@@ -97,6 +105,7 @@ You will need [Order printer pro app](https://apps.shopify.com/order-printer-pro
 Simply use the following code snippet in the packaging slip template to add the date / time
 
 ```html
+{% raw %}
 {% if attributes["Delivery Date"] %}
 	<div style="border: 1px solid black; padding: 1.5em; margin: 0 0 1.5em 0;"> 
 		<p>Date: {{ attributes["Delivery Date"] }}</p>
@@ -108,6 +117,7 @@ Simply use the following code snippet in the packaging slip template to add the 
 		{% endif %}
 	</div>
 {% endif %}
+{% endraw %}
 ```
 
 ![Bird App details on Packing Slip](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image-45_wy4ojt.png)

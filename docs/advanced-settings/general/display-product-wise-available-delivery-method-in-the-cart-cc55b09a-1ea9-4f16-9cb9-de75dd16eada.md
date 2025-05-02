@@ -30,6 +30,7 @@ crisp_updated_at: 1730790125000
 5. Now click on the cart template.liquid page then add below snippet code above  or  of cart_details
 
 ```javascript
+{% raw %}
 {% if item.product.tags contains "pick up" %}
          <p style="color:green"><strong>Pickup Available</strong></p>
 {% endif %}
@@ -39,6 +40,7 @@ crisp_updated_at: 1730790125000
 {% if item.product.tags contains "Courier" %}
          <p style="color:green"><strong>Shipping Available</strong></p>
 {% endif %}
+{% endraw %}
 ```
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-09-at-11513_cq0gn0.png)

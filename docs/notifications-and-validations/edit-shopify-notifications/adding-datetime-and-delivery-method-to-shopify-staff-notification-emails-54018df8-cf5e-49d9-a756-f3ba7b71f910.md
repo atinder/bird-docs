@@ -4,7 +4,7 @@ title: "Adding Date/Time and Delivery Method to Shopify Staff Notification Email
 category: notifications-and-validations
 section: edit-shopify-notifications
 slug: adding-datetime-and-delivery-method-to-shopify-staff-notification-emails
-crisp_updated_at: 1729253194000
+crisp_updated_at: 1746159339000
 ---
 
 When a new order is placed, it’s essential that staff members receive an email with all the necessary details, including the customer’s selected slot date, time, and delivery method.
@@ -27,6 +27,7 @@ When a new order is placed, it’s essential that staff members receive an email
 Below code you can edit as per your store language.
 
 ```html
+{% raw %}
 {% 
 
   ###################################
@@ -133,6 +134,7 @@ Below code you can edit as per your store language.
     </tr>
   </table>
 {% endif %}
+{% endraw %}
 ```
 
 We recommend to paste the entire code above the Order Summary table as shown below. You have the right to paste the code at any place.

@@ -36,10 +36,12 @@ crisp_updated_at: 1737999840000
 7. Copy the following code.
 
 ```html
+{% raw %}
 {% assign note_array = note | split: " | " %}
 {% for note_item in note_array %}
    <p class="notes-details">{{ note_item }}</p>
 {% endfor %}
+{% endraw %}
 ```
 
 8. We recommend you to paste this code above order summery table.
