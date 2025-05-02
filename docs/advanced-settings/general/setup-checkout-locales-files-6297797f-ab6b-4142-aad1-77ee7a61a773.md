@@ -97,7 +97,8 @@ Checkout locales are set up to update the labels in the Shopify Checkout pages b
 
 ![Add delivery locale and paste following code](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-08-09-at-11165_1tthtgn.png)
 
-```{% raw %}json
+```json
+{% raw %}
 {
   "shopify": {
     "checkout": {
@@ -185,4 +186,5 @@ Checkout locales are set up to update the labels in the Shopify Checkout pages b
     }
   }
 }
-{% endraw %}```
+{% endraw %}
+```

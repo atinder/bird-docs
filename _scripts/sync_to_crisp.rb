@@ -26,8 +26,8 @@ if CRISP_IDENTIFIER.nil? || CRISP_IDENTIFIER.empty? ||
 end
 
 def get_changed_files
-  # For testing - return only the test article
-  # return ['docs/uncategorized/general/configure-pickup-rates_nitin-b98ff675-af78-4b26-ac84-250a455f040f.md']
+  # For testing - return only the specific file
+  return ['docs/advanced-settings/general/setup-checkout-locales-files-6297797f-ab6b-4142-aad1-77ee7a61a773.md']
   
   # Check if we're running in GitHub Actions
   if ENV['GITHUB_SHA']
@@ -36,8 +36,15 @@ def get_changed_files
   else
     # Get files changed in the latest commit (for local testing)
     latest_commit = `git rev-parse HEAD`.strip
-    parent_commit = `git rev-parse HEAD^`.strip
-    changed_files = `git diff --name-only #{parent_commit} #{latest_commit}`.split("\n")
+    
+    # Check if this is the first commit
+    begin
+      parent_commit = `git rev-parse HEAD^`.strip
+      changed_files = `git diff --name-only #{parent_commit} #{latest_commit}`.split("\n")
+    rescue
+      # If this is the first commit, get all files in the commit
+      changed_files = `git show --name-only --pretty="" #{latest_commit}`.split("\n")
+    end
   end
   
   # Filter for only markdown files in the docs directory
@@ -68,10 +75,23 @@ def put_article(id, content_markdown, title, crisp_updated_at, path)
     return true
   end
 
-  puts "Updating #{path} - last commit: #{Time.at(file_updated_at/1000)}, last sync: #{crisp_updated_at ? Time.at(crisp_updated_at.to_i/1000) : 'never'}"
+  puts "\n=== Testing put_article ==="
+  puts "Article ID: #{id}"
+  puts "Title: #{title}"
+  puts "Path: #{path}"
+  puts "Last commit: #{Time.at(file_updated_at/1000)}"
+  puts "Last sync: #{crisp_updated_at ? Time.at(crisp_updated_at.to_i/1000) : 'never'}"
 
   # Process content to remove raw tags from code blocks
   content = content_markdown.dup
+
+  # Log original JSON code blocks
+  puts "\nOriginal JSON code blocks:"
+  content.scan(/```json\n(.*?)```\n/m) do |code_block|
+    puts "\nFound JSON code block:"
+    puts "Content: #{code_block[0].inspect}"
+    puts "Contains raw tags: #{code_block[0].include?('{% raw %}')}"
+  end
 
   # Handle triple backtick code blocks
   content.gsub!(/```((?:json|javascript|html|liquid|ruby))\n{% raw %}\n(.*?){% endraw %}\n```\n/m) do |match|
@@ -89,6 +109,19 @@ def put_article(id, content_markdown, title, crisp_updated_at, path)
   # Remove any remaining raw tags (cleanup)
   content.gsub!(/{% raw %}/, '')
   content.gsub!(/{% endraw %}/, '')
+
+  # Log processed JSON code blocks
+  puts "\nProcessed JSON code blocks:"
+  content.scan(/```json\n(.*?)```\n/m) do |code_block|
+    puts "\nFound JSON code block:"
+    puts "Content: #{code_block[0].inspect}"
+    puts "Contains raw tags: #{code_block[0].include?('{% raw %}')}"
+  end
+
+  puts "\n=== End Test ===\n"
+  
+  # Early return for testing - comment this out to make actual API calls
+  return true
 
   # Using 'en-US' as the locale
   uri = URI("https://api.crisp.chat/v1/website/#{WEBSITE_ID}/helpdesk/locale/en-US/article/#{id}")
