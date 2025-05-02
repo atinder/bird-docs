@@ -32,6 +32,7 @@ The order confirmation email can be updated by following the steps.
 
 *Below code you can edit as per your store language.*
 ```ruby
+{% raw %}
 {% 
   ###################################
   # Below code you can edit as per your store language
@@ -134,6 +135,7 @@ The order confirmation email can be updated by following the steps.
     </tr>
   </table>
 {% endif %}
+{% endraw %}
 ```
 
 We recommend pasting the entire code above the Order Summary table, as shown in the example below. For English, it will be labeled as "Order Summary" but for other languages, the label may vary. You are free to place the code wherever it best suits your needs.
@@ -148,28 +150,37 @@ We recommend pasting the entire code above the Order Summary table, as shown in 
 
 You can use one of following options to format date in your desired format in the order confirmation email.
 ```ruby
+{% raw %}
 {{ Bird_Date | date: "%d-%m-%Y" }}
+{% endraw %}
 ```
 
 ```ruby
+{% raw %}
 {{ Bird_Date | date: "%m-%d-%Y" }}
+{% endraw %}
 ```
 
 ```ruby
+{% raw %}
 {{ Bird_Date | date: "%Y-%m-%d" }}
+{% endraw %}
 ```
 
 ```ruby
+{% raw %}
 {{ Bird_Date | date: "%d.%m.%Y" }}
+{% endraw %}
 ```
 
 # In case of Store Pickup you should make the following change as well
 
 1. Open the Order Confirmation Email Code:
 
-2. Locate `{% case delivery_method %}`  in the email code somewhere around line 15-24.
+2. Locate `{% raw %}{% case delivery_method %}{% endraw %}`  in the email code somewhere around line 15-24.
 
 ```html
+{% raw %}
 {% if order.attributes['Delivery Method'] == 'Shipping' %}
           We're getting your order ready to be shipped. We will notify you when it has been sent.
 {% elsif order.attributes['Delivery Method'] == 'Delivery' %}
@@ -177,6 +188,7 @@ You can use one of following options to format date in your desired format in th
 {% else %}
           Your pickup order has been received.
 {% endif %}
+{% endraw %}
 ```
 
 Replace the selected text on the below screenshot with the above code snippet:

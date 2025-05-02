@@ -55,42 +55,58 @@ Please reach out to us—we’ll be happy to hide the _BirdChimeSlotId for you. 
 
 Within your cart file (cart.liquid, cart-template.liquid, main-cart.liquid, etc.), find the following code:
 ```javascript
+{% raw %}
 {% unless p.last == blank %}
+{% endraw %}
 ```
 Replace the code above with the following code:
 ```javascript
+{% raw %}
 {% unless p.last == blank or p.first == '_BirdChimeSlotId' %}
+{% endraw %}
 ```
 
 ###### Option 1.b
 
 * Within your cart file (cart.liquid, cart-template.liquid, main-cart.liquid, etc.), find the following code:
 ```javascript
+{% raw %}
 {%- unless p.last == blank -%}
+{% endraw %}
 ```
 Replace the code above with the following code:
 ```javascript
+{% raw %}
 {%- unless p.last == blank or p.first == '_BirdChimeSlotId' -%}
+{% endraw %}
 ```
 
 ###### Option 2
 * Within your cart file (cart.liquid, cart-template.liquid, main-cart.liquid, etc.), find the following code:
 ```javascript
+{% raw %}
 {% if p.last != blank %}
+{% endraw %}
 ```
 * Replace the code above with the following code:
 ```javascript
+{% raw %}
 {% if p.last != blank and p.first != "_BirdChimeSlotId" %}
+{% endraw %}
 ```
 
 ###### Option 3
 * Within your cart file (cart.liquid, cart-template.liquid, main-cart.liquid, etc.), find the following code:
 ```javascript
+{% raw %}
 {% unless property.last == blank %}
+{% endraw %}
 ```
 * Replace the code above with the following code:
 ```javascript
+{% raw %}
 {% unless property.last == blank or property.first == '_BirdChimeSlotId' %}
+{% endraw %}
 ```
 If the code you found already has some additions to it, only append the code below:
 
@@ -109,7 +125,9 @@ or property.first == '_BirdChimeSlotId'
 ###### Option 4
 * Within your cart file (cart-ajax-template.liquid, cart-notification.liquid), find the following code:
 ```javascript
+{% raw %}
 <span class="ajaxcart__product-meta">{{@key}}: {{this}}</span>
+{% endraw %}
 ```
 *Remove this code
 

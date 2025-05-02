@@ -19,6 +19,7 @@ Add an additional column in the table header (thead tag) at the end along with o
 Add the following the in table body (tbody tag) at then end along with other columns
 
 ```html
+{% raw %}
 <td>
 	{% if order.attributes['Delivery Date'] %}
 		<span>{{ order.attributes['Delivery Date'] }}</span>
@@ -27,6 +28,7 @@ Add the following the in table body (tbody tag) at then end along with other col
 	   <span>, {{ order.attributes['Delivery Time'] }}</span>
   {% endif %}
 </td>
+{% endraw %}
 ```
 
 * **Customers/order.liquid**
@@ -34,12 +36,14 @@ Add the following the in table body (tbody tag) at then end along with other col
 Add the following code near order date at the top
 
 ```html
+{% raw %}
 {%- if order.attributes['Delivery Date'] -%}
   <p>Order Delivery Date: <span style="color:green;font-weight:bold">{{ order.attributes['Delivery Date'] }}</span></p>
 	{%- if order.attributes['Delivery Time'] -%}
 		<p>Order Delivery Time: <span style="color:green;font-weight:bold">{{ order.attributes['Delivery Time'] }}</span></p>
 	{%- endif -%}
 {%- endif -%}
+{% endraw %}
 ```
 
 ### Need Help?
