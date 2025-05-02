@@ -7,7 +7,7 @@ require 'dotenv'
 require 'base64'
 
 # Load environment variables from .env file
-Dotenv.load
+Dotenv.load if File.exist?('.env')
 
 CRISP_IDENTIFIER = ENV['CRISP_IDENTIFIER']
 CRISP_KEY = ENV['CRISP_KEY']
@@ -21,7 +21,7 @@ puts "WEBSITE_ID present: #{!WEBSITE_ID.nil? && !WEBSITE_ID.empty?}"
 if CRISP_IDENTIFIER.nil? || CRISP_IDENTIFIER.empty? || 
    CRISP_KEY.nil? || CRISP_KEY.empty? || 
    WEBSITE_ID.nil? || WEBSITE_ID.empty?
-  puts "Error: Required environment variables CRISP_IDENTIFIER, CRISP_KEY and WEBSITE_ID must be set in .env file"
+  puts "Error: Required environment variables CRISP_IDENTIFIER, CRISP_KEY and WEBSITE_ID must be set as environment variables or in .env file"
   exit 1
 end
 
