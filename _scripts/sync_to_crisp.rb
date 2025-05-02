@@ -70,6 +70,26 @@ def put_article(id, content_markdown, title, crisp_updated_at, path)
 
   puts "Updating #{path} - last commit: #{Time.at(file_updated_at/1000)}, last sync: #{crisp_updated_at ? Time.at(crisp_updated_at.to_i/1000) : 'never'}"
 
+  # Process content to remove raw tags from code blocks
+  content = content_markdown.dup
+
+  # Handle triple backtick code blocks
+  content.gsub!(/```((?:json|javascript|html|liquid|ruby))\n{% raw %}\n(.*?){% endraw %}\n```\n/m) do |match|
+    language = $1
+    code_block = $2
+    "```#{language}\n#{code_block.strip}\n```\n"
+  end
+
+  # Handle single backtick code blocks
+  content.gsub!(/`{% raw %}(.*?){% endraw %}`/) do |match|
+    code_block = $1
+    "`#{code_block}`"
+  end
+
+  # Remove any remaining raw tags (cleanup)
+  content.gsub!(/{% raw %}/, '')
+  content.gsub!(/{% endraw %}/, '')
+
   # Using 'en-US' as the locale
   uri = URI("https://api.crisp.chat/v1/website/#{WEBSITE_ID}/helpdesk/locale/en-US/article/#{id}")
   req = Net::HTTP::Patch.new(uri)
@@ -77,7 +97,7 @@ def put_article(id, content_markdown, title, crisp_updated_at, path)
   req['Authorization'] = "Basic #{Base64.strict_encode64("#{CRISP_IDENTIFIER}:#{CRISP_KEY}")}"
   req['Content-Type'] = 'application/json'
   req.body = {
-    content: content_markdown
+    content: content
   }.to_json
 
   puts "Making PATCH request to: #{uri}"

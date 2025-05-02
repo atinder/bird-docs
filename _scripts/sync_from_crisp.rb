@@ -61,6 +61,62 @@ def write_article(category_slug, section_slug, article)
   dir = File.join(BASE_DIR, category_slug, section_slug)
   FileUtils.mkdir_p(dir)
 
+  # Process content to wrap code blocks with raw tags
+  content = article['content'].to_s.strip
+
+  puts "\n=== Processing article: #{article['title']} ==="
+  puts "Initial content length: #{content.length}"
+
+  # Handle triple backtick code blocks
+  content.gsub!(/```json\n(.*?)```\n/m) do |match|
+    code_block = $1
+    puts "\nFound JSON code block:"
+    puts "Original block: #{match.inspect}"
+    puts "Code content: #{code_block.inspect}"
+    # Ensure raw tags are inside the code block
+    if code_block.include?("{% raw %}")
+      result = "```json\n#{code_block.strip}\n```\n"
+    else
+      result = "```json\n{% raw %}\n#{code_block.strip}\n{% endraw %}\n```\n"
+    end
+    puts "Processed block: #{result.inspect}"
+    result
+  end
+
+  # Handle other code blocks with Liquid syntax
+  content.gsub!(/```((?:javascript|html|liquid|ruby))\n(.*?)```\n/m) do |match|
+    language = $1
+    code_block = $2
+    puts "\nFound #{language} code block:"
+    puts "Original block: #{match.inspect}"
+    puts "Code content: #{code_block.inspect}"
+    if code_block.match?(/{%|{{|}}|%}/)
+      result = "```#{language}\n{% raw %}\n#{code_block.strip}\n{% endraw %}\n```\n"
+      puts "Block contains Liquid syntax, processed: #{result.inspect}"
+      result
+    else
+      puts "Block does not contain Liquid syntax, keeping as is"
+      match
+    end
+  end
+
+  # Handle single backtick code blocks containing Liquid syntax
+  content.gsub!(/`([^`]*(?:{%[^`]*%}|{{[^`]*}})[^`]*)`/) do |match|
+    code_block = $1
+    if code_block.include?("{% raw %}")
+      match
+    else
+      "`{% raw %}#{code_block}{% endraw %}`"
+    end
+  end
+
+  # Remove any double raw tags that might have been created
+  content.gsub!(/{% raw %}{% raw %}/, '{% raw %}')
+  content.gsub!(/{% endraw %}{% endraw %}/, '{% endraw %}')
+
+  # Remove any empty raw tags
+  content.gsub!(/{% raw %}[\s\n]*{% endraw %}/, '')
+
   # Write article to markdown file
   file_path = File.join(dir, "#{article['slug']}-#{article['id']}.md")
   content = <<~MARKDOWN
@@ -73,7 +129,7 @@ def write_article(category_slug, section_slug, article)
     crisp_updated_at: #{article['updated_at']}
     ---
 
-    #{article['content'].to_s.strip}
+    #{content}
   MARKDOWN
 
   File.write(file_path, content)
