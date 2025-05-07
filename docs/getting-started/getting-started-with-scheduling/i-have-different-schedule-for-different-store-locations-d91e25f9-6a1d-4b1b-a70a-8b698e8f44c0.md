@@ -31,11 +31,17 @@ Use this guide if your locations operate on different days or hours. This allows
 
 ## Step 2: Configure a Specific Location
 
+**Note:** The list of locations shown here is based on the locations you have created in Shopify. To add a new location, you must first create it in your Shopify admin—new locations cannot be created directly in the Bird App.
+
 1. From the locations list, click on the store location you want to configure.
-2. For each delivery method you want to enable:
-   - Toggle on **Local Delivery** if you want to offer delivery from this location
-   - Toggle on **Store Pickup** if you want to offer pickup from this location
+2. You can enable either **Local Delivery**, **Store Pickup**, or both for this location.
 3. Click **Edit Settings** next to each enabled method to configure its specific settings.
+
+**Additional options:**  
+- You can **delete** or **duplicate** a location in Bird App.  
+  - Deleting only removes it from Bird App; it remains in Shopify.  
+  - Duplicating creates a Bird App–only copy (not in Shopify) with the **same inventory as the original**. This is useful for advanced setups like postal code–based delivery zones.  
+    See: [Configure Local Delivery Rates Based on Postal Code](https://help.birdchime.com/en-us/article/configure-local-delivery-rates-based-on-postal-code-16da0ew/).
 
 ![Screenshot showing the location selection screen](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-073244_1ut1y3u.png)
 
