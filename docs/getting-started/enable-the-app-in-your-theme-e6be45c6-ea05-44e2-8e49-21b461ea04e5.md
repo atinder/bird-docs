@@ -59,15 +59,8 @@ You should now see the Bird Pickup and Delivery widget on your cart page. The wi
 - The widget supports both in-store pickup and local delivery options.
 
 ## Related Articles
-- [Get started with Bird App setup](/en-us/article/get-started-with-app-setup-1tra0ra/)
-
-## Suggested Future Articles
-To provide a more comprehensive guide, we recommend creating the following articles:
-- Configure Bird pickup and delivery settings
-- Set up Bird local delivery zones
-- Manage Bird in-store pickup locations
-- Troubleshoot Bird widget installation issues
-- Customize widget appearance and behavior
-- Set up delivery time slots
-- Configure order preparation times
-- Manage multiple pickup locations
+- [Get started with Bird App setup](/en-us/article/get-started-with-app-setup-1tra0ra/) - Complete the initial app setup before enabling the widget
+- [Place a test order](/en-us/article/place-a-test-order-13fhz0a/) - Verify your widget installation by placing a test order
+- [How to customize the widget look](/en-us/article/how-to-customize-the-widget-look-1t5c07x/) - Customize the appearance of your date picker widget
+- [Configure Availability Settings](/en-us/article/configure-availability-settings-199dozz/) - Set up your delivery and pickup availability after enabling the widget
+- [Manual Widget Placement](/en-us/article/manual-widget-placement-1iq0zmb/) - Advanced options for custom widget placement
