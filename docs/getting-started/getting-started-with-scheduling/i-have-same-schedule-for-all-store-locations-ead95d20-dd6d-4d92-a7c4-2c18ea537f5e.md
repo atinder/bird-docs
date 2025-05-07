@@ -68,7 +68,7 @@ Use this guide if all your locations share the same **Delivery** or **Pickup Sch
 
 *All these settings are available directly from your main Settings dashboard when using the unified schedule mode.*
 
-> **Note:** The 'Product Overrides' feature, which allows you to set different configurations for different products globally, is not available in this mode. To use Product Overrides, you must enable different schedules for each location.
+
 
 ---
 
