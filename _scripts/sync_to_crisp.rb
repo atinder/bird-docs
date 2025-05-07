@@ -88,7 +88,7 @@ def put_article(id, content_markdown, title, crisp_updated_at, path)
 
   # Fetch current content from Crisp and compare
   current_crisp_content = get_crisp_article_content(id)
-  if current_crisp_content && current_crisp_content.strip == content_markdown.strip
+  if current_crisp_content && current_crisp_content.rstrip == content_markdown.rstrip
     puts "Skipping #{path} - content is identical to Crisp, no update needed."
     return true
   end
