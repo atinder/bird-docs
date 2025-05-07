@@ -1,37 +1,104 @@
 ---
 id: ead95d20-dd6d-4d92-a7c4-2c18ea537f5e
-title: "I have same schedule for all store locations"
+title: "Same Schedule for All Store Locations – Bird App Pickup and Delivery Setup"
 category: getting-started
 section: getting-started-with-scheduling
 slug: i-have-same-schedule-for-all-store-locations
 crisp_updated_at: 1736248429000
 crisp_url: https://help.birdchime.com/en-us/article/i-have-same-schedule-for-all-store-locations-13ukhrg/
+meta_description: "Use a unified delivery and pickup schedule for all store locations in Bird App. Step-by-step setup for merchants on Shopify."
 ---
 
-Follow this document if all your locations share the same **Delivery** or **Pickup Schedule**. This ensures consistent operations across one or more locations while simplifying schedule management. For unique schedules per location, refer to [I have different schedules for different store locations](https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/) document.
+# Same Schedule for All Store Locations – Bird App Pickup and Delivery Setup
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-074117_m9ctr8.png)
+**Meta Description:**  
+Use a unified delivery and pickup schedule for all store locations in Bird App. Step-by-step setup for merchants on Shopify.
 
-## Configure Local Delivery / Store Pickup
+---
 
-You can choose to offer Local Delivery or Store Pickup for all your locations. Please follow the steps listed below and refer to screenshot:
+## Introduction
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-074401_1n49qgu.png)
+Use this guide if you want all your store locations to follow the same delivery and pickup hours and order rules. This setup is ideal for merchants with a single location or multiple locations that operate on identical schedules. You'll configure your pickup and delivery calendar once, and it will apply to every store location automatically.
 
-## Get started with your configuration.
+> **Tip:** If you need different hours for each store, [follow the guide for different schedules per location](https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/).
 
-1. [Configure Availability](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)
+---
 
-Enable Local Delivery and Store pickup 
+## Step 1: Choose Your Schedule Mode
 
-2. [Preparation Time](/en-us/article/configure-order-preparation-times-1b43s8n/)
+1. In the Bird App dashboard, go to **Settings**.
+2. At the top of the Settings page, select either **I have same schedule for all my store locations** or **I have different schedule for different store locations** by clicking the corresponding checkbox. (See screenshot above.)
 
-This helps you configure the time required to prepare orders and configure day-wise cut-off time. 
+   ![Screenshot showing the Settings view with the schedule mode checkboxes.](image-url-1)
 
-3. [Blockout Dates](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)
+   *Once selected, the options for Pickup & Delivery, Shipping, and Product Overrides will appear on the main dashboard.*
 
-Dates that you want to disable from the calendar so that customers can not select them. 
+---
 
-4. [Block Local Delivery / Pick up / Shipping using Applicable products](https://help.birdchime.com/en-us/article/block-shipping-local-delivery-pickup-using-applicable-products-1fzgo08/)
+## Step 2: Enable Local Delivery and/or Store Pickup
 
-Only allow certain products to be picked up or delivered and block checkout for the rest of the products.
+1. In the **General** section, click **Pickup & Delivery**.
+2. In the **Availability Configuration** screen, you can enable **Local Delivery**, **Store Pickup**, or both, depending on your business needs. Simply check the boxes for the options you want to offer.
+
+   ![Screenshot of the Availability Configuration page with Local Delivery and Store Pickup options.](image-url-2)
+
+   *You should now see your selected options enabled for all locations.*
+
+---
+
+## Step 3: Configure Availability Settings
+
+1. In the **Availability Configuration** screen, click **Edit Settings** for Local Delivery or Pickup to set your open hours and rules.
+2. You can set your availability for all days or customize it day by day.
+
+   [Learn how to configure your open hours and availability settings →](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)
+
+   *This article is part of the Calendar and Time Configurations section.*
+
+   ![Screenshot showing the Edit Settings options for Local Delivery and Pickup.](image-url-3)
+
+   *Now that you've enabled and configured your schedule, customers will see the same delivery and pickup options at every store location.*
+
+---
+
+## Step 4: Set Preparation Time, Cut-off Times, Blockout Dates, and Product Availability
+
+- **Preparation Time & Cut-off Time:**  
+  Set how much time you need to prepare orders and the cut-off time for your store. The cut-off time determines how late in the day customers can place orders for upcoming pickup or delivery dates. Orders placed after the cut-off time will be scheduled for a later date, based on your store's rules. You can set a single value for all days or customize it for each day of the week.  
+  [Learn how to configure Preparation and Cut-off Times →](https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/)
+
+- **Blockout Dates:**  
+  Mark specific dates as unavailable for pickup or delivery.  
+  [Learn how to block dates →](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)
+
+- **Product Availability:**  
+  Limit availability for certain products for pickup or delivery, based on your business needs. More details and options are available in the linked article.  
+  [Learn about Product Availability →](https://help.birdchime.com/en-us/article/block-shipping-local-delivery-pickup-using-applicable-products-1fzgo08/)
+
+*All these settings are available directly from your main Settings dashboard when using the unified schedule mode.*
+
+---
+
+## Navigation Tips
+
+- All availability, preparation time, and blockout date settings are managed from the main Settings dashboard.
+- If you ever need to switch to different schedules for each location, you can do so at any time from the Settings page.
+
+---
+
+## FAQ
+
+**Q: Can I switch to different schedules later?**  
+*A: Yes, you can toggle to "Different schedule for each location" at any time in Settings.*
+
+**Q: Is this setup valid for single-location stores?**  
+*A: Yes! This works perfectly if your store setup is identical across all locations, including single-location stores.*
+
+---
+
+## Need More Help?
+
+Still need help? Use the in-app chat for support or [schedule a free onboarding session](https://help.birdchime.com/en-us/article/schedule-onboarding-session-link).
+
+
+
