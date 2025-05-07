@@ -65,6 +65,17 @@ def get_file_last_modified_time(path, since_timestamp = nil)
   commits.empty? ? 0 : commits.first.to_i * 1000  # Convert to milliseconds
 end
 
+def get_crisp_article_content(article_id)
+  uri = URI("https://api.crisp.chat/v1/website/#{WEBSITE_ID}/helpdesk/locale/en-US/article/#{article_id}")
+  req = Net::HTTP::Get.new(uri)
+  req['X-Crisp-Tier'] = 'plugin'
+  req['Authorization'] = "Basic #{Base64.strict_encode64("#{CRISP_IDENTIFIER}:#{CRISP_KEY}")}"  
+  res = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) { |http| http.request(req) }
+  return nil unless res.code.to_i == 200
+  json = JSON.parse(res.body) rescue nil
+  json && json['data'] && json['data']['content'] ? json['data']['content'] : nil
+end
+
 def put_article(id, content_markdown, title, crisp_updated_at, path)
   # Get file's last commit time, considering all commits since last sync
   file_updated_at = get_file_last_modified_time(path, crisp_updated_at)
@@ -72,6 +83,13 @@ def put_article(id, content_markdown, title, crisp_updated_at, path)
   # Skip if file hasn't been modified since last sync
   if crisp_updated_at && file_updated_at <= crisp_updated_at.to_i
     puts "Skipping #{path} - no changes since last sync (last commit: #{Time.at(file_updated_at/1000)}, last sync: #{Time.at(crisp_updated_at.to_i/1000)})"
+    return true
+  end
+
+  # Fetch current content from Crisp and compare
+  current_crisp_content = get_crisp_article_content(id)
+  if current_crisp_content && current_crisp_content.strip == content_markdown.strip
+    puts "Skipping #{path} - content is identical to Crisp, no update needed."
     return true
   end
 
