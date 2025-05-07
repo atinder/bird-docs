@@ -8,6 +8,11 @@ crisp_updated_at: 1746089315000
 crisp_url: 
 ---
 
+<<<<<<< Updated upstream
+=======
+> **Note**: Testing preview with updated GitHub Pages configuration. This note will be removed after testing.
+
+>>>>>>> Stashed changes
 # Configure Pickup Rates:
 
 You can configure the pickup rates for a single location as well as for multiple locations.

@@ -27,7 +27,7 @@ end
 
 def get_changed_files
   # For testing - return only the specific file
-  return ['docs/advanced-settings/general/setup-checkout-locales-files-6297797f-ab6b-4142-aad1-77ee7a61a773.md']
+  # return ['docs/advanced-settings/general/setup-checkout-locales-files-6297797f-ab6b-4142-aad1-77ee7a61a773.md']
   
   # Check if we're running in GitHub Actions
   if ENV['GITHUB_SHA']
@@ -139,7 +139,7 @@ def put_article(id, content_markdown, title, crisp_updated_at, path)
   puts "\n=== End Test ===\n"
   
   # Early return for testing - comment this out to make actual API calls
-  return true
+  # return true
 
   # Using 'en-US' as the locale
   uri = URI("https://api.crisp.chat/v1/website/#{WEBSITE_ID}/helpdesk/locale/en-US/article/#{id}")
