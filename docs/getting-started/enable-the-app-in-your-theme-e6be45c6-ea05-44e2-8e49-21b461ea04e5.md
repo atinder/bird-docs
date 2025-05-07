@@ -60,14 +60,3 @@ You should now see the Bird Pickup and Delivery widget on your cart page. The wi
 
 ## Related Articles
 - [Get started with Bird App setup](/en-us/article/get-started-with-app-setup-1tra0ra/)
-
-## Suggested Future Articles
-To provide a more comprehensive guide, we recommend creating the following articles:
-- Configure Bird pickup and delivery settings
-- Set up Bird local delivery zones
-- Manage Bird in-store pickup locations
-- Troubleshoot Bird widget installation issues
-- Customize widget appearance and behavior
-- Set up delivery time slots
-- Configure order preparation times
-- Manage multiple pickup locations
