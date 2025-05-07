@@ -44,6 +44,9 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: List _site directory
+        run: ls -al _site || echo "_site does not exist"
+
       - name: Deploy to gh-pages Branch
         run: |
           # Configure git
@@ -59,11 +62,15 @@ jobs:
             git rm -rf .
           fi
           
-          # Remove old content but preserve preview directory
-          find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name 'preview' -exec rm -rf {} +
+          # Remove old content but preserve .git
+          find . -maxdepth 1 ! -name '.' ! -name '.git' -exec rm -rf {} +
           
-          # Copy new content
+          # Copy new site content to root
           cp -r _site/* .
+          
+          # Debug: List contents after copy
+          echo "Contents of root directory after copy:"
+          ls -la
           
           # Stage and commit
           git add -A
