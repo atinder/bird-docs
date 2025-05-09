@@ -13,7 +13,7 @@ meta_description: "Use a unified delivery and pickup schedule for all store loca
 
 Use this guide if all your locations share the same **Delivery** or **Pickup Schedule**. This ensures consistent operations across one or more locations while simplifying schedule management. For unique schedules per location, see [I have different schedules for different store locations](https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/).
 
-![Screenshot showing the Settings view with the schedule mode checkboxes.](image-url-1)
+![Screenshot showing the Settings view with the schedule mode checkboxes.](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-074117_m9ctr8.png)
 
 ---
 
@@ -31,7 +31,7 @@ Use this guide if all your locations share the same **Delivery** or **Pickup Sch
 1. In the **General** section, click **Pickup & Delivery**.
 2. In the **Availability Configuration** screen, you can enable **Local Delivery**, **Store Pickup**, or both, depending on your business needs. Simply check the boxes for the options you want to offer.
 
-![Screenshot of the Availability Configuration page with Local Delivery and Store Pickup options.](image-url-2)
+![Screenshot of the Availability Configuration page with Local Delivery and Store Pickup options.](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-074401_1n49qgu.png)
 
 *You should now see your selected options enabled for all locations.*
 
@@ -87,8 +87,11 @@ Use this guide if all your locations share the same **Delivery** or **Pickup Sch
 **Q: Is this setup valid for single-location stores?**  
 *A: Yes! This works perfectly if your store setup is identical across all locations, including single-location stores.*
 
+
+**Q: Will my customers see the same delivery/pickup options at all locations?**  
+*A: Yes, customers will see identical delivery and pickup options across all your store locations when using the unified schedule mode.*
+
+
+
 ---
 
-## Need More Help?
-
-Still need help? Use the in-app chat for support or [schedule a free onboarding session](https://help.birdchime.com/en-us/article/schedule-onboarding-session-link).
