@@ -154,8 +154,14 @@ def put_article(id, content_markdown, title, crisp_updated_at, path)
   req['X-Crisp-Tier'] = 'plugin'
   req['Authorization'] = "Basic #{Base64.strict_encode64("#{CRISP_IDENTIFIER}:#{CRISP_KEY}")}"
   req['Content-Type'] = 'application/json'
+  
+  # Get the description from the frontmatter
+  meta, _ = extract_frontmatter_and_content(path)
+  description = meta['description']
+
   req.body = {
-    content: content
+    content: content,
+    description: description
   }.to_json
 
   puts "Making PATCH request to: #{uri}"
