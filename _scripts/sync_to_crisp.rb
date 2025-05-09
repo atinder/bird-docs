@@ -31,8 +31,15 @@ def get_changed_files
   
   # Check if we're running in GitHub Actions
   if ENV['GITHUB_SHA']
-    # Get files changed in the commit that triggered the workflow
-    changed_files = `git diff-tree --no-commit-id --name-only -r #{ENV['GITHUB_SHA']}`.split("\n")
+    # For merge commits, we need to look at the parent commits
+    parents = `git show --no-patch --format=%P #{ENV['GITHUB_SHA']}`.strip.split
+    if parents.length > 1
+      # This is a merge commit, get changes between the merge commit and its first parent
+      changed_files = `git diff --name-only #{parents[0]} #{ENV['GITHUB_SHA']}`.split("\n")
+    else
+      # Regular commit, use the original method
+      changed_files = `git diff-tree --no-commit-id --name-only -r #{ENV['GITHUB_SHA']}`.split("\n")
+    end
   else
     # Get files changed in the latest commit (for local testing)
     latest_commit = `git rev-parse HEAD`.strip
