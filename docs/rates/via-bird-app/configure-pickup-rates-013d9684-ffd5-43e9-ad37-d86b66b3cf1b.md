@@ -6,6 +6,7 @@ section: via-bird-app
 slug: configure-pickup-rates
 crisp_updated_at: 1740705645000
 crisp_url: https://help.birdchime.com/en-us/article/configure-pickup-rates-1n7gumb/
+description: ""
 ---
 
 You can configure the pickup rates for a single location and multiple locations.

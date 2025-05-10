@@ -6,6 +6,7 @@ section: general
 slug: how-to-track-orders-on-google-calendar
 crisp_updated_at: 1739598848000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-track-orders-on-google-calendar-7p8ous/
+description: ""
 ---
 
 This article will help you sync your Shopify orders to your Google Calendar with Bird App details attached.

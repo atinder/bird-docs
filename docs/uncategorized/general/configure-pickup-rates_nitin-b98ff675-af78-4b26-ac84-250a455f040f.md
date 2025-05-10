@@ -4,15 +4,11 @@ title: "Configure Pickup Rates_Nitin"
 category: uncategorized
 section: general
 slug: configure-pickup-rates_nitin
-crisp_updated_at: 1746089315000
+crisp_updated_at: 1746783674000
 crisp_url: 
+description: ""
 ---
 
-<<<<<<< Updated upstream
-=======
-> **Note**: Testing preview with updated GitHub Pages configuration. This note will be removed after testing.
-
->>>>>>> Stashed changes
 # Configure Pickup Rates:
 
 You can configure the pickup rates for a single location as well as for multiple locations.

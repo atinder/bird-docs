@@ -6,6 +6,7 @@ section: general
 slug: how-to-enable-bird-pickup-and-delivery-date-widget-in-your-shopify-theme
 crisp_updated_at: 1746104902000
 crisp_url: 
+description: ""
 ---
 
 ${youtube}[Bird Pickup and Delivery Date widget installation guide for Shopify](ill_E6Rg1uA)

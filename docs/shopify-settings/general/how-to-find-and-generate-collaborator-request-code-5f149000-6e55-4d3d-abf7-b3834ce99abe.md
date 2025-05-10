@@ -6,6 +6,7 @@ section: general
 slug: how-to-find-and-generate-collaborator-request-code
 crisp_updated_at: 1730790042000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-find-and-generate-collaborator-request-code-lxyycq/
+description: ""
 ---
 
 # Collaborator Request Code Guide

@@ -6,6 +6,7 @@ section: general
 slug: payment-rules-hiding-payment-methods
 crisp_updated_at: 1746458057000
 crisp_url: https://help.birdchime.com/en-us/article/payment-rules-hiding-payment-methods-uisd00/
+description: ""
 ---
 
 The **Payment Rules** feature allows you to **hide specific payment methods** in your **Shopify checkout** based on the selected delivery method and store location. This helps ensure customers see only the relevant payment options for their chosen fulfillment method.

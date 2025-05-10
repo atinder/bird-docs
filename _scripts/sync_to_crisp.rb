@@ -27,6 +27,7 @@ if CRISP_IDENTIFIER.nil? || CRISP_IDENTIFIER.empty? ||
 end
 
 def get_changed_files
+  return []
   # Use GitHub API if running in a PR context
   if ENV['GITHUB_EVENT_PATH'] && File.exist?(ENV['GITHUB_EVENT_PATH'])
     event = JSON.parse(File.read(ENV['GITHUB_EVENT_PATH']))

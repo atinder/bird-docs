@@ -6,6 +6,7 @@ section: general
 slug: how-to-filter-orders-in-shopify---by-delivery-date-delivery-method
 crisp_updated_at: 1730789467000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-filter-orders-in-shopify-by-delivery-date-delivery-method-1x0uebf/
+description: ""
 ---
 
 # How to filter orders in Shopify - By Delivery Date, Delivery Method, Location ID

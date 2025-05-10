@@ -6,6 +6,7 @@ section: global-settings
 slug: product-override
 crisp_updated_at: 1743074012000
 crisp_url: https://help.birdchime.com/en-us/article/product-override-g2yfl9/
+description: ""
 ---
 
 ### Setting Different Lead/Available Times for Specific Products

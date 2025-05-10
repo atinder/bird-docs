@@ -6,6 +6,7 @@ section: general
 slug: enable-order-confirmation-email-with-slot-date-and-time
 crisp_updated_at: 1737566998000
 crisp_url: https://help.birdchime.com/en-us/article/enable-order-confirmation-email-with-slot-date-and-time-iju71t/
+description: ""
 ---
 
 Once a customer places an order, the customer needs to be informed about the date and time he/she has picked.

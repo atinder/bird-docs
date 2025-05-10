@@ -6,6 +6,7 @@ section: global-settings
 slug: configure-availability-settings
 crisp_updated_at: 1739118965000
 crisp_url: https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/
+description: ""
 ---
 
 # Configure Availability

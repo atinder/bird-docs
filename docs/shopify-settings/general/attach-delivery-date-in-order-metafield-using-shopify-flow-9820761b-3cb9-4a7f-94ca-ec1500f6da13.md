@@ -6,6 +6,7 @@ section: general
 slug: attach-delivery-date-in-order-metafield-using-shopify-flow
 crisp_updated_at: 1737458950000
 crisp_url: https://help.birdchime.com/en-us/article/attach-delivery-date-in-order-metafield-using-shopify-flow-14l1gfc/
+description: ""
 ---
 
 By default the app attached the delivery date to the order additional details. If you need the date to be attached in order metafield, follow the steps below.

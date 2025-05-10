@@ -6,6 +6,7 @@ section: general
 slug: bulk-add-tags-to-products
 crisp_updated_at: 1730790097000
 crisp_url: https://help.birdchime.com/en-us/article/bulk-add-tags-to-products-12xc905/
+description: ""
 ---
 
 ###### Bulk add tags to products in Shopify

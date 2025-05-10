@@ -6,6 +6,7 @@ section: general
 slug: enable-same-daynext-day-delivery-for-specific-products
 crisp_updated_at: 1737999965000
 crisp_url: https://help.birdchime.com/en-us/article/enable-same-daynext-day-delivery-for-specific-products-hfb1hm/
+description: ""
 ---
 
 In case **Sample requirement** : Set up next-day delivery for some products in your catalog while offering same-day delivery for rest. 

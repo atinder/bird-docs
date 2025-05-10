@@ -6,6 +6,7 @@ section: common
 slug: rates-show-a-double-amount-during-checkout
 crisp_updated_at: 1724936116000
 crisp_url: https://help.birdchime.com/en-us/article/rates-show-a-double-amount-during-checkout-a2ppko/
+description: ""
 ---
 
 # Why do shipping rates show double on the checkout page?

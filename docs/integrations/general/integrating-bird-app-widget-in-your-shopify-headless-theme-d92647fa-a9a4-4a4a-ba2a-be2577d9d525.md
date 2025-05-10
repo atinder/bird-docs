@@ -4,8 +4,9 @@ title: "Integrating Bird App Widget in Your Shopify Headless Theme"
 category: integrations
 section: general
 slug: integrating-bird-app-widget-in-your-shopify-headless-theme
-crisp_updated_at: 1741922929000
+crisp_updated_at: 1746704750000
 crisp_url: https://help.birdchime.com/en-us/article/integrating-bird-app-widget-in-your-shopify-headless-theme-2vb8hr/
+description: ""
 ---
 
 # Follow the below steps to integrate the widget into the headless theme 
@@ -29,7 +30,16 @@ window.Shopify = { shop: 'your-shopify-domain.myshopify.com' }
 https://cdn.birdchime.com/script.js?v=0.4
 ```
 
-5. **Implement ** `/cart.js` route
+5. **Implement** `/products/[product-handle].js` route
+Just like `/cart.js`, our widget also fetches product-specific data from the products endpoint.
+
+**How to Implement /products/[product-handle].js in a Headless Theme?**
+
+1️⃣ **Create an API route** that accepts a product handle as a parameter (e.g., /products/the-archived-snowboard.js).
+2️⃣ **Fetch product details** using the Shopify Storefront API, including tags and variant information.
+3️⃣ **Return the response** in a JSON format similar to the default Shopify `/products/[product-handle].js` endpoint.
+
+6. **Implement ** `/cart.js` route
 In a **headless Shopify setup**, `/cart.js` is not available by default. You need to create an API route that mimics Shopify’s native cart behavior so the Bird App Widget can fetch cart data.
 
 **How to Implement /cart.js in a Headless Theme?**

@@ -1,10 +1,10 @@
 ---
 id: 1bbe1515-5d83-45a9-aca0-e021122944f2
-title: "Bird App Setup Guide: Enable Pickup & Delivery on Shopify"
+title: "Get started with app setup"
 category: getting-started
 section: getting-started-with-widget
 slug: get-started-with-app-setup
-crisp_updated_at: 1729252645000
+crisp_updated_at: 1746874112000
 crisp_url: https://help.birdchime.com/en-us/article/get-started-with-app-setup-1tra0ra/
 description: "Step-by-step guide to install Bird App Pickup and Delivery, enable the Shopify widget, and configure your local delivery or pickup options."
 ---
