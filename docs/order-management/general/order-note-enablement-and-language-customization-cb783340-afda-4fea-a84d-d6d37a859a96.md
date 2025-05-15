@@ -6,6 +6,7 @@ section: general
 slug: order-note-enablement-and-language-customization
 crisp_updated_at: 1730789447000
 crisp_url: https://help.birdchime.com/en-us/article/order-note-enablement-and-language-customization-1vr14z9/
+description: ""
 ---
 
 To enable order note on your cart page. Go to themes -> Click on Coustomize.

@@ -6,6 +6,7 @@ section: global-settings
 slug: how-to-set-the-maximum-available-days
 crisp_updated_at: 1736419656000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-set-the-maximum-available-days-1u2xflh/
+description: ""
 ---
 
 This setting helps you let your customers configure Maximum days in advance(including order day) they can select date and time while checking out. 

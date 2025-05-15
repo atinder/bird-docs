@@ -6,6 +6,7 @@ section: general
 slug: how-to-verify-dkim-and-return-path_nitin
 crisp_updated_at: 1745934004000
 crisp_url: 
+description: ""
 ---
 
 When sending customer notifications through the Bird Pickup & Delivery app using your own company email, proper email authentication is essential. Setting up **DKIM** and **Return-Path** records ensures that your emails are delivered reliably and recognized as legitimate.

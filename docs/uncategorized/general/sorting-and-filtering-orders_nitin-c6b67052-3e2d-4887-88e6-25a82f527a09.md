@@ -6,6 +6,7 @@ section: general
 slug: sorting-and-filtering-orders_nitin
 crisp_updated_at: 1745935237000
 crisp_url: 
+description: ""
 ---
 
 When managing multiple orders, you can quickly sort and filter them by date, location, and delivery method to prioritize and organize your workflow. This is particularly useful for ensuring timely deliveries and efficient order processing. This guide covers two approaches for viewing and managing orders by date, delivery method, and location:

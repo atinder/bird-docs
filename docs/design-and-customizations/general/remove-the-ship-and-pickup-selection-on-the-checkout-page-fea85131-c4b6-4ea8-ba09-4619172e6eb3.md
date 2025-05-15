@@ -6,6 +6,7 @@ section: general
 slug: remove-the-ship-and-pickup-selection-on-the-checkout-page
 crisp_updated_at: 1740638491000
 crisp_url: https://help.birdchime.com/en-us/article/remove-the-ship-and-pickup-selection-on-the-checkout-page-1c996th/
+description: ""
 ---
 
 Follow these steps to configure the checkout page and remove the Ship and Store Pickup selection options. Only when Pickup/Delivery is selected in the Bird App cart widget will that option be visible on the checkout page.

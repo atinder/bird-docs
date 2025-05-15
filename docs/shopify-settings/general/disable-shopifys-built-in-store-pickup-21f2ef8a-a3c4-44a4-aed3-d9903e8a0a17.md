@@ -6,6 +6,7 @@ section: general
 slug: disable-shopifys-built-in-store-pickup
 crisp_updated_at: 1741179652000
 crisp_url: https://help.birdchime.com/en-us/article/disable-shopifys-built-in-store-pickup-w4zg1p/
+description: ""
 ---
 
 Follow the steps below to disable Shopify’s inbuilt store pickup option.

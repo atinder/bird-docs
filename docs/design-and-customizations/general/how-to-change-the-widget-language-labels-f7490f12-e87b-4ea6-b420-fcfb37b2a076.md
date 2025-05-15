@@ -6,6 +6,7 @@ section: general
 slug: how-to-change-the-widget-language-labels
 crisp_updated_at: 1733143824000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-change-the-widget-language-labels-11stcld/
+description: ""
 ---
 
 | Note: You can configure the label/text in any language.

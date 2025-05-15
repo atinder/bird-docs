@@ -6,6 +6,7 @@ section: general
 slug: how-to-mark-the-product-as-a-physical-product
 crisp_updated_at: 1730789956000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-mark-the-product-as-a-physical-product-1rdiqi/
+description: ""
 ---
 
 To mark the product as a physical product, it can be done in two ways.

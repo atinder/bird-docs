@@ -6,6 +6,7 @@ section: general
 slug: how-to-integrate-the-bird-app-with-shopify-pos_lokesh
 crisp_updated_at: 1741025401000
 crisp_url: 
+description: ""
 ---
 
 * [Add the Bird Pickup Delivery app to the Shopify POS app](#3-add-the-bird-pickup-delivery-app-tile-to-the-shopify-pos-app)

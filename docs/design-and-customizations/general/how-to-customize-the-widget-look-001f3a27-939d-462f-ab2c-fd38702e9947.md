@@ -6,6 +6,7 @@ section: general
 slug: how-to-customize-the-widget-look
 crisp_updated_at: 1739115429000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-customize-the-widget-look-1t5c07x/
+description: ""
 ---
 
 1. Navigate to **Bird App Settings > Widget Design** to change the background color, and click on the color palette as shown below.

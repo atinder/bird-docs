@@ -6,6 +6,7 @@ section: general
 slug: how-to-change-the-date-and-time-after-the-order-has-been-placed
 crisp_updated_at: 1740489716000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-change-the-date-and-time-after-the-order-has-been-placed-1ik7t39/
+description: ""
 ---
 
 Follow this document to change the delivery date and time after placing an order, access the order in the Bird App, update the details, and notify the customer.

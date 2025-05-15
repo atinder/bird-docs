@@ -6,6 +6,7 @@ section: general
 slug: some-products-not-shippable-or-deliverable
 crisp_updated_at: 1730789939000
 crisp_url: https://help.birdchime.com/en-us/article/some-products-not-shippable-or-deliverable-yjt2w0/
+description: ""
 ---
 
 ** Overview ** : Follow this document if Shipping / delivery address form is not visible in your checkout page. 

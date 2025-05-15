@@ -6,6 +6,7 @@ section: general
 slug: what-is-the-_birdchimeslotid-and-how-do-i-hide-it
 crisp_updated_at: 1730790111000
 crisp_url: https://help.birdchime.com/en-us/article/what-is-the-birdchimeslotid-and-how-do-i-hide-it-jghlmi/
+description: ""
 ---
 
 # What is _BirdChimeSlotId?

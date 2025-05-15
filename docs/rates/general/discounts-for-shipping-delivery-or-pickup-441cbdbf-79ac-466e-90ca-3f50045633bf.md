@@ -6,6 +6,7 @@ section: general
 slug: discounts-for-shipping-delivery-or-pickup
 crisp_updated_at: 1746536378000
 crisp_url: https://help.birdchime.com/en-us/article/discounts-for-shipping-delivery-or-pickup-5tl3ts/
+description: ""
 ---
 
 The **Bird App** allows you to automatically apply Shopify discount codes during checkout based on the selected delivery method— **Shipping**, **Local Delivery**, or **Pickup**. This helps streamline promotional offers and ensures customers see the right discount without having to manually enter a code.

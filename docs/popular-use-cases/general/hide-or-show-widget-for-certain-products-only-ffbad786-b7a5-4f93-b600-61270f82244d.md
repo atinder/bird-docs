@@ -6,6 +6,7 @@ section: general
 slug: hide-or-show-widget-for-certain-products-only
 crisp_updated_at: 1741669210000
 crisp_url: https://help.birdchime.com/en-us/article/hide-or-show-widget-for-certain-products-only-14nf3pv/
+description: ""
 ---
 
 There are digital products, like **Gift cards** for which the **widget** may not be necessary. In this case, we can **hide** the widget for those products.

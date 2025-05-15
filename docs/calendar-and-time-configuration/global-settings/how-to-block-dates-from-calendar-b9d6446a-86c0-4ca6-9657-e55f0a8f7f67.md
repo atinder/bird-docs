@@ -6,6 +6,7 @@ section: global-settings
 slug: how-to-block-dates-from-calendar
 crisp_updated_at: 1734319779000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/
+description: ""
 ---
 
 Consider the following Scenarios:

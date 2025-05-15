@@ -5,6 +5,7 @@ require 'uri'
 require 'find'
 require 'dotenv'
 require 'base64'
+require 'open-uri'
 
 # Load environment variables from .env file
 Dotenv.load if File.exist?('.env')
@@ -26,28 +27,45 @@ if CRISP_IDENTIFIER.nil? || CRISP_IDENTIFIER.empty? ||
 end
 
 def get_changed_files
-  # For testing - return only the specific file
-  # return ['docs/advanced-settings/general/setup-checkout-locales-files-6297797f-ab6b-4142-aad1-77ee7a61a773.md']
-  
-  # Check if we're running in GitHub Actions
+  # Use GitHub API if running in a PR context
+  if ENV['GITHUB_EVENT_PATH'] && File.exist?(ENV['GITHUB_EVENT_PATH'])
+    event = JSON.parse(File.read(ENV['GITHUB_EVENT_PATH']))
+    if event['pull_request']
+      pr_number = event['pull_request']['number']
+      repo = ENV['GITHUB_REPOSITORY']
+      token = ENV['GITHUB_TOKEN'] || ENV['CRISP_KEY'] # Use a GitHub token with repo read access
+      url = "https://api.github.com/repos/#{repo}/pulls/#{pr_number}/files"
+      files = []
+      page = 1
+      loop do
+        api_url = "#{url}?page=#{page}&per_page=100"
+        cmd = "curl -s -H 'Authorization: token #{token}' '#{api_url}'"
+        response = `#{cmd}`
+        pr_files = JSON.parse(response)
+        break if pr_files.empty?
+        files += pr_files.map { |f| f['filename'] }
+        page += 1
+      end
+      return files.select { |file| file.start_with?('docs/') && file.end_with?('.md') }
+    end
+  end
+  # Fallback to previous logic
   if ENV['GITHUB_SHA']
-    # Get files changed in the commit that triggered the workflow
-    changed_files = `git diff-tree --no-commit-id --name-only -r #{ENV['GITHUB_SHA']}`.split("\n")
+    parents = `git show --no-patch --format=%P #{ENV['GITHUB_SHA']}`.strip.split
+    if parents.length > 1
+      changed_files = `git diff --name-only #{parents[0]} #{ENV['GITHUB_SHA']}`.split("\n")
+    else
+      changed_files = `git diff-tree --no-commit-id --name-only -r #{ENV['GITHUB_SHA']}`.split("\n")
+    end
   else
-    # Get files changed in the latest commit (for local testing)
     latest_commit = `git rev-parse HEAD`.strip
-    
-    # Check if this is the first commit
     begin
       parent_commit = `git rev-parse HEAD^`.strip
       changed_files = `git diff --name-only #{parent_commit} #{latest_commit}`.split("\n")
     rescue
-      # If this is the first commit, get all files in the commit
       changed_files = `git show --name-only --pretty="" #{latest_commit}`.split("\n")
     end
   end
-  
-  # Filter for only markdown files in the docs directory
   changed_files.select { |file| file.start_with?('docs/') && file.end_with?('.md') }
 end
 
@@ -147,8 +165,14 @@ def put_article(id, content_markdown, title, crisp_updated_at, path)
   req['X-Crisp-Tier'] = 'plugin'
   req['Authorization'] = "Basic #{Base64.strict_encode64("#{CRISP_IDENTIFIER}:#{CRISP_KEY}")}"
   req['Content-Type'] = 'application/json'
+  
+  # Get the description from the frontmatter
+  meta, _ = extract_frontmatter_and_content(path)
+  description = meta['description']
+
   req.body = {
-    content: content
+    content: content,
+    description: description
   }.to_json
 
   puts "Making PATCH request to: #{uri}"

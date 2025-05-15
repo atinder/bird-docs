@@ -1,104 +1,129 @@
 ---
-id: ead95d20-dd6d-4d92-a7c4-2c18ea537f5e
-title: "Same Schedule for All Store Locations – Bird App Pickup and Delivery Setup"
+id: 1bbe1515-5d83-45a9-aca0-e021122944f2
+title: "Get started with app setup"
 category: getting-started
-section: getting-started-with-scheduling
-slug: i-have-same-schedule-for-all-store-locations
-crisp_updated_at: 1736248429000
-crisp_url: https://help.birdchime.com/en-us/article/i-have-same-schedule-for-all-store-locations-13ukhrg/
-meta_description: "Use a unified delivery and pickup schedule for all store locations in Bird App. Step-by-step setup for merchants on Shopify."
+section: getting-started-with-widget
+slug: get-started-with-app-setup
+crisp_updated_at: 1746874112000
+crisp_url: https://help.birdchime.com/en-us/article/get-started-with-app-setup-1tra0ra/
+description: "Step-by-step guide to install Bird App Pickup and Delivery, enable the Shopify widget, and configure your local delivery or pickup options."
 ---
 
-# Same Schedule for All Store Locations – Bird App Pickup and Delivery Setup
+# Getting Started: How to Set Up the Bird App Pickup and Delivery Widget on Shopify
 
-**Meta Description:**  
-Use a unified delivery and pickup schedule for all store locations in Bird App. Step-by-step setup for merchants on Shopify.
+Welcome to Bird App Pickup and Delivery! This guide will help you set up your Shopify delivery app in a few easy steps — from installing the widget to configuring your store's delivery or pickup settings. By the end of this guide, you'll have a fully functional delivery date picker on your Shopify store.
 
----
+## Steps to Set Up Bird App Pickup and Delivery on Shopify
 
-## Introduction
+### Step 1: Enable the Widget in Your Theme
+First, you need to add the Bird App Pickup and Delivery widget to your Shopify theme. This step will make the delivery date picker visible on your store's cart page.
 
-Use this guide if you want all your store locations to follow the same delivery and pickup hours and order rules. This setup is ideal for merchants with a single location or multiple locations that operate on identical schedules. You'll configure your pickup and delivery calendar once, and it will apply to every store location automatically.
+[Read our detailed guide on enabling the app in your theme](https://help.birdchime.com/en-us/article/enable-the-app-in-your-theme-450cbp/) to learn how to:
+- Access the widget placement settings
+- Select your theme for widget installation
+- Enable the app embed section
+- Verify the widget installation
 
-> **Tip:** If you need different hours for each store, [follow the guide for different schedules per location](https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/).
+### Step 2: Configure Your Store's Schedule
+Choose the appropriate schedule configuration based on your business needs:
 
----
+#### Option A: Same Schedule for All Locations
+If all your store locations operate on the same schedule, [follow this guide](https://help.birdchime.com/en-us/article/i-have-same-schedule-for-all-locations-13ukhrg/) to:
+- Set up a unified delivery and pickup schedule
+- Configure preparation times
+- Set up blockout dates
+- Manage product-specific delivery rules
 
-## Step 1: Choose Your Schedule Mode
+#### Option B: Different Schedules per Location
+If your locations have different operating hours, [use this guide](https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-location-1f6j2p0/) to:
+- Configure location-specific schedules
+- Set up individual preparation times
+- Manage location-specific blockout dates
+- Handle location-based delivery rules
 
-1. In the Bird App dashboard, go to **Settings**.
-2. At the top of the Settings page, select either **I have same schedule for all my store locations** or **I have different schedule for different store locations** by clicking the corresponding checkbox. (See screenshot above.)
+### Step 3: Set Up Shipping Options
+Configure your shipping settings to ensure smooth delivery operations:
 
-   ![Screenshot showing the Settings view with the schedule mode checkboxes.](image-url-1)
+[Configure your shipping settings](https://help.birdchime.com/en-us/article/shipping-198gsjt/) to:
+- Set up shipping zones
+- Configure shipping rates
+- Manage shipping methods
+- Set up delivery timeframes
 
-   *Once selected, the options for Pickup & Delivery, Shipping, and Product Overrides will appear on the main dashboard.*
+### Step 4: Configure Product-Specific Settings
+Customize delivery options for specific products:
 
----
+1. [Set up schedule overrides](https://help.birdchime.com/en-us/article/product-override-g2yfl9/) to:
+   - Configure product-specific lead times
+   - Set custom available times
+   - Manage preparation times per product
 
-## Step 2: Enable Local Delivery and/or Store Pickup
+2. [Configure visibility overrides](https://help.birdchime.com/en-us/article/hide-or-show-widget-for-certain-products-only-14nf3pv/) to:
+   - Show or hide the widget for specific products
+   - Manage product-specific delivery options
+   - Set up product-based restrictions
 
-1. In the **General** section, click **Pickup & Delivery**.
-2. In the **Availability Configuration** screen, you can enable **Local Delivery**, **Store Pickup**, or both, depending on your business needs. Simply check the boxes for the options you want to offer.
+### Step 5: Set Up Delivery and Pickup Rates
+[Configure your rates](https://help.birdchime.com/en-us/article/rates-control-jjcrrp/) to:
+- Set up delivery fees
+- Configure pickup rates
+- Manage time-based pricing
+- Set up location-specific rates
 
-   ![Screenshot of the Availability Configuration page with Local Delivery and Store Pickup options.](image-url-2)
+### Step 6: Configure Notifications
+Set up order notifications to keep customers informed:
 
-   *You should now see your selected options enabled for all locations.*
+1. [Enable order confirmation emails](https://help.birdchime.com/en-us/article/enable-order-confirmation-email-with-slot-date-and-time-iju71t/) to:
+   - Show delivery date and time in emails
+   - Customize email templates
+   - Set up automated notifications
 
----
+2. [Configure packing slip details](https://help.birdchime.com/en-us/article/add-datetime-in-packaging-slip-m9smdk/) to:
+   - Include delivery date and time
+   - Add custom packing slip information
+   - Set up automated slip generation
 
-## Step 3: Configure Availability Settings
+### Step 7: Customize the Widget Design
+Make the widget match your store's branding:
 
-1. In the **Availability Configuration** screen, click **Edit Settings** for Local Delivery or Pickup to set your open hours and rules.
-2. You can set your availability for all days or customize it day by day.
+1. [Customize widget appearance](https://help.birdchime.com/en-us/article/how-to-customize-the-widget-look-1t5c07x/) to:
+   - Adjust colors and styles
+   - Modify layout and spacing
+   - Set up responsive design
 
-   [Learn how to configure your open hours and availability settings →](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)
+2. [Configure widget language](https://help.birdchime.com/en-us/article/how-to-change-the-widget-language-11stcld/) to:
+   - Change text content
+   - Set up multiple languages
+   - Customize date formats
 
-   *This article is part of the Calendar and Time Configurations section.*
+3. [Set up checkout page customization](https://help.birdchime.com/en-us/article/setup-checkout-page-as-our-demo-1xddwhq/) to:
+   - Modify checkout page language
+   - Customize checkout flow
+   - Set up order confirmation details
 
-   ![Screenshot showing the Edit Settings options for Local Delivery and Pickup.](image-url-3)
+## Frequently Asked Questions
 
-   *Now that you've enabled and configured your schedule, customers will see the same delivery and pickup options at every store location.*
+### How do I verify my widget installation?
+After enabling the widget, [place a test order](https://help.birdchime.com/en-us/article/place-a-test-order-13fhz0a/) to ensure everything is working correctly. You should see the date picker on your cart page and be able to select delivery or pickup times. You can also use the widget preview feature in the Configure Availability settings to see how your widget will appear to customers.
 
----
+### Can I customize the widget for different products?
+Yes, you can customize delivery options for specific products using our product override settings. This allows you to set different lead times, available times, and even hide the widget for certain products. You can also use visibility overrides to control which products show the delivery date picker.
 
-## Step 4: Set Preparation Time, Cut-off Times, Blockout Dates, and Product Availability
+### What types of notifications can I set up for orders?
+The app offers comprehensive notification settings to keep both you and your customers informed. You can enable order confirmation emails to automatically include delivery dates in customer emails, configure packing slip details to show the delivery information on packing slips, and set up various other notifications like ready for pickup alerts, dispatch notifications, and delivery reminders. All notification templates can be customized to match your brand's voice and style.
 
-- **Preparation Time & Cut-off Time:**  
-  Set how much time you need to prepare orders and the cut-off time for your store. The cut-off time determines how late in the day customers can place orders for upcoming pickup or delivery dates. Orders placed after the cut-off time will be scheduled for a later date, based on your store's rules. You can set a single value for all days or customize it for each day of the week.  
-  [Learn how to configure Preparation and Cut-off Times →](https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/)
+### Can I change the widget's appearance to match my store's design?
+Yes, you can fully customize the widget's appearance using our design settings. This includes adjusting colors, styles, layout, and spacing. You can also change the widget language and customize the checkout page to maintain a consistent look and feel.
 
-- **Blockout Dates:**  
-  Mark specific dates as unavailable for pickup or delivery.  
-  [Learn how to block dates →](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)
+### How do I manage orders after setup?
+The app integrates seamlessly with your Shopify admin panel. All orders with delivery or pickup dates will appear in your Shopify orders section with the selected date and time. You can [track orders on Google Calendar](https://help.birdchime.com/en-us/article/how-to-track-orders-on-google-calendar-7p8ous/) for better organization, and the app automatically updates order statuses based on your schedule settings.
 
-- **Product Availability:**  
-  Limit availability for certain products for pickup or delivery, based on your business needs. More details and options are available in the linked article.  
-  [Learn about Product Availability →](https://help.birdchime.com/en-us/article/block-shipping-local-delivery-pickup-using-applicable-products-1fzgo08/)
+### What if I need to modify my schedule after setup?
+You can easily update your schedule settings at any time through the Bird App dashboard. Changes to preparation times, blockout dates, or available time slots will automatically update the widget and affect only future orders. Existing orders will maintain their original schedule unless manually modified.
 
-*All these settings are available directly from your main Settings dashboard when using the unified schedule mode.*
+### How does this work with my existing Shopify setup?
+The app is designed to work alongside your existing Shopify configuration. It integrates with your current shipping rates, product settings, and store locations. You can configure rates to work with your existing shipping options, and the widget automatically adapts to your store's theme and design.
 
----
+For more detailed answers to common questions, visit our [FAQ section](https://help.birdchime.com/en-us/article/faq-frequently-asked-questions-1xx5rjd/).
 
-## Navigation Tips
-
-- All availability, preparation time, and blockout date settings are managed from the main Settings dashboard.
-- If you ever need to switch to different schedules for each location, you can do so at any time from the Settings page.
-
----
-
-## FAQ
-
-**Q: Can I switch to different schedules later?**  
-*A: Yes, you can toggle to "Different schedule for each location" at any time in Settings.*
-
-**Q: Is this setup valid for single-location stores?**  
-*A: Yes! This works perfectly if your store setup is identical across all locations, including single-location stores.*
-
----
-
-## Need More Help?
-
-Still need help? Use the in-app chat for support or [schedule a free onboarding session](https://help.birdchime.com/en-us/article/schedule-onboarding-session-link).
-
-
-
+Remember, setting up your delivery and pickup options correctly is crucial for providing a great customer experience. Take your time to configure each setting properly!
