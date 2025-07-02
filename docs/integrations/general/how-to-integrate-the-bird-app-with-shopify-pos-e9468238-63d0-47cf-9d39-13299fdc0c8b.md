@@ -4,7 +4,7 @@ title: "How to Integrate the Bird app with Shopify POS"
 category: integrations
 section: general
 slug: how-to-integrate-the-bird-app-with-shopify-pos
-crisp_updated_at: 1741093270000
+crisp_updated_at: 1750415273000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-integrate-the-bird-app-with-shopify-pos-v6ni4l/
 description: ""
 ---
@@ -32,7 +32,7 @@ ${frame}[Integrate Bird with Shopify POS](https://www.loom.com/embed/73c1672644b
 ### Use Bird App to add date/time to an Order in POS
 
 1. **Open Bird Pickup Delivery** (DateTime Picker) Tile.
-2. **Select Your respective method** for Order (Shipping / Delivery / Pick Up)
+2. **Select your respective method** for Order (Shipping / Delivery / Pick Up)
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/partialblur_1mm6xwy.jpg =650x537)
 
@@ -43,6 +43,7 @@ ${frame}[Integrate Bird with Shopify POS](https://www.loom.com/embed/73c1672644b
 * **End Time:** Click End Time > Choose a preferred time slot (It creates a specific time range from start time to end Time) for current order.
 
 4. Save
+5. After Saving, open the Cart and you can place the Order.
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-02-22-at-20092_1lre2b6.png =900x526)
 

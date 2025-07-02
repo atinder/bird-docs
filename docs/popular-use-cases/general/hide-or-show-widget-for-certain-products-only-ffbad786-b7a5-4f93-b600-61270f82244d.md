@@ -4,12 +4,12 @@ title: "Hide or Show widget for certain products only"
 category: popular-use-cases
 section: general
 slug: hide-or-show-widget-for-certain-products-only
-crisp_updated_at: 1741669210000
+crisp_updated_at: 1750741990000
 crisp_url: https://help.birdchime.com/en-us/article/hide-or-show-widget-for-certain-products-only-14nf3pv/
 description: ""
 ---
 
-There are digital products, like **Gift cards** for which the **widget** may not be necessary. In this case, we can **hide** the widget for those products.
+There are digital products, like **Gift cards,** for which the **widget** may not be necessary. In this case, we can **hide** the widget for those products.
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/giftcardhide_1xarlpy.png)
 
@@ -17,11 +17,10 @@ There are digital products, like **Gift cards** for which the **widget** may not
 
 ### Steps to Configure Widget Visibility:
 
-${frame}[Hide or Show widget for certain products only](https://www.loom.com/embed/1cb656618c494e79be8393e0fe98093e?sid=338921f3-1df0-4be8-b455-781453291267)
- 
+${frame}[](https://www.youtube.com/embed/OdQ7x68-iww) 
 1. Go to **Bird App Settings > Product Overrides**.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-21459_128kql0.png) **
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-21459_128kql0.png)*
 2. Click **Add Override** and Select **Widget Visibility Override**.
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-21-172731_gdkhvy.png)
@@ -36,5 +35,17 @@ ${frame}[Hide or Show widget for certain products only](https://www.loom.com/emb
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/visibility-override-last-image_9ogm17.png)
 5. The widget will now appear or be hidden based on your configuration.
+
+### Previewing the Widget After Saving Changes
+
+To ensure your widget configurations appear as intended, you can preview the widget after saving your changes. This allows you to verify that all settings are correctly applied.
+
+**Steps to Preview:**
+
+1. After making the desired changes to the Override.
+2. Click **Save** to apply the changes.
+3. After saving, click the **Widget** **Preview** option to view the widget with the updated settings.
+
+![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
 
 **Related Article:** [Product override](https://help.birdchime.com/en-us/article/product-override-g2yfl9/?bust=1709814702246)
