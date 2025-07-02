@@ -4,14 +4,12 @@ title: "How to filter orders in Shopify - By Delivery Date, Delivery Method"
 category: order-management
 section: general
 slug: how-to-filter-orders-in-shopify---by-delivery-date-delivery-method
-crisp_updated_at: 1730789467000
+crisp_updated_at: 1747937102000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-filter-orders-in-shopify-by-delivery-date-delivery-method-1x0uebf/
 description: ""
 ---
 
-# How to filter orders in Shopify - By Delivery Date, Delivery Method, Location ID
-
-### You can filter orders by **Delivery Date** in Shopify:
+## Filtering Orders in Shopify
 
 1. From the Shopify app, go to Orders > All orders. Tap on the search and filter icon. Click on **Add Filter** and select "Tagged With" from the options.
 
@@ -53,4 +51,5 @@ Orders for the desired delivery method will be filtered and shown in the box.
 
 ###### Related Document:
 
-[Order note enablement and language customization](https://help.birdchime.com/en-us/article/order-note-enablement-and-language-customization-1vr14z9/) – This guide helps customize order notes and language on the cart page.
+[How to Sort and Filter Orders in the Bird App
+](https://help.birdchime.com/en-us/article/how-to-sort-and-filter-orders-in-the-bird-app-18rou3t/)
