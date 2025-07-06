@@ -4,7 +4,7 @@ title: "Product Override_Nitin (Title has to be thought through)"
 category: uncategorized
 section: general
 slug: product-override_nitin-title-has-to-be-thought-through
-crisp_updated_at: 1742836498000
+crisp_updated_at: 1748339850000
 crisp_url: 
 description: ""
 ---
@@ -66,7 +66,7 @@ Assume you set the lead time to 1 day in the Preparation time settings, which wi
 
 Ex. You make a smaller cake, which takes one day, but a large cake takes two days, so you can use the product override feature to set the lead time separately for both products.
 
- ${frame}[ Schedule Override: Product Based Availability ](https://www.loom.com/embed/31a89fe58def47c1a8addeb43a69ea69?sid=f80e0aab-95a2-4c02-bdde-e0242fced43c) 
+ ${frame}[ Schedule Override: Product Based Availability ](https://www.loom.com/embed/31a89fe58def47c1a8addeb43a69ea69?sid=f80e0aab-95a2-4c02-bdde-e0242fced43c)
 
 1. Go to Bird App Settings --> Product Override
 
@@ -93,7 +93,5 @@ Ex. You make a smaller cake, which takes one day, but a large cake takes two day
 * **Blockout Dates** : block the tagged product for selected dates.
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-083224_rbz3uu.png)
-
-| **NOTE:** You can create multiple product overrides for different SKUs and Tags.
 
 || Related Articles: [Hide or Show widget for certain products only](https://help.birdchime.com/en-us/article/hide-or-show-widget-for-certain-products-only-14nf3pv/?bust=1709814859482)

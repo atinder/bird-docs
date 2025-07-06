@@ -4,31 +4,31 @@ title: "Enable order confirmation email with slot date and time"
 category: order-management
 section: general
 slug: enable-order-confirmation-email-with-slot-date-and-time
-crisp_updated_at: 1737566998000
+crisp_updated_at: 1750744247000
 crisp_url: https://help.birdchime.com/en-us/article/enable-order-confirmation-email-with-slot-date-and-time-iju71t/
 description: ""
 ---
 
 Once a customer places an order, the customer needs to be informed about the date and time he/she has picked.
 
-${frame}[Add Date & Time to Order Confirmation Email](https://www.loom.com/embed/9321a70d903743d581d5e98d8e61086a)
+${frame}[](https://www.youtube.com/embed/rRfxDRGh_JA)
 The order confirmation email can be updated by following the steps.
 
 1. A) Shortcut Via our App: **BirdApp Settings > Notifications**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/notification-menu_17qic4j.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/notification-menu_17qic4j.png =800x424)
 
 1. B. Then look for: **Edit order confirmation email**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-14-174151_1yuaa5d.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-14-174151_1yuaa5d.png =800x336)
 
 2. Or Via Shopify Admin : In your Shopify admin Go to **Setting > Notifications > Customer Notification > Order Confirmation**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/cusnotif_73nnd4.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/cusnotif_73nnd4.png =800x450)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-14-174518_1rdfv3l.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-14-174518_1rdfv3l.png =800x344)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-14-174652_1m61qn1.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-14-174652_1m61qn1.png =800x720)
 
 3. In the body of the email template insert the following code in the given sequence.
 
@@ -142,11 +142,11 @@ The order confirmation email can be updated by following the steps.
 
 We recommend pasting the entire code above the Order Summary table, as shown in the example below. For English, it will be labeled as "Order Summary" but for other languages, the label may vary. You are free to place the code wherever it best suits your needs.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-07-24-at-12000_158ssv4.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-07-24-at-12000_158ssv4.png =800x413)
 
 4. Below is a sample image of the order confirmation email with above template code
 
-![Confirmation email with date & time](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-05-01-at-45214_l0mxb2.png)
+![Confirmation email with date & time](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-05-01-at-45214_l0mxb2.png =800x403)
 
 5. Change date format (Optional)
 
@@ -195,15 +195,15 @@ You can use one of following options to format date in your desired format in th
 
 Replace the selected text on the below screenshot with the above code snippet:
 
-![Email template before](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-10-28-at-14243_1wbhlpg.png)
+![Email template before](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-10-28-at-14243_1wbhlpg.png =800x631)
 
-![Email template after replacing the text with code snippet](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-10-28-at-20738_d7462v.png)
+![Email template after replacing the text with code snippet](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-10-28-at-20738_d7462v.png =800x619)
 
 || **Note:** The changes in the Order Confirmation Email template can be viewed only by placing a Test Order.
 || Related Document: [Place a test order](https://help.birdchime.com/en-us/article/place-a-test-order-13fhz0a/)
 
 Below is a sample image of the "Pickup order has been received email" with above template code
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/untitled_11max54.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/untitled_11max54.png =800x586)
 
 | Related Document: [Add Date/Time in packaging slip or invoice.](https://help.birdchime.com/en-us/article/add-datetime-in-packaging-slip-or-invoice-m9smdk/)
