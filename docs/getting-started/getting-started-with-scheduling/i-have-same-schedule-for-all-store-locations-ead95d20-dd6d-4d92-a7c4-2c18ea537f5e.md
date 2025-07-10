@@ -30,5 +30,3 @@ This helps you configure the time required to prepare orders and configure day-w
 3. [Blockout Dates](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)
 Dates that you want to disable from the calendar so that customers can not select them. 
 
-4. [Block Shipping / Local Delivery / Pickup using Product availability](https://help.birdchime.com/en-us/article/block-shipping-local-delivery-pickup-using-product-availability-t1zg9b/)
-Only allow certain products to be picked up or delivered and block checkout for the rest of the products.
