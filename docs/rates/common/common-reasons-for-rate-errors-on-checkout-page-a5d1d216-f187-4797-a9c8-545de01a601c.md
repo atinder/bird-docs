@@ -1,98 +1,155 @@
 ---
 id: a5d1d216-f187-4797-a9c8-545de01a601c
-title: "Common reasons for rate errors on checkout page"
+title: "How to Fix Rate Errors on Checkout Page - Complete Troubleshooting Guide"
 category: rates
 section: common
 slug: common-reasons-for-rate-errors-on-checkout-page
 crisp_updated_at: 1747737073000
 crisp_url: https://help.birdchime.com/en-us/article/common-reasons-for-rate-errors-on-checkout-page-1iekz2h/
-description: ""
+description: "Learn how to resolve common rate errors that prevent customers from completing checkout with Bird Pickup & Delivery"
 ---
 
-### If you are facing the following error messages in the checkout. This document will help you resolve it.
+**You'll learn how to identify and fix the most common rate errors that block customers from completing checkout.**
 
-![Error message during checkout](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1mqhgsj.png)
+![Checkout error message indicating that no shipping methods are available for the customer's address](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1mqhgsj.png)
 
-1. [Common Reasons](#1-common-reasons)
-* [Location not enabled in product Edit page inventory section.](#3-1-location-not-enabled-in-product-edit-page-inventory-section)
-* [Product is out of stock on a particular location](#3-2-product-is-out-of-stock-on-a-particular-location)
-* [Location is not enabled to Fulfill online orders](#3-3-location-is-not-enabled-to-fulfill-online-orders)
-* [Store location address of one of the locations in Shopify admin is not validated.](#3-4-store-location-address-of-one-of-the-locations-in-shopify-admin-is-not-validated)
-* [Rates can also be reordered or hidden by third apps using Shopify functions](#3-5-rates-can-also-be-reordered-or-hidden-by-third-party-apps-using-shopify-functions)
+## Quick Navigation
 
-2. [Built in Local Delivery rates specific](#1-built-in-local-delivery-rates-specific)
-* [The rates defined do not cover the area of the customer.](#3-1-the-rates-defined-do-not-cover-the-area-of-the-customer)
-* [Cart total is lesser than the minimum order value.](#3-2-cart-total-is-lesser-than-the-minimum-order-value)
+- [General Rate Issues](#general-rate-issues)
+- [Local Delivery Rate Issues](#local-delivery-rate-issues)
+- [Store Pickup Rate Issues](#store-pickup-rate-issues)
+- [Shipping Rate Issues](#shipping-rate-issues)
 
-3. [Built in Store Pickup specific](#1-built-in-store-pickup-rates-specific)
-* [Location is not enabled for pickup.](#3-1-location-is-not-enabled-for-pickup)
-* [There are no pickup locations available.](#3-2-there-are-no-pickup-locations-available)
+## General Rate Issues
 
-4. [Shipping/Delivery rates specific](#1-built-in-store-pickup-rates-specific)
-* [If configured by Bird App](#3-1-if-configured-by-bird-app-deliveryshipping-address-not-covered-by-rules-configured)
-* [If configured by Shopify Admin Shipping rates](#3-2-if-configured-by-shopify-admin-shipping-rates-shipping-address-not-covered-by-rules-configured)
+### Location Not Enabled in Product Inventory
 
-# Common Reasons
+**Problem:** Products aren't available at specific locations.
 
-### 1. Location not enabled in product Edit page inventory section.
-
-![One location not stocked](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-03-07-at-10565_1sqpjr4.png)
-
-This can be fixed by navigating to **Shopify Admin -> Products -> Select Product -> Inventory -> Edit Locations**
-
-### 2. Product is out of stock on a particular location
-
-![Product out of stock](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1iqowmq.png =600x488)
-This can be fixed by **adding stock** to the out of stock location.
-
-### 3. Location is not enabled to fulfil online orders.
-
-![Enable fulfill online orders](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-03-08-at-12372_13ghji7.png)
- 
-### 4. Store location address of one of the locations in Shopify admin is not validated.
-
-![Location address not validated](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-03-07-at-11034_1rmr5e2.png =600x597)
-This can be fixed by entering a **valid address** in Shopify location and saving it.
-
-### 5. Rates can also be reordered or hidden by third party apps using Shopify functions.
-
-![Deactivate other third part delivery customization](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_60fi43.png)
-This can be fixed in **Shopify admin -> Settings -> Shipping & Delivery -> Delivery Customization**
-
-# Built in Local Delivery rates specific
-### 1. The rates defined do not cover the area of the customer.
-
-![Zip or postal code not covered](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_pnpdwc.png =600x501)
-
-![Delivery radius not covered](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1j2nhg2.png =600x539)
-
-### 2. Cart total is lesser than the minimum order value.
-
-![Minimum order value](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1dkdp8b.png =600x539)
-
-# Built in Store Pickup rates specific
-### 1. Location is not enabled for pickup.
-|| Refer this only if you are getting the second error (on the right side) mentioned at the top.
-
-![Location not enabled for built in pickup.](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-03-08-at-12355_21gzfr.png)
-
-### 2. There are no pickup locations available.
-
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_kus95a.png =600x425)
-
-One of the reasons for this error is that the Street address is missing, making the location unverified on Shopify's end!
+![Shows product inventory settings with one location not enabled for the product](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-03-07-at-10565_1sqpjr4.png)
 
 **Solution:**
+1. Go to **Shopify Admin → Products**
+2. Select your product
+3. Navigate to **Inventory**
+4. Click **Edit Locations**
+5. Enable the required locations
 
-* Edit the Location address, Please navigate to Shopify's Settings > Locations > Created Location
-* Edit the Street address and then try to save the location!
+**That's it!** Your product will now be available at all enabled locations.
 
-# Shipping/Delivery rates specific
-### 1. **If configured by Bird App**: Delivery/Shipping address not covered by rules configured
+### Product Out of Stock at Location
 
-![Bird App Conditions don't pass](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_145ykz6.png)
+**Problem:** Customers can't order because inventory is depleted.
 
-### 2. **If configured by Shopify Admin Shipping rates**:  Shipping address not covered by rules configured
+![Shows inventory with zero stock at a specific location](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1iqowmq.png)
 
-![Shopify configured rates](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_14ituua.png)
-**Related Document:** [Rates Control](https://help.birdchime.com/en-us/article/rates-control-jjcrrp/)
+**Solution:** Add stock to the depleted location in your inventory management.
+
+### Location Not Enabled for Online Orders
+
+**Problem:** Locations exist but can't fulfill online orders.
+
+![Location settings with the option to enable online order fulfillment](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-03-08-at-12372_13ghji7.png)
+
+**Solution:** Enable "Fulfill online orders" for each location in your Shopify settings.
+
+### Invalid Store Location Address
+
+**Problem:** Shopify can't validate your store's physical address.
+
+![Location settings with an invalid address that needs correction](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-03-07-at-11034_1rmr5e2.png)
+
+**Solution:** Enter a complete, valid address in your Shopify location settings.
+
+### Third-Party App Conflicts
+
+**Problem:** Other apps interfere with your delivery rates.
+
+![Shopify's delivery customization settings where conflicting apps can be managed](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_60fi43.png)
+
+**Solution:** Check **Shopify Admin → Settings → Shipping & Delivery → Delivery Customization** for conflicting apps.
+
+## Local Delivery Rate Issues
+
+### Customer Address Outside Delivery Zone
+
+**Problem:** Customer's postal code or address falls outside your delivery radius.
+
+![Delivery rate configuration with postal codes that don't cover the customer's area](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_pnpdwc.png)
+
+![Delivery radius settings that may not cover the customer's location](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1j2nhg2.png)
+
+**Solution:** Expand your delivery zones or add the customer's postal code to your delivery areas.
+
+### Cart Below Minimum Order Value
+
+**Problem:** Customer's cart total doesn't meet your minimum order requirement.
+
+![Shows minimum order value settings that may be preventing checkout completion](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1dkdp8b.png)
+
+**Solution:** Lower your minimum order value or guide customers to add more items.
+
+## Store Pickup Rate Issues
+
+### Location Not Enabled for Pickup
+
+**Problem:** Store locations exist but aren't configured for customer pickup.
+
+![Shows location settings where pickup options are not enabled](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-03-08-at-12355_21gzfr.png)
+
+**Solution:** Enable pickup options for each location in your Bird Pickup & Delivery settings.
+
+### No Pickup Locations Available
+
+**Problem:** All locations are missing required address information.
+
+![Error indicating no pickup locations are available due to missing address information](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_kus95a.png)
+
+**Solution:**
+1. Go to **Shopify Admin → Settings → Locations**
+2. Select each location
+3. Add complete street address
+4. Save the location
+
+**That's it!** Your locations will now be available for pickup orders.
+
+## Shipping Rate Issues
+
+### Bird App Rate Rules Not Met
+
+**Problem:** Customer's cart conditions doesn't match your configured delivery rates.
+
+![Rate configuration where customer address doesn't meet the set conditions](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_145ykz6.png)
+
+**Solution:** Review and adjust your delivery rate rules in the Bird Pickup & Delivery app.
+
+### Shopify Admin Shipping Rules Not Met
+
+**Problem:** Customer's order value falls outside your Shopify delivery rates.
+
+![Shows Shopify shipping rate configuration that may not cover customer's cart value](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_14ituua.png)
+
+**Solution:** Update your shipping zones in **Shopify Admin → Settings → Shipping & Delivery**.
+
+## FAQs
+
+##### Why do I see "no shipping methods available" errors?
+This usually means your product inventory, location settings, or delivery zones need configuration. Check the general rate issues section above.
+
+##### How do I know if my location address is valid?
+Shopify will show a validation error if the address is incomplete or invalid. Add a complete street address to resolve this.
+
+##### Can I have different delivery zones for different products?
+Yes, Bird Pickup & Delivery allows you to configure product-specific delivery rules and availability.
+
+##### What should I do if third-party apps conflict with my rates?
+Check your Shopify delivery customization settings and temporarily disable conflicting apps to test.
+
+For more general questions, see our main [FAQs page](https://help.birdchime.com/en-us/category/faqs-1ygmxau/).
+
+## Related Articles
+
+- [Rates Control](https://help.birdchime.com/en-us/article/rates-control-jjcrrp/)
+- [Configure Delivery Rates](https://help.birdchime.com/en-us/article/configure-delivery-rates-1xbrder/)
+- [Configure Pickup Rates](https://help.birdchime.com/en-us/article/configure-pickup-rates-1n7gumb/)
+- [How to Enable Bird Pickup and Delivery Date Widget in Your Shopify Theme](https://help.birdchime.com/en-us/article/how-to-enable-bird-pickup-and-delivery-date-widget-in-your-shopify-theme-450cbp/)
