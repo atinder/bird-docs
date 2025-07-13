@@ -15,7 +15,7 @@ Use the following Liquid variables to display scheduled pickup, delivery, and sh
 | ---- |
 | **Slot & Method** |  |
 | Bird_Method | Fulfillment method selected by customer: Delivery, Pick Up, or Shipping. |
-| Bird_Date | Scheduled date for the slot. *(Use Liquid filters to format, e.g. `{{ Bird*Date |
+| Bird_Date | Scheduled date for the slot. *(Use Liquid filters to format, e.g.&#32;* `{{ Bird_Date | date: "%Y-%m-%d" }}` |
 | Bird_Time | Time slot selected for the order |
 | Bird_Day | Day-of-week for Bird_Date, e.g. Tuesday. |
 | Bird_Location_Id | Internal ID of the pickup location (useful for custom logic). ** |
