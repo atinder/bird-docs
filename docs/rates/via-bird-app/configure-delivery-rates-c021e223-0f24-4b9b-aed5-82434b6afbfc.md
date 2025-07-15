@@ -1,90 +1,141 @@
 ---
 id: c021e223-0f24-4b9b-aed5-82434b6afbfc
-title: "Configure Delivery Rates"
+title: "How to Configure Delivery Rates"
 category: rates
 section: via-bird-app
 slug: configure-delivery-rates
 crisp_updated_at: 1747145122000
 crisp_url: https://help.birdchime.com/en-us/article/configure-delivery-rates-1xbrder/
-description: ""
+description: "Learn how to set up flexible delivery rates based on price, weight, time, and other conditions using the Bird Pickup & Delivery app."
 ---
 
 # Configure Delivery Rates
 
-${frame}[Postal code based rates via Bird App](https://www.loom.com/embed/cfede30a353842f99bb07be98bd66ccc?sid=16125e85-444a-4226-802a-bec455f98c8a)
+**Set up custom delivery rates that automatically adjust based on order conditions, location, and timing.**
 
-You can configure the delivery rates for a single location and multiple locations.
+${frame}[Demonstrates how to configure postal code-based delivery rates through the Bird App interface](https://www.loom.com/embed/cfede30a353842f99bb07be98bd66ccc?sid=16125e85-444a-4226-802a-bec455f98c8a)
 
-### How to Add Rates for a Single Location:
+Configure delivery rates for single or multiple locations with flexible pricing rules.
 
-1. Select the "I have same rates for all my locations" option, then click Add Rate.
+## Single Location Setup
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/rt1_rc5clb.png)
+**Choose uniform rates across all locations for simplified management.**
 
-For **multiple locations**, add rates for each specific location.
+1. Select **"I have same rates for all my locations"**
+2. Click **Add Rate**
 
-For configuring local delivery rates over **Distance based or postal code.**
+![Shows the rate configuration interface with the option to set same rates across all locations](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/rt1_rc5clb.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/rt3_52qynq.png)
+## Multiple Location Setup
 
-2. Enter the rate name and condition.
+**Set location-specific rates for precise control over delivery pricing.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-09-at-44212_1388zyw.png =600x415)
+Add rates individually for each location to customize pricing per area.
 
-3. Enter values based on the selected conditions:
+![Interface for configuring distance-based or postal code delivery rates](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/rt3_52qynq.png)
 
-3a. If you have selected **Price**, then enter the minimum order price and maximum order price on which you want to apply rates.
+## Rate Configuration Steps
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_6p6e49.png =600x420)
+### 1. Define Rate Details
 
-3b. If you have selected **weight**, then enter the minimum order weight(gms) and maximum order weight(gms) on which you want to apply rates.
+Enter your rate name and select pricing conditions.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_kb0tlu.png =600x416)
+![Bird App's rate configuration form where users enter rate names and select conditions](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-09-at-44212_1388zyw.png =600x415)
 
-3c. If you have selected **Day**, then enter the start day and end day.
-As an example, if you want to charge $10 from Monday to Friday and $15 for Saturday and Sunday, you can create two rates.
-First rates, where the start day will be Monday and the end day will be Friday. The second rate, where the start day will be Saturday and the end day will be Sunday, and rates of $10 and $15 respectively.
+### 2. Configure Pricing Conditions
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1pj7mdg.png =600x414)
+Choose from seven flexible condition types:
 
-3d. If you want to configure rates on the basis of the **SKUs of products**, then you can configure the SKUs and rates for those respective products.
+#### Price-Based Rates
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_f8d3hg.png =600x410)
+Set minimum and maximum order values for tiered pricing.
 
-3e. If you want to Configure Rates based on **Rush/Urgency**, then enter the Min days and Max days.
-As an example, If you want to charge for rush days like on the basis of urgency when a user wants delivery on the same day or the next day you can put Min  Days 0(Today) and Max Days 1(Tomorrow).
+![Demonstrates price-based rate configuration with min/max order value fields](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_6p6e49.png =600x420)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_m4i8hs.png =600x411)
+#### Weight-Based Rates
 
-3f. If you want to Configure Rates based on **Time**, then enter the Min Time and Max Time.
-As an example, If you want to set rates based on time period; when a user wants the product between a specific time period they will be charged as per the specified rate based on time period.
+Configure rates based on order weight.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1idwzhi.png =600x414)
+![Shows weight-based rate setup with weight ranges](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_kb0tlu.png =600x416)
 
-3g. If you want to Configure Rates based on **Date** Then set the date range over the calendar.
+#### Day-Based Rates
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1h3u07o.png =600x455)
+Set different rates for specific days of the week.
 
-3h. Based on **Multiple conditions**
-As an example, if you want to set rates on the basis of day and price, you can select multiple conditions.
+**Example:** $10 Monday-Friday, $15 Saturday-Sunday
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_eudmil.png =600x466)
+![Day-based rate configuration](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1pj7mdg.png =600x414)
 
-Click on **Add condition** and you can add multiple conditions to the rate.
+#### SKU-Based Rates
 
-**Define values for conditions:**
-* For Price, set min and max order prices.
-* For Weight, set min and max order weights(gms).
-* For Day, specify start and end days.
-* For SKUs, configure product-specific rates.
-* For Rush, enter min and max rush days.
-* For Time, set min and max delivery times.
-* For Multiple Conditions, combine criteria.
-* For Date, set the date range.
+Apply specific rates to individual products by SKU.
 
-| Note: Modify rates anytime to suit your requirements.
+![SKU-based rate configuration for product-specific pricing](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_f8d3hg.png =600x410)
 
-## To configure rates from our app:
+#### Rush Delivery Rates
 
-1. [Configure pickup rates](https://help.birdchime.com/en-us/article/configure-pickup-rates-1n7gumb/)
-2. [Configure shipping rates](https://help.birdchime.com/en-us/article/configure-shipping-rates-llsy16/)
+Charge premium rates for urgent deliveries.
+
+**Example:** Same-day (0 days) or next-day (1 day) delivery
+
+![Demonstrates rush delivery ("urgency") rate setup with min/max day ranges](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_m4i8hs.png =600x411)
+
+#### Time-Based Rates
+
+Set rates for specific delivery time slots.
+
+![Shows time-based rate configuration with time range selection](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1idwzhi.png =600x414)
+
+#### Date-Based Rates
+
+Configure rates for specific date ranges using the calendar.
+
+![Displays date-based rate setup with calendar date range selection](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1h3u07o.png =600x455)
+
+#### Multiple Conditions
+
+Combine multiple criteria for complex pricing rules.
+
+**Example:** Different rates for weekdays with orders over $50
+
+![Shows multiple condition rate option](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_eudmil.png =600x466)
+
+Click **Add condition** to combine multiple pricing factors.
+
+## Condition Value Guidelines
+
+- **Price:** Set minimum and maximum order values
+- **Weight:** Configure weight ranges in grams
+- **Day:** Specify start and end days of the week
+- **SKU:** Add product-specific rate configurations
+- **Urgency:** Define minimum and maximum rush delivery days
+- **Time:** Set delivery time slot ranges
+- **Date:** Choose calendar date ranges
+- **Multiple:** Combine any of the above conditions
+
+## Rate Management
+
+**Modify your rates anytime to match changing business needs.**
+
+Update rate configurations, conditions, and pricing as your delivery requirements evolve.
+
+## Related Configuration Guides
+
+- [Configure pickup rates](https://help.birdchime.com/en-us/article/configure-pickup-rates-1n7gumb/)
+- [Configure shipping rates](https://help.birdchime.com/en-us/article/configure-shipping-rates-llsy16/)
+
+## FAQs
+
+##### Can I set different rates for different locations?
+Yes, you can configure location-specific rates by adding rates individually for each location instead of using uniform rates.
+
+##### How do I charge extra for rush deliveries?
+Use the Urgency condition type and set minimum days to 0 (same day) and maximum days to 1 (next day) with your premium rate.
+
+##### Can I combine multiple pricing conditions?
+Yes, click "Add condition" to combine price, weight, day, time, and other factors for complex pricing rules.
+
+##### How often can I update my delivery rates?
+You can modify rates anytime through the Bird App dashboard to match your changing business needs.
+
+For more general questions, see our main [FAQs page](https://help.birdchime.com/en-us/category/faqs-1ygmxau/).
