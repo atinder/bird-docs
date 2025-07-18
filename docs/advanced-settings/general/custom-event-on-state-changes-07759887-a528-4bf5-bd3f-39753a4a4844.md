@@ -6,6 +6,7 @@ section: general
 slug: custom-event-on-state-changes
 crisp_updated_at: 1730790144000
 crisp_url: https://help.birdchime.com/en-us/article/custom-event-on-state-changes-bfj6bz/
+description: ""
 ---
 
 App is capable of dispatching custom events which you can catch in order to perform certain action after the selections are made.

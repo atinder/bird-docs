@@ -4,8 +4,9 @@ title: "Enable Internal Staff Notifications via BirdApp"
 category: notifications-and-validations
 section: staff-notifications
 slug: enable-internal-staff-notifications-via-birdapp
-crisp_updated_at: 1737568540000
+crisp_updated_at: 1751333904000
 crisp_url: https://help.birdchime.com/en-us/article/enable-internal-staff-notifications-via-birdapp-1kp1gtc/
+description: ""
 ---
 
 When a new order is placed, staff members must receive an email with all the necessary details, including the customer’s selected slot date, time, and delivery method.
@@ -56,4 +57,4 @@ Follow this document: [How to customize the email templates](https://help.birdch
 This ensures that staff members have all the information they need for fulfilling orders based on the selected schedule.
 
 **Related Document:** [Ready for pickup and dispatch email notification](https://help.birdchime.com/en-us/article/ready-for-pickup-and-dispatch-email-notification-8o1c1h/)
-**Related Document:** [Adding Date/Time and Delivery Method to Shopify Staff Notification Emails](en-us/article/adding-datetime-and-delivery-method-to-shopify-staff-notification-emails-ozlh06)
+**Related Document:** [Adding Date/Time and Delivery Method to Shopify Staff Notification Emails](https://help.birdchime.com/en-us/article/adding-datetime-and-delivery-method-to-shopify-staff-notification-emails-ozlh06)

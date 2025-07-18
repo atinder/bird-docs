@@ -4,8 +4,9 @@ title: "How to block dates from calendar?"
 category: calendar-and-time-configuration
 section: global-settings
 slug: how-to-block-dates-from-calendar
-crisp_updated_at: 1734319779000
+crisp_updated_at: 1750741766000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/
+description: ""
 ---
 
 Consider the following Scenarios:
@@ -15,9 +16,8 @@ Consider the following Scenarios:
 
 In the above scenarios, you can block such days so that customers cannot select them for store pickup, local delivery, or shipment. 
 
-${frame}[How to Block Dates from Calendar?](https://www.loom.com/embed/b97fb8b135fe4f6e97ab5aca2e61daa8?sid=22d9a62a-a827-4edd-824c-b38ae217e65d)
-
-To configure it, follow the below steps:
+${youtube}[](q9Vo7u_PtNQ)
+To configure it, follow the steps below:
 
 1. Go to Bird App Settings
 2. Click on Pickup & Delivery > Edit Settings
@@ -36,5 +36,18 @@ Now you can see which date has been blocked in the list. You can modify this set
 Result : 
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-085639_yl8x2s.png)
+
+### Previewing the Widget After Saving Changes
+
+To ensure your widget configurations appear as intended, you can preview the widget after saving your changes. This allows you to verify that all settings are correctly applied.
+
+**Steps to Preview:**
+
+1. Navigate to the **App Settings > Pickup & Delivery/Configure locations/Shipping** 
+2. Scroll to **Blockout dates** settings and make the desired changes.
+3. Click **Save** to apply the changes.
+
+![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
+4. After saving, click the **Widget** **Preview** option to view the widget with the updated settings.
 
 || Related Document:  [Product Override](https://help.birdchime.com/en-us/article/product-override-g2yfl9/)

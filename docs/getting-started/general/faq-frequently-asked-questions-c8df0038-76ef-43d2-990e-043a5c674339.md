@@ -4,23 +4,24 @@ title: "FAQ (Frequently asked questions)"
 category: getting-started
 section: general
 slug: faq-frequently-asked-questions
-crisp_updated_at: 1735050308000
+crisp_updated_at: 1750876419000
 crisp_url: https://help.birdchime.com/en-us/article/faq-frequently-asked-questions-1xx5rjd/
+description: ""
 ---
 
 ###### 1. What are Birdchime products and services?
 
-Birdchime builds advanced calendar and order management software to help stores manage their pickup, delivery, and shipping for Shopify. Learn how it works [here](https://help.birdchime.com/en-us/article/enable-the-app-with-your-theme-450cbp/)
+Birdchime builds advanced calendar and order management software to help stores manage their pickup, delivery, and shipping for Shopify. Learn how it works [here](https://help.birdchime.com/en-us/article/enable-the-app-in-your-theme-450cbp/)
 
-1. [Birchime pickup and delivery](https://help.birdchime.com/en-us/article/how-to-set-up-pickupdelivery-slots-1b46v6v/) allows customers to control and manage product availability, multiple store location pickup and delivery, attach a date and time stamp for each product for better management, define product-based customizations, and seamless order management from a single dashboard.
+1. [Birchime pickup and delivery](https://help.birdchime.com/en-us/article/get-started-with-app-setup-1tra0ra/) allows customers to control and manage product availability, multiple store location pickup and delivery, attach a date and time stamp for each product for better management, define product-based customizations, and seamless order management from a single dashboard.
 
 2. Birdchime Shipping and Rates features allow customers to calculate the delivery price based on multiple conditions and provide multiple other tools for organizing orders.
 
-For a full list of services, feel free to [install our app](https://apps.shopify.com/store-pickup-and-delivery-date) or contact [support](https://apps.shopify.com/store-pickup-and-delivery-date#:~:text=Send%20a-,message,-support%40birdchime.com). 
+For a full list of services, feel free to [install our app](https://apps.shopify.com/store-pickup-and-delivery-date) or contact [support](https://go.crisp.chat/chat/embed/?website_id=9a669714-af96-4a70-bf92-ea0b2ade5ab0). 
 
 ###### 2. How can I get started with the Birdchime app?
 
-It is very easy to get started with Birdchime. Here is a step-by-step [video](https://help.birdchime.com/en-us/article/enable-the-app-with-your-theme-450cbp/) to get started with the Birdchime app. Alternatively, check out our [Getting Started](https://help.birdchime.com/en-us/category/getting-started-xag15p/) section for all the relevant articles. If you have any questions please feel free to [chat with us](https://go.crisp.chat/chat/embed/?website_id=9a669714-af96-4a70-bf92-ea0b2ade5ab0) or [send us an email](support@birdchime.com).
+It is very easy to get started with Birdchime. Here is a step-by-step [video](https://help.birdchime.com/en-us/article/enable-the-app-in-your-theme-450cbp/) to get started with the Birdchime app. Alternatively, check out our [Getting Started](https://help.birdchime.com/en-us/category/getting-started-xag15p/) section for all the relevant articles. If you have any questions please feel free to [chat with us](https://go.crisp.chat/chat/embed/?website_id=9a669714-af96-4a70-bf92-ea0b2ade5ab0) or [send us an email](mailto:support@birdchime.com).
 
 ###### 3. Is there a free plan available?
 
@@ -32,19 +33,19 @@ No, Birdchime doesn't offer any type of extension on its free plan. We recommend
 
 ###### 5. Can I get custom features built for my store?
 
-We work very hard to update our app as per our customer requirements. We track customer requirements [here](https://birdchime.kampsite.co/) . The higher the number of upvotes, the faster we ship out that particular feature. However, as part of our [enterprise plan](https://admin.shopify.com/store/deepankarbirdstore/apps/simple-on-time-delivery/subscribe) , we do offer customized upgrades to the app. This is completely at the discretion of the tech team and the amount of effort involved. We urge you to [reach out](https://go.crisp.chat/chat/embed/?website_id=9a669714-af96-4a70-bf92-ea0b2ade5ab0) to us for any such queries. 
+We work very hard to update our app as per our customer requirements. We track customer requirements [here](https://birdchime.kampsite.co/) . The higher the number of upvotes, the faster we ship out that particular feature. However, as part of our [enterprise plan](https://www.birdchime.com/pricing) , we do offer customized upgrades to the app. This is completely at the discretion of the tech team and the amount of effort involved. We urge you to [reach out](https://go.crisp.chat/chat/embed/?website_id=9a669714-af96-4a70-bf92-ea0b2ade5ab0) to us for any such queries. 
 
 ###### 6. How can I lodge my issue with Birdchime?
 
-Birdchime offers 24/7 support all 365 days of the year. You may experience slight delays over the weekends or during holidays however be rest assured we have got you covered. You can [chat with us](https://go.crisp.chat/chat/embed/?website_id=9a669714-af96-4a70-bf92-ea0b2ade5ab0) or [send us an email](support@birdchime.com) . Alternatively, you can set up a 1 on 1 session over a video call. We are always eager to help.
+Birdchime offers 24/7 support all 365 days of the year. You may experience slight delays over the weekends or during holidays however be rest assured we have got you covered. You can [chat with us](https://go.crisp.chat/chat/embed/?website_id=9a669714-af96-4a70-bf92-ea0b2ade5ab0) or [send us an email](mailto:support@birdchime.com) . Alternatively, you can set up a 1 on 1 session over a video call. We are always eager to help.
 
 ###### 7. I have installed the app but I don't see the date picker on my cart page on the store front.
 
  There can be a few reasons for it
 
-* You have not enabled the app on the settings page. [Please refer to this section](https://help.birdchime.com/en-us/article/enable-the-app-with-your-theme-450cbp/?bust=1673503321482)
+* You have not enabled the app on the settings page. [Please refer to this section](https://help.birdchime.com/en-us/article/enable-the-app-in-your-theme-450cbp/)
 
-* You have not enabled the embed block in your theme.  [Please refer to this section](https://help.birdchime.com/en-us/article/enable-the-app-with-your-theme-450cbp/?bust=1673503321482)
+* You have not enabled the embed block in your theme.  [Please refer to this section](https://help.birdchime.com/en-us/article/enable-the-app-in-your-theme-450cbp/)
 
 * If the first two steps were complete but you still don’t see it, then your theme is a customized one. And we need to add the following 1 line of code in your theme and it will start working
 
@@ -52,7 +53,7 @@ Birdchime offers 24/7 support all 365 days of the year. You may experience sligh
 <div id="birdchime-slots-box"></div>
 ```
 
-You can either do it yourself or just ping us via in-app chat or email us at support@birdchime.com, we will do it for you. 
+You can either do it yourself or just ping us via in-app chat or email us at [support@birdchime.com](mailto:support@birdchime.com), we will do it for you. 
 To accelerate the process, you can provide us the collaborator access to edit your current theme.
 
 ###### 8. How can I configure the app to display only the next five days on the calendar?

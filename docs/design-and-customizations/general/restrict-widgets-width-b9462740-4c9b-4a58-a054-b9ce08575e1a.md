@@ -6,6 +6,7 @@ section: general
 slug: restrict-widgets-width
 crisp_updated_at: 1736238593000
 crisp_url: https://help.birdchime.com/en-us/article/restrict-widgets-width-1ph2q97/
+description: ""
 ---
 
 If the widget occupies a lot of space on your cart page, you can restrict its width by adding the following code in Advance Styling in the Widget Design.

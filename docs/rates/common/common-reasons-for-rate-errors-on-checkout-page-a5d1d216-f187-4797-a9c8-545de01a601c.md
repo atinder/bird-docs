@@ -4,16 +4,17 @@ title: "Common reasons for rate errors on checkout page"
 category: rates
 section: common
 slug: common-reasons-for-rate-errors-on-checkout-page
-crisp_updated_at: 1724333668000
+crisp_updated_at: 1747737073000
 crisp_url: https://help.birdchime.com/en-us/article/common-reasons-for-rate-errors-on-checkout-page-1iekz2h/
+description: ""
 ---
 
-### If you are facing the following error message in the checkout. This document will help you resolve it.
+### If you are facing the following error messages in the checkout. This document will help you resolve it.
 
 ![Error message during checkout](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1mqhgsj.png)
 
-1.  [Common Reasons](#1-common-reasons)
-*  [Location not enabled in product Edit page inventory section.](#3-1-location-not-enabled-in-product-edit-page-inventory-section)
+1. [Common Reasons](#1-common-reasons)
+* [Location not enabled in product Edit page inventory section.](#3-1-location-not-enabled-in-product-edit-page-inventory-section)
 * [Product is out of stock on a particular location](#3-2-product-is-out-of-stock-on-a-particular-location)
 * [Location is not enabled to Fulfill online orders](#3-3-location-is-not-enabled-to-fulfill-online-orders)
 * [Store location address of one of the locations in Shopify admin is not validated.](#3-4-store-location-address-of-one-of-the-locations-in-shopify-admin-is-not-validated)
@@ -31,7 +32,6 @@ crisp_url: https://help.birdchime.com/en-us/article/common-reasons-for-rate-erro
 * [If configured by Bird App](#3-1-if-configured-by-bird-app-deliveryshipping-address-not-covered-by-rules-configured)
 * [If configured by Shopify Admin Shipping rates](#3-2-if-configured-by-shopify-admin-shipping-rates-shipping-address-not-covered-by-rules-configured)
 
-
 # Common Reasons
 
 ### 1. Location not enabled in product Edit page inventory section.
@@ -42,7 +42,7 @@ This can be fixed by navigating to **Shopify Admin -> Products -> Select Product
 
 ### 2. Product is out of stock on a particular location
 
-![Product out of stock](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1iqowmq.png)
+![Product out of stock](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1iqowmq.png =600x488)
 This can be fixed by **adding stock** to the out of stock location.
 
 ### 3. Location is not enabled to fulfil online orders.
@@ -51,7 +51,7 @@ This can be fixed by **adding stock** to the out of stock location.
  
 ### 4. Store location address of one of the locations in Shopify admin is not validated.
 
-![Location address not validated](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-03-07-at-11034_1rmr5e2.png)
+![Location address not validated](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-03-07-at-11034_1rmr5e2.png =600x597)
 This can be fixed by entering a **valid address** in Shopify location and saving it.
 
 ### 5. Rates can also be reordered or hidden by third party apps using Shopify functions.
@@ -62,23 +62,23 @@ This can be fixed in **Shopify admin -> Settings -> Shipping & Delivery -> Deliv
 # Built in Local Delivery rates specific
 ### 1. The rates defined do not cover the area of the customer.
 
-![Zip or postal code not covered](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_pnpdwc.png)
+![Zip or postal code not covered](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_pnpdwc.png =600x501)
 
-![Delivery radius not covered](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1j2nhg2.png)
+![Delivery radius not covered](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1j2nhg2.png =600x539)
 
 ### 2. Cart total is lesser than the minimum order value.
 
-![Minimum order value](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1dkdp8b.png)
+![Minimum order value](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1dkdp8b.png =600x539)
 
 # Built in Store Pickup rates specific
-### 1. Location is not enabled for pickup. 
+### 1. Location is not enabled for pickup.
 || Refer this only if you are getting the second error (on the right side) mentioned at the top.
 
 ![Location not enabled for built in pickup.](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-03-08-at-12355_21gzfr.png)
 
 ### 2. There are no pickup locations available.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_kus95a.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_kus95a.png =600x425)
 
 One of the reasons for this error is that the Street address is missing, making the location unverified on Shopify's end!
 
@@ -94,5 +94,5 @@ One of the reasons for this error is that the Street address is missing, making 
 
 ### 2. **If configured by Shopify Admin Shipping rates**:  Shipping address not covered by rules configured
 
-
 ![Shopify configured rates](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_14ituua.png)
+**Related Document:** [Rates Control](https://help.birdchime.com/en-us/article/rates-control-jjcrrp/)

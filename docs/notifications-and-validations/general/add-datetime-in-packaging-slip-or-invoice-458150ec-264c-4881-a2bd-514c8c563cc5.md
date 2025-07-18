@@ -6,6 +6,7 @@ section: general
 slug: add-datetime-in-packaging-slip-or-invoice
 crisp_updated_at: 1740215624000
 crisp_url: https://help.birdchime.com/en-us/article/add-datetime-in-packaging-slip-or-invoice-m9smdk/
+description: "Add Date and Time to packaging slip"
 ---
 
 # Add the selected date/time on the package slip or invoice and get it printed.

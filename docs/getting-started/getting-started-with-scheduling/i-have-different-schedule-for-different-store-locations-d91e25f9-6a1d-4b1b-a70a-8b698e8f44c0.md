@@ -4,9 +4,9 @@ title: "I have different schedule for different store locations"
 category: getting-started
 section: getting-started-with-scheduling
 slug: i-have-different-schedule-for-different-store-locations
-crisp_updated_at: 1736245720000
+crisp_updated_at: 1750153171000
 crisp_url: https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/
-meta_description: "Configure unique delivery and pickup schedules for each store location in Bird App. Step-by-step setup for merchants with multiple locations requiring different operating hours."
+
 ---
 
 # I have different schedule for different store locations
@@ -58,6 +58,7 @@ For a unified schedule, see [I have same schedule for all store locations](https
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-073445_1b95oox.png)
 
 ## Get started with your configuration.
+
 
 
 
@@ -113,5 +114,3 @@ A: Add internal email addresses in the location settings to receive order notifi
 ---
 
 ## Keywords
-
-different schedules per location, location-specific scheduling, multi-location delivery setup, Bird App location settings, delivery schedule per store, pickup schedule per location, location-based availability, preparation times per location, blockout dates per location, product availability per location

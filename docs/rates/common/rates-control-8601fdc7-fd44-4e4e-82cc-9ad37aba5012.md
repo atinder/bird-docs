@@ -6,6 +6,7 @@ section: common
 slug: rates-control
 crisp_updated_at: 1742900735000
 crisp_url: https://help.birdchime.com/en-us/article/rates-control-jjcrrp/
+description: ""
 ---
 
 Rates for **Pickup, Delivery, and Shipping** can be managed either through the **Bird app** or **Shopify**. Once the **Rates Setup** is completed, Delivery and Shipping rates can be configured in the Bird app or controlled via Shopify.

@@ -6,6 +6,7 @@ section: general
 slug: how-to-addedit-skus-in-bulk-from-shopify
 crisp_updated_at: 1730789968000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-addedit-skus-in-bulk-from-shopify-1n39vpw/
+description: ""
 ---
 
 To edit SKUs, you can use the bulk edit feature from Shopify, which will save a lot of time instead of multiple clicks.

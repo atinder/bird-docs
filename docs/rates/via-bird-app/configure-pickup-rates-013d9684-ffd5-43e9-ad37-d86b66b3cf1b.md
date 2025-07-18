@@ -4,8 +4,9 @@ title: "Configure Pickup Rates"
 category: rates
 section: via-bird-app
 slug: configure-pickup-rates
-crisp_updated_at: 1740705645000
+crisp_updated_at: 1747734692000
 crisp_url: https://help.birdchime.com/en-us/article/configure-pickup-rates-1n7gumb/
+description: ""
 ---
 
 You can configure the pickup rates for a single location and multiple locations.
@@ -22,37 +23,36 @@ For **multiple locations**, add rates for each specific location.
 
 2. Enter the rate name and condition.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/ratenamecondition_g2718c.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/ratenamecondition_g2718c.png =600x600)
 
 3. Setting up the Pickup rate based on the below conditions.
 
 * Based on **Price**. Enter the minimum order price and maximum order price on which you want to apply rates. For a Free Pickup, leave the Rate Amount section blank.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122439_1k5kf7c.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122439_1k5kf7c.png =600x415)
 
 * If you have selected **Day**, enter the start and end day.
 Example: Create a weekday rate ($10, Monday- Friday) and weekend rate ($15, Saturday- Sunday) by setting different start/end days.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122508_rzwl5n.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122508_rzwl5n.png =600x410)
 
 * To configure rates based on **Rush/Urgency**, enter the Min days and Max days.
 For example, if you want to charge rush fees based on urgency—such as a **higher rate for same-day or next-day delivery**—set Min Days to 0 (Today) and Max Days to 1 (Tomorrow) and the Rate Amount.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122552_5va36d.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122552_5va36d.png =600x409)
 
 * The rate can also be set based on **Weight, Product, Date, and Time**. Select the appropriate option from the dropdown and create the rates accordingly.
 
-
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1hv5x92.png)
 
-*  Based on **Multiple conditions** As an example, if you want to set rates based on day and price, you can select multiple conditions.
+* Based on **Multiple conditions** As an example, if you want to set rates based on day and price, you can select multiple conditions.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122639_1vcvw6n.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122639_1vcvw6n.png =600x467)
 
 Click on **Add condition**, then select one of the conditions mentioned in the example.
 Now click on Add condition to add another condition under Multiple conditions.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122655_13ygahs.png)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-122655_13ygahs.png =600x613)
 
 **Define values for conditions:**
 ****
