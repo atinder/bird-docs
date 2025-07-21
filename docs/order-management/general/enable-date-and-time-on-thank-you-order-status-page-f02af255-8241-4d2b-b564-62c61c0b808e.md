@@ -1,6 +1,6 @@
 ---
 id: f02af255-8241-4d2b-b564-62c61c0b808e
-title: "Enable date and time on Thank you / Order status page"
+title: "Display Delivery Date & Time on Thank You and Order Status Pages"
 category: order-management
 section: general
 slug: enable-date-and-time-on-thank-you-order-status-page
