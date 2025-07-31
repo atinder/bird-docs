@@ -1,52 +1,72 @@
 ---
 id: c4cb46f4-ba5d-4135-b2cd-f2fc9c01822d
-title: "Shipping"
+title: "How to Set Up Standard Shipping Settings"
 category: shipping
 section: general
 slug: shipping
 crisp_updated_at: 1750159338000
 crisp_url: https://help.birdchime.com/en-us/article/shipping-198gsjt/
-description: ""
+description: "Configure shipping settings, manage delivery calendars, and set up shipping rates for your Bird Pickup & Delivery app"
 ---
 
-Navigate to **Bird App Settings > Shipping**
+**Configure shipping settings to control delivery options and manage your shipping calendar effectively.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/shippingmenu_lnws6l.png)
+Standard Shipping offers carrier delivery to supported addresses. Customers can select delivery dates and times for shipped orders.
 
-1. Enable Standard Shipping
+## Access Shipping Settings
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_yguhy7.png)
+Navigate to **Bird App Settings > Shipping** in your dashboard.
 
-2. Manage Shipping calendar.
+![Shows the Bird App Settings navigation menu with the Shipping option highlighted](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/shippingmenu_lnws6l.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/schedule_1pzxlaa.png)
+## Enable Standard Shipping
 
-### Previewing the Widget After Saving Changes
+1. Locate the **Standard Shipping** toggle in your shipping settings
+2. Click the toggle to **Enable** standard shipping for your store
+3. Save your changes
 
-To ensure your widget configurations appear as intended, you can preview the widget after saving your changes. This allows you to verify that all settings are correctly applied.
+![Displays the Shipping configuration panel with enable/disable toggle options](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_yguhy7.png)
 
-**Steps to Preview:**
+## Manage Shipping Calendar
 
-1. Navigate to the **App Settings > Shipping** 
-2. Make the desired changes to your widget configurations.
-3. Click **Save** to apply the changes.
+Configure your delivery schedule to control when customers can select shipping dates.
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
-4. After saving, click the **Widget** **Preview** option to view the widget with the updated settings.
+1. Navigate to the **Shipping Calendar** section in your Bird App shipping settings.
+2. **Set Available Delivery Days:** Choose which days of the week you want to offer shipping (e.g., Monday to Friday).
+3. **Set Delivery Time Windows:** Specify the time ranges when deliveries can be made (e.g., 9am–5pm).
+4. **Configure Date Restrictions or Blackout Periods:** Block out holidays or dates when shipping is unavailable.
+5. Click **Save** to apply your calendar settings.
 
-## Get started with your configuration
+[Screenshot Required: Shows the shipping calendar configuration interface with date selection options.]
 
-1. [Configure Availability](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)
-Set your schedule or calendar
+## Preview Widget Changes
 
-2. [Preparation Time](https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/)
-This helps you configure time required to prepare orders and configure day wise cut-off time 
+**Verify your shipping configurations appear correctly by previewing the widget after saving changes.**
 
-3. [Blockout Dates](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)
-Dates which you want to disable from the calendar, so that customers can not select them. 
+1. Navigate to **App Settings > Shipping**
+2. Make your desired configuration changes
+3. Click **Save** to apply all changes
+4. Click **Widget Preview** to see your updated configuration
 
-4. [Block Shipping / Local Delivery / Pickup using Product availability](https://help.birdchime.com/en-us/article/block-shipping-local-delivery-pickup-using-product-availability-t1zg9b/)
-Only allow certain products to be shipped and block checkout for rest of the products.
+The widget preview appears in the top right corner of the Bird App. Use this feature to simulate any date and time to test your advanced rules.
 
-5. [Configure Shipping Rates](https://help.birdchime.com/en-us/article/configure-shipping-rates-llsy16/)
-This guide details configuring shipping rates for different zones.
+![Save button and widget preview option in shipping settings](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
+
+That's it! Your shipping widget now reflects your updated configuration.
+
+## Complete Shipping Setup
+
+Follow these essential configuration steps to fully set up your shipping system:
+
+1. **[Configure Availability Settings](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)** - Set your store's delivery schedule and calendar availability
+2. **[Configure Order Preparation Times](https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/)** - Set time required to prepare orders and day-specific cut-off times
+3. **[Block Dates from Calendar](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)** - Disable specific dates to prevent customer selection
+4. **[Block Shipping Using Product Availability](https://help.birdchime.com/en-us/article/block-shipping-local-delivery-pickup-using-product-availability-t1zg9b/)** - Restrict shipping to specific products
+5. **[Configure Shipping Rates](https://help.birdchime.com/en-us/article/configure-shipping-rates-llsy16/)** - Set up rates for different zones and delivery methods
+
+## Related Articles
+
+- [Configure Local Delivery Rates](https://help.birdchime.com/en-us/article/configure-local-delivery-rates-based-on-postal-code-16da0ew/)
+- [Set Up Pickup Rates](https://help.birdchime.com/en-us/article/configure-pickup-rates-1n7gumb/)
+- [Manage Order Preparation Times](https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/)
+- [Configure Availability Settings](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)

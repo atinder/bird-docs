@@ -1,85 +1,105 @@
 ---
 id: f7490f12-e87b-4ea6-b420-fcfb37b2a076
-title: "How to change the widget Language & Labels?"
+title: "How to Customize Widget Language and Labels"
 category: design-and-customizations
 section: general
 slug: how-to-change-the-widget-language-labels
 crisp_updated_at: 1749544114000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-change-the-widget-language-labels-11stcld/
-description: ""
+description: "Learn how to customize widget language labels, calendar text, and add customer instructions in Bird Pickup & Delivery app settings."
 ---
 
-| Note: You can configure the label/text in any language.
+**Customize your widget text and labels to match your brand voice and provide clear customer guidance.**
 
-Navigate to **Bird App Settings > Text & Languages** 
+Configure all widget text in any language through Bird App settings. This includes calendar labels, delivery method names, and customer instructions.
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-60_198q9ck.png)
+## Access Text & Language Settings
 
-Click on the edit button of the language you want to edit.
+1. Navigate to **Bird App Settings > Text & Languages**
+2. Click the **edit button** next to your desired language
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-59_1ktcv7a.png)
+![Bird App Settings page showing the Text & Languages section with language options](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-60_198q9ck.png)
 
-### This is useful for:
+![Language editing interface with edit buttons for each language option](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-59_1ktcv7a.png)
 
-* Change the **calendar label and time field label**.
-* Change the **label store pickup**.
-* Add instructions for customer **above the app**.
-* Add instructions for customer **below the app**.
-* Add instructions for customer for **Shipping**.
-* Add instructions for customer for **Local Delivery**.
-* Add instructions for customer for **Store Pickup**.
+## What You Can Customize
 
-### Change the calendar label and time field label
+The language settings allow you to modify:
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image_9rm91p.png)
+- **Calendar and time labels** (date picker text, time selection fields)
+- **Delivery method names** (local delivery, store pickup, shipping)
+- **Customer instructions** (above/below widget, delivery-specific guidance)
+- **Error messages** (validation errors, availability messages)
+- **Order confirmation text** (thank you page labels)
+- **Postal code checker messages** (availability confirmations)
 
-**RESULT :**
-Example, we have changed the Calendar Label from "Pick a date" to "Select a Date"
+Most fields support HTML formatting for rich content and styling.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-16-at-81546_1trw0b7.png)
+## Change Calendar and Time Labels
 
-### Change the label store pickup.
+Customize the date picker and time selection text to match your brand.
 
-Example, we have changed the "Store Pickup" to "Local Pickup"
+![Text editing interface showing calendar label customization options](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image_9rm91p.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/cal2_1o16fqo.png)
+**Example:** Change "Pick a date" to "Select a Date"
 
-### Add instructions for customer above the app.
+![Widget showing the updated calendar label "Select a Date" instead of the default text](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-16-at-81546_1trw0b7.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/cal4_o16ci0.png)
+## Modify Store Pickup Labels
 
-**RESULT :**
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-21-at-85847_7wa5se.png)
+Rename delivery methods to match your business terminology.
 
-### Add instructions for customer below the app.
+**Example:** Change "Store Pickup" to "Local Pickup"
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-14-at-81655_1gq6flm.png)
+![Widget displaying "Local Pickup" as the customized pickup option label](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/cal2_1o16fqo.png)
 
-### Add instructions for customer for Shipping:
+## Add Customer Instructions
 
-Add instructions in widget footer shipping as shown in the screenshot [here](#3-add-instructions-for-customer-below-the-app) 
+### Above the Widget
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-16-at-82523_r4xi1l.png)
+Place important information customers need before selecting delivery options.
 
-### Add instructions for customer for Local Delivery :
+![Text editing interface for adding instructions above the widget](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/cal4_o16ci0.png)
 
-Add instructions in widget footer Local Delivery as shown in the screenshot [here](#3-add-instructions-for-customer-below-the-app) 
+**Result:**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-16-at-82753_12zb578.png)
+![Widget showing custom instructions displayed above the date picker](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-21-at-85847_7wa5se.png)
 
-### Add instructions for customer for Store Pickup :
+### Below the Widget
 
-Add instructions in widget footer Store Pickup as shown in the screenshot [here](#3-add-instructions-for-customer-below-the-app) 
+Add helpful guidance after the main widget content.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-16-at-82951_ulx5fw.png)
-### Previewing the Widget After Saving Changes
+![Text editing interface for adding instructions below the widget](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-14-at-81655_1gq6flm.png)
 
-To ensure your widget appear as intended, you can preview the widget after saving your changes. This allows you to verify that all settings are correctly applied.
+### Delivery Method-Specific Instructions
 
-**Steps to Preview:**
+Add targeted instructions for each delivery method.
 
-1. After making the desired changes click **Save** to apply the changes.
-2. After saving, click the **Widget** **Preview** option to view the widget with the updated settings.
+#### Shipping Instructions
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
-**Related Document:** [How to customize the widget look](https://help.birdchime.com/en-us/article/how-to-customize-the-widget-look-1t5c07x/)
+![Widget footer showing shipping-specific instructions for customers](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-16-at-82523_r4xi1l.png)
+
+#### Local Delivery Instructions
+
+![Widget footer showing local delivery-specific instructions for customers](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-16-at-82753_12zb578.png)
+
+#### Store Pickup Instructions
+
+![Widget footer showing store pickup-specific instructions for customers](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-16-at-82951_ulx5fw.png)
+
+## Preview Your Changes
+
+Always preview your widget after saving changes to ensure proper display.
+
+1. Click **Save** to apply your changes
+2. Click **Widget Preview** to view the updated widget
+
+![Settings page showing the Widget Preview option for testing changes](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
+
+That's it! Your widget now displays custom text that matches your brand.
+
+## Related Articles
+
+- [How to customize the widget look](https://help.birdchime.com/en-us/article/how-to-customize-the-widget-look-1t5c07x/)
+- [Manual widget placement](https://help.birdchime.com/en-us/article/manual-widget-placement-1iq0zmb/)
+- [How to Enable Bird Pickup and Delivery Date Widget in Your Shopify Theme](https://help.birdchime.com/en-us/article/how-to-enable-bird-pickup-and-delivery-date-widget-in-your-shopify-theme-450cbp/)
