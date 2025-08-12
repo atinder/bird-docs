@@ -23,10 +23,10 @@ ${frame}[Step-by-step tutorial showing how to access and configure availability 
 
 Choose between two availability options:
 
-- **Custom Availability by days**: Set different schedules for each day of the week
+- **Customize Availability by Day**: Set different schedules for each day of the week
 - **Same Availability for All days (Mon to Sun)**: Use identical schedule for every day
 
-![Shows the availability configuration interface with options for custom days or same schedule for all days](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/configure-avalibility_1jf3ime.png)
+![Availability configuration interface with custom days or same schedule options](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/configure-avalibility_1jf3ime.png)
 
 ## Configure Date and Time Options
 
@@ -36,31 +36,31 @@ Select the scheduling option that best fits your business needs. Each option con
 
 Choose **"Only Date"** to let customers select delivery/pickup dates without specific times.
 
-![Shows date-only configuration with Sunday disabled as an example of day-specific settings](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/sunday-disabled_152uufb.png)
+![Date-only configuration example with Sunday disabled](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/sunday-disabled_152uufb.png)
 
 ### Date and Time Scheduling
 
 Choose **"Date & time"** to offer specific time slots for each date.
 
-![Displays the date and time selection interface with available time slots](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/dateandtimeslection_pv5eqg.png)
+![Date and time selection interface with available time slots](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/dateandtimeslection_pv5eqg.png)
 
 ### Date and Time Range Scheduling
 
 Choose **"Date & time range"** to offer flexible time windows instead of fixed slots.
 
-![Shows time range configuration allowing customers to select from flexible time windows](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/configure-avalibilityv2_1a7hcz8.png)
+![Time range configuration with flexible time windows](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/configure-avalibilityv2_1a7hcz8.png)
 
 ### Disable Calendar
 
 Choose **"No Date & time"** to turn off the calendar widget completely.
 
-![Demonstrates the disabled calendar state when no date and time selection is configured](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/noselections_1uuir02.png)
+![Disabled calendar state with no date/time selection](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/noselections_1uuir02.png)
 
 ## Set Maximum Order Limits
 
 Control your order capacity by setting daily or time slot limits. When limits are reached, those options automatically disable for customers.
 
-![Shows the fields for setting maximum orders per day and per time slot](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/orderlimit_1dso3u7.png)
+![Maximum orders per day and per time slot fields](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/orderlimit_1dso3u7.png)
 
 ## Preview Your Widget
 

@@ -11,11 +11,7 @@ description: "Control which products are available for specific delivery methods
 
 **Control which products customers can select for shipping, local delivery, or store pickup using product tags.**
 
-## What is Product Availability?
-
 Product Availability lets you restrict delivery methods to specific products using Shopify product tags. You can include only tagged products or exclude tagged products from each delivery method.
-
-This feature gives you precise control over fulfillment options across your product catalog.
 
 ${youtube}[Demonstrates the complete process of configuring product availability settings and adding tags to products](cywEtEfrHcA)
 
@@ -37,11 +33,9 @@ When customers have mixed products in their cart, the system evaluates the entir
 - **Include mode**: If any product lacks the required tag, the delivery method becomes unavailable for the entire cart
 - **Exclude mode**: If any product has the exclusion tag, the delivery method becomes unavailable for the entire cart
 
-**Example**: If you set "Include Products tagged with 'local-delivery'" and a customer adds both a tagged product and an untagged product to their cart, local delivery will disappear completely.
+**Example**: If you set "Include Products tagged with 'local-delivery'" and a customer adds both a tagged product and an untagged product to their cart, local delivery becomes unavailable.
 
-**Pro Tip**: Test your setup with mixed carts to ensure the behavior matches your business needs.
-
-**Important**: Mixed cart behavior affects the entire cart. If any product doesn't meet the criteria, the delivery method disappears completely.
+**Important**: Mixed cart behavior affects the entire cart. If any product doesn't meet the criteria, the delivery method becomes unavailable.
 
 ### Include Specific Products Only
 
@@ -88,8 +82,8 @@ Products without the specified tags will be blocked from the chosen delivery met
 
 ## Related Articles
 
-- [Product Override](https://help.birdchime.com/en-us/article/product-override-g2yfl9/) - Set different availability rules for specific products
-- [Configure Availability Settings](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/) - Set up general availability rules
-- [How to Block Dates from Calendar](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/) - Block specific dates from delivery options
+- [Set different availability rules for specific products](https://help.birdchime.com/en-us/article/product-override-g2yfl9/)
+- [Set up general availability rules](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)
+- [How to Block Dates from Calendar](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)
 
 

@@ -1,6 +1,6 @@
 ---
 id: b9d6446a-86c0-4ca6-9657-e55f0a8f7f67
-title: "How to block dates from calendar?"
+title: "How to block dates from Bird Pickup & Delivery Calendar"
 category: calendar-and-time-configuration
 section: global-settings
 slug: how-to-block-dates-from-calendar
@@ -65,30 +65,7 @@ If each location has its own unique schedule:
 
 - **Blocked dates only prevent new bookings.** Existing orders on blocked dates will not be affected. Consider your current order volume before blocking dates to avoid scheduling conflicts.
 
-- **Changes take effect immediately** for new customer selections. Allow 5-10 minutes for changes to fully propagate across your store.
-
-## Common Scenarios
-
-**Use date blocking for these common business situations:**
-
-### Holiday Closures
-- Block major holidays when your store is closed
-- Example: Christmas Day, New Year's Day, Thanksgiving
-
-### Temporary Store Closures
-- Block dates for renovations or maintenance
-- Block dates when you're attending trade shows or events
-- Block dates for staff training days
-
-### Staff Vacation Periods
-- Block dates when key staff are unavailable
-- Block dates during peak vacation seasons
-- Block dates for team building events
-
-### Special Events
-- Block dates for private events or catering orders
-- Block dates when you're operating at reduced capacity
-- Block dates for inventory counts or system maintenance
+- **Changes take effect immediately** for new customer selections.
 
 ## Review Blocked Dates
 

@@ -16,7 +16,7 @@ Configure all widget text in any language through Bird App settings. This includ
 ## Access Text & Language Settings
 
 1. Navigate to **Bird App Settings > Text & Languages**
-2. Click the **edit button** next to your desired language
+2. Click the **Edit button** next to your desired language
 
 ![Bird App Settings page showing the Text & Languages section with language options](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-60_198q9ck.png)
 
@@ -31,9 +31,9 @@ The language settings allow you to modify:
 - **Customer instructions** (above/below widget, delivery-specific guidance)
 - **Error messages** (validation errors, availability messages)
 - **Order confirmation text** (thank you page labels)
-- **Postal code checker messages** (availability confirmations)
+- **Postal code validation messages** (availability confirmations)
 
-Most fields support HTML formatting for rich content and styling.
+Most fields support HTML formatting for rich content and styling, including bold text, italics, and basic formatting tags.
 
 ## Change Calendar and Time Labels
 
@@ -45,7 +45,7 @@ Customize the date picker and time selection text to match your brand.
 
 ![Widget showing the updated calendar label "Select a Date" instead of the default text](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-16-at-81546_1trw0b7.png)
 
-## Modify Store Pickup Labels
+## Modify Delivery Method Names
 
 Rename delivery methods to match your business terminology.
 
@@ -87,19 +87,26 @@ Add targeted instructions for each delivery method.
 
 ![Widget footer showing store pickup-specific instructions for customers](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-16-at-82951_ulx5fw.png)
 
+## Additional Customization Options
+
+You can also customize error messages, order confirmation text, and postal code validation messages using the same editing interface. These fields follow the same formatting rules and customization process.
+
 ## Preview Your Changes
 
-Always preview your widget after saving changes to ensure proper display.
+Always preview your widget after saving changes to ensure proper display and formatting.
 
 1. Click **Save** to apply your changes
 2. Click **Widget Preview** to view the updated widget
+3. Test the widget to ensure all customizations work as expected
 
 ![Settings page showing the Widget Preview option for testing changes](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
+
+**Tip:** If you encounter display issues, check that your HTML formatting is properly closed and doesn't contain unsupported tags.
 
 That's it! Your widget now displays custom text that matches your brand.
 
 ## Related Articles
 
-- [How to customize the widget look](https://help.birdchime.com/en-us/article/how-to-customize-the-widget-look-1t5c07x/)
-- [Manual widget placement](https://help.birdchime.com/en-us/article/manual-widget-placement-1iq0zmb/)
+- [How to Customize the Widget Look](https://help.birdchime.com/en-us/article/how-to-customize-the-widget-look-1t5c07x/)
+- [Manual Widget Placement](https://help.birdchime.com/en-us/article/manual-widget-placement-1iq0zmb/)
 - [How to Enable Bird Pickup and Delivery Date Widget in Your Shopify Theme](https://help.birdchime.com/en-us/article/how-to-enable-bird-pickup-and-delivery-date-widget-in-your-shopify-theme-450cbp/)

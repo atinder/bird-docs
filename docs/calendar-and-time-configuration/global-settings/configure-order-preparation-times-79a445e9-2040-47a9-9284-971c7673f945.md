@@ -13,6 +13,8 @@ description: "Learn how to set up order preparation times to control when custom
 
 Order preparation times control when customers can select delivery slots. They align with your store's processing capabilities. This prevents overbooking and manages customer expectations effectively.
 
+${frame}[Demonstrates how to navigate to and configure order preparation time settings in the Bird app dashboard](https://www.youtube.com/embed/3hXp2jyI-eY)
+
 ## Access Preparation Time Settings
 
 To configure your preparation time settings, follow the steps below based on your store setup:
@@ -21,11 +23,9 @@ To configure your preparation time settings, follow the steps below based on you
 
 - If you have selected **"I have different schedule for different store locations"**, navigate to **Bird App Settings > Configure Locations > Select a Location**, then access the delivery method settings for that specific location.
 
-${frame}[Demonstrates how to navigate to and configure order preparation time settings in the Bird app dashboard](https://www.youtube.com/embed/3hXp2jyI-eY)
-
 ## Enable Preparation Time Feature
 
-1. Toggle **Enable Preparation Time** to activate this feature
+1. Toggle **Enable Preparation Time** to activate the feature
 
 ![Shows the preparation time toggle switch in the Bird app settings interface](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-071225_1r94amt.png)
 
@@ -81,13 +81,13 @@ Cut-off time determines when your store stops accepting new orders each day.
 
 **After Cut-off Time (6:00 PM):**
 - Lead time: 2 days
-- Customers can only select slots starting two days from then (e.g., if ordering Monday after 6:00 PM, the earliest available slot is Wednesday).
+- Customers can only select slots starting two days from then (e.g., if ordering Sunday after 6:00 PM, the earliest available slot is Tuesday).
 
 ![Illustrates the cut-off time configuration with before/after lead time settings](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-15502_5afvyy.png)
 
 ### Cut-Off Time Rules
 
-**Set lead time after cut-off longer than before cut-off.**
+**Set the lead time after cut-off to be longer than before cut-off.**
 
 This ensures you have enough processing time for orders placed after closing.
 
@@ -98,7 +98,7 @@ This ensures you have enough processing time for orders placed after closing.
 **Why this works:**
 Orders placed after closing need extra time since your operations have ended for the day.
 
-**Important:** Configure preparation times for all 7 days when using "Customize by Day" option.
+**Important:** Configure preparation times for all 7 days when using the "Customize by Day" option.
 
 ![Shows the complete preparation time configuration with all settings applied](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-15654_199eqrj.png)
 
