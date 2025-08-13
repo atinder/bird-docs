@@ -43,20 +43,16 @@ Choose your preferred method to access the order confirmation email template:
 **Tip:** Before editing, copy your current template code to a safe place. If needed, use Shopify’s **Restore to Default** button to revert.
 
 ```liquid
-{% 
-  ###################################
-  # Customize these translations for your store language
-  ###################################
-%}
+{% ################################### %}
+{% Customize these translations for your store language %}
+{% ################################### %}
 
 {% assign translated_method = "Delivery,Pick Up,Shipping"  | split: "," %}
 {% assign translated_days = "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday"  | split: "," %}
 
-{% 
-  ###################################
-  # Don't modify the code below
-  ###################################
-%}
+{% ################################### %}
+{% # Don't modify the code below %}
+{% ################################### %}
   
   {% assign keyValuePairs = nil %}
   {% assign Bird_flag = true %}
@@ -116,11 +112,9 @@ Choose your preferred method to access the order confirmation email template:
   {% assign Bird_Time = order.attributes['Translated Delivery Time'] %} 
 {% endif %}
 
-{% 
-  ###################################
-  # Customize the display format below
-  ###################################
-%}
+{% ################################### %}
+{% # Customize the display format below %}
+{% ################################### %}
 
 {% if Bird_Method %}
   <table class="container">
