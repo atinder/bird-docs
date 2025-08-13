@@ -1,59 +1,122 @@
 ---
 id: 052280d5-d990-46f8-9731-10c28b87d988
-title: "Configure Local Delivery Rates based on Postal Code"
+title: "Set Up Postal Code-Based Local Delivery Rates"
 category: rates
 section: via-bird-app
 slug: configure-local-delivery-rates-based-on-postal-code
 crisp_updated_at: 1750741944000
 crisp_url: https://help.birdchime.com/en-us/article/configure-local-delivery-rates-based-on-postal-code-16da0ew/
-description: ""
+description: "Set up different delivery rates for different areas of your city using postal codes with Bird Pickup & Delivery"
 ---
 
-### We will create rates based on postal codes, this is useful when we want to have different delivery rates for different parts of your city.
+**You'll create multiple delivery zones with different rates based on postal codes to optimize your local delivery pricing.**
 
-| Please watch the video tutorial then continue with the article for steps and quick links.
+This setup allows you to charge different rates for nearby versus far-away areas within your city. Each zone can have unique delivery rates, minimum order values, and schedules.
 
-### Video Tutorial:
+${frame}[Step-by-step tutorial showing how to configure postal code-based delivery rates in the Bird app dashboard](https://www.youtube.com/embed/MIVH967eXYk)
 
-${frame}[](https://www.youtube.com/embed/MIVH967eXYk)
-###### Example:
-* Main Store Location ( delivery rate $10)
-* West Zone (Nearby locations delivery rate $20, min order value $50)
-* East Zone (Faraway locations delivery rate $30, min order value $50)
-* Dynamically show delivery rates based on the postal code selected, and configure the minimum order value for the zones, we can also have different schedules for these zones!
+## How Postal Code-Based Rates Work
 
-### Create new zones:
-1. [Birdapp Settings](https://admin.shopify.com/apps/simple-on-time-delivery/settings) >  [I have different schedules for different locations.](https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/)
+**Bird Pickup & Delivery** creates virtual zones within your main store location. Each zone serves specific postal codes with customized rates and requirements.
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/configurelocation_jronww.png)
+**Example Setup:**
+- **Main Store Location:** $10 delivery rate
+- **West Zone (Nearby):** $20 delivery rate, $50 minimum order
+- **East Zone (Far-away):** $30 delivery rate, $50 minimum order
 
-2. **Birdapp Settings > Configure Location > Select Location > Duplicate Location** (Scroll)
+The app automatically displays the correct rate based on the customer's postal code during checkout.
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/duplicate-location_a1vp6a.png)
+## Create Delivery Zones
 
-3. **This duplicate**d location acts like a **subzone **to the Main Location and shares inventory with it, this zone is specific to **Birdapp and doesn't create a new location in Shopify.**
-4. For duplicated location rename it to (East Zone/East Zone/Nearby/Far-away, your choice), add any address, and save.
-5. We have 1 locations and 2 zones. In my case West Zone will have nearby postal codes and the East Zone can have far-away postal codes(we will configure the rates for these zones later).
-6. **Enable Local Delivery > Edit settings > Local Delivery Postal codes > Paste unique postal codes accordingly for both locations**.
+### Step 1: Access Location Settings
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/localdelivery-edit-settings_n55trt.png)
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/addpostalcodes_qgceq2.png)
+1. Go to **Bird App Settings**
+2. Click **[I have different schedules for different locations](https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/)**
 
-7. You will find the minimum order value validation below this.
+![Bird app settings page with location configuration options highlighted](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/configurelocation_jronww.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/minorder_15gtd2p.png)
+### Step 2: Duplicate Your Main Location
 
-### Rates Setup:
-8. [Bird Rates](https://admin.shopify.com/apps/simple-on-time-delivery/rates) > Local Delivery > I have different rates for different locations > Set up the rates for each location.
+1. Click **Configure Location**
+2. Select your main store location
+3. Click **Duplicate Location** (scroll to find this option)
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-03-25-091609_3904dw.png)
+![Shows the duplicate location button in the location configuration interface](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/duplicate-location_a1vp6a.png)
 
-Optional requirements
-* Postal code validation: [If you want to prevent the users from changing the postal code at checkout:](https://help.birdchime.com/en-us/article/how-to-validate-local-delivery-postal-code-in-widget-1fi7kha/#1-if-you-have-different-schedule-for-different-locations-multi-location)
-* **Bird Rates > Validation Settings (scroll) > Revalidate delivery location postal code in checkout**.
+|| **Important:** The duplicated location becomes a subzone that shares inventory with your main location. This zone exists only in Bird Pickup & Delivery and doesn't create a new Shopify location.
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/validatepostalcodecheckout_g32w6v.png)
+### Step 3: Configure Zone Details
 
-Once you are done with the above setup try to test this using different postal codes for rates. 
+1. Rename the duplicated location (e.g., "East Zone," "West Zone," "Nearby," "Far-away")
+2. Add any address for the zone
+3. Click **Save**
 
-|| The app displays the rate based on the zone the postal code entered belonged to. This has no effect on the normal checkout flow of the customer.
+You now have one main location and two zones. Configure nearby postal codes for one zone and far-away postal codes for the other.
+
+### Step 4: Set Postal Codes for Each Zone
+
+1. **Enable Local Delivery** for each zone
+2. Click **Edit Settings**
+3. Go to **Local Delivery Pincodes**
+4. Paste _unique postal codes_ for each zone
+
+![Shows the local delivery settings page with postal code configuration options](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/localdelivery-edit-settings_n55trt.png)
+
+![Shows the postal code input field where merchants can paste their zone-specific postal codes](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/addpostalcodes_qgceq2.png)
+
+### Step 5: Set Minimum Order Values
+
+Configure minimum order value validation for each zone below the postal code settings.
+
+![Shows the minimum order value configuration section](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/minorder_15gtd2p.png)
+
+## Configure Zone-Specific Rates
+
+### Step 6: Set Up Delivery Rates
+
+1. Go to **Bird App → Rates**
+2. Click **Local Delivery**
+3. Select **I have different rates for different store locations**
+4. Configure rates for each zone
+
+![Shows the rates configuration page where merchants can set different delivery rates for each location/zone](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-03-25-091609_3904dw.png)
+
+**That's it!** Your postal code-based delivery rates are now active. Test the setup using different postal codes to verify the correct rates display.
+
+## Optional: Postal Code Validation
+
+**Prevent customers from changing postal codes during checkout** to ensure they receive the correct zone-based rates.
+
+1. Go to **Bird Rates → Validation Settings** (scroll down)
+2. Enable **Revalidate delivery location postal code in checkout**
+
+![Shows the validation settings section with the postal code revalidation option highlighted](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/validatepostalcodecheckout_g32w6v.png)
+
+For detailed postal code validation setup including implementing postal code checker header, see [How to Validate Local Delivery Postal Code in Widget](https://help.birdchime.com/en-us/article/how-to-validate-local-delivery-postal-code-in-widget-1fi7kha/).
+
+## How It Works for Customers
+
+The app automatically displays the appropriate delivery rate based on the postal code entered. This process is seamless and doesn't affect the normal checkout flow.
+
+## FAQs
+
+##### Can I create more than two zones?
+Yes, you can duplicate your main location multiple times to create as many zones as needed for your delivery area based on your subscribed plan.
+
+##### Do the zones share inventory?
+Yes, all zones share inventory with your main store location. The zones are virtual and don't create separate Shopify locations.
+
+##### Can I set different schedules for each zone?
+Absolutely! Each zone can have its own delivery schedule, rates, and minimum order requirements.
+
+##### What happens if a postal code isn't assigned to any zone?
+Customers with unassigned postal codes will see the main location's delivery rate and availability.
+
+For more general questions, see our main [FAQs page](https://help.birdchime.com/en-us/category/faqs-1ygmxau/).
+
+## Related Articles
+
+- [Configure Delivery Rates](https://help.birdchime.com/en-us/article/configure-delivery-rates-1xbrder/)
+- [How to Validate Local Delivery Postal Code in Widget](https://help.birdchime.com/en-us/article/how-to-validate-local-delivery-postal-code-in-widget-1fi7kha/)
+- [I Have Different Schedules for Different Store Locations](https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/)
+- [How to Add a Minimum Order Value Validation Message](https://help.birdchime.com/en-us/article/how-to-add-a-minimum-order-value-validation-message-uihm3w/)
