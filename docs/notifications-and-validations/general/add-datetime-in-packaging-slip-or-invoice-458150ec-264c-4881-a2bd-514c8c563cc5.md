@@ -1,6 +1,6 @@
 ---
 id: 458150ec-264c-4881-a2bd-514c8c563cc5
-title: "Add Date/Time in packaging slip or invoice."
+title: "Add Date and Time to Packaging Slips and Invoices"
 category: notifications-and-validations
 section: general
 slug: add-datetime-in-packaging-slip-or-invoice
@@ -9,119 +9,112 @@ crisp_url: https://help.birdchime.com/en-us/article/add-datetime-in-packaging-sl
 description: "Add Date and Time to packaging slip"
 ---
 
-# Add the selected date/time on the package slip or invoice and get it printed.
+**Learn to display delivery date and time on packaging slips for better tracking.**
 
-## Easy way- (Recommended)
+## Quick Setup Method
 
-1. Go to **Bird App Settings > Order Management**.
+**Enable date/time display on packaging slips in three simple steps.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-11441_1gz7zgy.png)
+### Step 1: Access Order Management Settings
 
-2. Scroll to Order notes and fulfillment and enable the following. This will add the date/time to the order note and order note can then be printed in the packaging slip.
+Navigate to **Bird App Settings > Order Management**.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-12012_16buo4o.png)
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-04-12-at-12425_es9psn.png)
+![Shows the Bird App Settings navigation menu with Order Management highlighted](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-11441_1gz7zgy.png)
 
-3. Optionally, If you want to format it, navigate to **Bird App Settings > Notifications > Customer notifications > Edit packaging slip** .
+### Step 2: Enable Order Notes
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-06-223454_1qz7eny.png)
+Scroll to **Order notes and fulfillment** section. Enable the **"Append date/time to order note"** option to add date/time information to order notes:
 
-Replace the following code
+![Shows the Order notes and fulfillment settings with toggle options for adding date/time to order note](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-12012_16buo4o.png)
+![Demonstrating how enabled append date/time to order note setting looks in order note](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-04-12-at-12425_es9psn.png)
+
+### Step 3: Format Display (Optional)
+
+For better formatting, navigate to **Bird App Settings > Notifications > Customer notifications > Edit packaging slip**.
+
+![Shows the packaging slip editing option under Customer Notifications section in Notifications setting](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-06-223454_1qz7eny.png)
+
+Replace the existing code:
 
 ```html
-{% raw %}
 <p class="notes-details">
    {{ order.note }}
 </p>
-{% endraw %}
 ```
 
-with
+With this improved formatting:
 
 ```html
-{% raw %}
 {% assign note_array = order.note | split: " | " %}
 {% for note_item in note_array %}
    <p class="notes-details">{{ note_item }}</p>
 {% endfor %}
-{% endraw %}
 ```
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-04-12-at-12555_1aqcc6.png)
+![Shows the highlighted code that is to be replaced in the packaging slip code editor](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-04-12-at-12555_1aqcc6.png)
 
-# Translate Date/Time in Invoice and packing slip (Optional)
+**That's it!** Your packaging slips will now display the delivery date and time information clearly.
 
-Translate the date/time on packaging slip and get it printed.
+## Translate Date/Time Labels (Optional)
 
-1. Replace the code you added before following the above steps:
+**Customize the display language for your packaging slips.**
 
-```html
-{% raw %}
-{% assign note_array = order.note | split: " | " %}
-
-{% for note_item in note_array %}
-   <p class="notes-details">{{ note_item }}</p>
-{% endfor %}
-{% endraw %}
-```
-
-with
+Replace the formatting code from Step 3 with this translation-ready version:
 
 ```html
-{% raw %}
 {% assign note_array = order.note | split: " | " %}
-
 {% for note_item in note_array %}
    {% assign translated_item = note_item %}
    {% if note_item contains "Delivery Method" %}
-      {% assign translated_item = note_item | replace: "Delivery Method", "Delivery Method" %}
+      {% assign translated_item = note_item | replace: "Delivery Method", "Bezordmethode" %}
    {% endif %}
    {% if note_item contains "Delivery Date" %}
-      {% assign translated_item = note_item | replace: "Delivery Date", "Delivery Date" %}
+      {% assign translated_item = note_item | replace: "Delivery Date", "Bezorgdatum" %}
    {% endif %}
    {% if note_item contains "Delivery Time" %}
-      {% assign translated_item = note_item | replace: "Delivery Time", "Delivery Time" %}
+      {% assign translated_item = note_item | replace: "Delivery Time", "Aflevertijd" %}
    {% endif %}
    {% if note_item contains "Delivery Location" %}
-      {% assign translated_item = note_item | replace: "Delivery Location", "Delivery Location" %}
+      {% assign translated_item = note_item | replace: "Delivery Location", "bezorglocatie" %}
    {% endif %}
    <p class="notes-details">{{ translated_item }}</p>
 {% endfor %}
-{% endraw %}
 ```
 
-| **Note:** Make sure to replace the words "Delivery Method,"  "Delivery Date,"  "Delivery Time," and "Delivery Location" as shown in the below screenshot with the translated words.
+**Important:** Replace the Dutch translations above with your preferred language terms. For example, for Spanish: "Método de entrega," "Fecha de entrega," "Hora de entrega," "Ubicación de entrega."
 
-The translated code will look like this:
+![Shows the translation code example with custom language terms](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/untitled_1vv51yf.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/untitled_1vv51yf.png)
+Your translated packaging slip will display like this in the case above:
 
-2. The translated fields in the packing slip will look like this (Dutch Language).
+![Shows the final translated packaging slip with Dutch language labels](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_i8g9ar.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_i8g9ar.png)
+## Advanced Method with Order Printer Pro
 
-# Advanced Way - (Optional)
+**Use Order Printer Pro app for enhanced customization options and professional layout.**
 
-You will need [Order printer pro app](https://apps.shopify.com/order-printer-pro) in order to add date and time in the packaging slip
+This method requires the [Order Printer Pro app](https://apps.shopify.com/order-printer-pro) and creates a more professional, layout for your delivery information.
 
-Simply use the following code snippet in the packaging slip template to add the date / time
+Add this code snippet to your packaging slip template:
 
 ```html
-{% raw %}
 {% if attributes["Delivery Date"] %}
-	<div style="border: 1px solid black; padding: 1.5em; margin: 0 0 1.5em 0;"> 
-		<p>Date: {{ attributes["Delivery Date"] }}</p>
-	  {% if attributes["Delivery Time"] %}
-		   <p>Time: {{ attributes["Delivery Time"] }}</p>
-		 {% endif %}
-		{% if attributes["Delivery Method"] %}
-		  <p>Delivery Method: {{ attributes["Delivery Method"] }}</p>
-		{% endif %}
-	</div>
+   <div style="border: 1px solid black; padding: 1.5em; margin: 0 0 1.5em 0;">
+      <p>Date: {{ attributes["Delivery Date"] }}</p>
+      {% if attributes["Delivery Time"] %}
+         <p>Time: {{ attributes["Delivery Time"] }}</p>
+      {% endif %}
+      {% if attributes["Delivery Method"] %}
+         <p>Delivery Method: {{ attributes["Delivery Method"] }}</p>
+      {% endif %}
+   </div>
 {% endif %}
-{% endraw %}
 ```
 
-![Bird App details on Packing Slip](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image-45_wy4ojt.png)
+![Shows the final packaging slip with Bird App delivery details displayed in the highlighted section](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image-45_wy4ojt.png)
 
-|| Related Document: [Enable order confirmation email with slot date and time](https://help.birdchime.com/en-us/article/enable-order-confirmation-email-with-slot-date-and-time-iju71t/)
+## Related Articles
+
+- [Enable order confirmation email with slot date and time](https://help.birdchime.com/en-us/article/enable-order-confirmation-email-with-slot-date-and-time-iju71t/)
+- [Add datetime to draft order invoice](https://help.birdchime.com/en-us/article/add-datetime-to-draft-order-invoice-pmdpbi/)
+- [Set up email branding for professional customer emails](https://help.birdchime.com/en-us/article/set-up-email-branding-for-professional-customer-emails-10v7eid/)

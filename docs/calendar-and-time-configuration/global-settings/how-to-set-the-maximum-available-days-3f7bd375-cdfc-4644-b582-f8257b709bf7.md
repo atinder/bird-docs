@@ -6,25 +6,61 @@ section: global-settings
 slug: how-to-set-the-maximum-available-days
 crisp_updated_at: 1736419656000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-set-the-maximum-available-days-1u2xflh/
-description: ""
+description: "Control how far in advance customers can book delivery or pickup dates by setting maximum available days for each delivery method in your Bird app."
 ---
 
-This setting helps you let your customers configure Maximum days in advance(including order day) they can select date and time while checking out. 
+**You'll limit how far ahead customers can book deliveries and pickups.**
 
-There can be multiple scenarios you can use this setting:
+Maximum Available Days restricts your booking window for each delivery method. Set the total days (including today) customers see when selecting delivery dates. This setting counts **all calendar days**, including weekends and holidays.
 
-1. You just want to limit the number of days in advance you get an order.
-2. You want to support a particular type of delivery method only for a few days. Let’s assume you want to do local delivery for the next 5 days including today then, in that case, you can set the maximum available days. Once you set this number then the customer won't be able to place the order after the 6th day from today for the local delivery.
+## Configure Maximum Available Days
 
-**Note: You need to configure maximum days separately for all delivery methods.**
+Set booking limits for each delivery method independently.
 
-1. Go to Bird App Settings--> Pickup & Delivery/ Configure Locations > Edit Settings
+1. Open **Bird App Settings**
+2. **Choose Your Delivery Method**
+   - Click **Pickup & Delivery** if you have same schedule across your store locations
+   - Click **Configure Locations** for multi-location stores (only appears if you selected "different schedules for different locations")
+   - Click **Shipping** for shipping method settings
+3. Select the delivery method you want to configure
+4. **Set Your Day Limit**
+   - Scroll to the **Blockout Dates** section
+   - Find **Maximum Available Days**
+   - Enter your limit (5 = today + 4 more days, 7 = today + 6 more days, 14 = today + 13 more days)
+   - **Note:** Blocked dates count toward this total
+   - Click **Save**
 
-2. Select the delivery method for which you want to set up the maximum number of available days. Go to **Blockout dates** settings in the app. 
+![Shows the Maximum Available Days field within the Blockout Dates settings where merchants enter the number of days customers can book in advance](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/maxavailday_1fdders.png)
 
-3. Set the number in **Maximum Available Days** as shown below
+5. **Verify Your Settings**
+   - Click **Widget Preview**
+   - Confirm only your specified days appear
+   - Test different dates to ensure limits work correctly
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/maxavailday_1fdders.png)
+You're done. Customers now see only your approved booking window.
 
-|| Related Document:
-|| [Block Shipping / Local Delivery / Pickup using Product availability](https://help.birdchime.com/en-us/article/block-shipping-local-delivery-pickup-using-product-availability-t1zg9b/) – To how to block specific products from being available for certain delivery methods.
+## Customer Experience
+
+Your booking limits create a focused shopping experience.
+
+### Without Day Limits
+- Calendar displays unlimited future dates
+- Customers see months of options
+- Creates booking overwhelm
+
+### With Day Limits
+- Calendar shows only your approved days
+- Future dates beyond your limit disappear
+- Creates focused decision-making
+
+**Example: 7-day limit on Tuesday**
+- Customer sees Tuesday through next Monday
+- Next Tuesday and beyond are hidden
+- Calendar updates automatically each day
+
+## Related Settings
+
+- [Configure Order Preparation Times](https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/) - Set minimum lead times for orders
+- [Configure Availability Settings](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/) - Manage delivery schedules and time slots
+- [How to block dates from calendar](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/) - Remove specific dates from availability
+- [Block Shipping / Local Delivery / Pickup using Product availability](https://help.birdchime.com/en-us/article/block-shipping-local-delivery-pickup-using-product-availability-t1zg9b/) - Control delivery methods by product type

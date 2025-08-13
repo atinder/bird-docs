@@ -1,71 +1,78 @@
 ---
 id: 09719ebc-e308-4231-a7fa-ac64526d3347
-title: "Product Override"
+title: "How to Set Product-Specific Lead Times and Availability"
 category: calendar-and-time-configuration
 section: global-settings
 slug: product-override
 crisp_updated_at: 1750763460000
 crisp_url: https://help.birdchime.com/en-us/article/product-override-g2yfl9/
-description: ""
+description: "Set unique lead times, available dates, and blockout dates for specific products using Product Override in Bird Pickup & Delivery."
 ---
 
-### Setting Different Lead/Available Times for Specific Products
+**Learn how to use Product Override to set custom lead times, available dates, and blockout dates for individual products in Bird Pickup & Delivery.**
 
-By default, the **Preparation Time** setting applies a single lead time to all products (e.g., 1 day). However, if certain products require different lead times, you can use the **Schedule Override** option in the **Product Override** feature.
+${youtube}[Walkthrough of setting up Product Override, including lead time and availability configuration](0gBbvBphOkg)
 
-### Example
+## What is Product Override?
+Product Override lets you apply different preparation times and availability rules to specific products. Use it to manage products that need more or less time to prepare. You can also control when certain products can be ordered.
 
-If a smaller cake takes 1 day to prepare, but a larger cake requires 2 days, you can configure separate lead times for these products using the product override feature.
+## Why Use Product Override?
+- Offer flexible lead times for products with different preparation needs.
+- Control product availability for special dates or limited-time offers.
+- Prevent orders for specific products on certain dates.
 
-Additionally, you can refine availability by:
+## How to Set Up Product Override
 
-* **Blockout Dates**: Prevent orders on certain dates.
-* **Available Dates**: Specify dates when a product can be ordered.
+Follow these steps to configure unique lead times and availability for your products:
 
-${youtube}[](0gBbvBphOkg)
+1. **Open Product Override Settings**
+   - Go to **Bird App Settings** > **Product Override**.
 
-1. Go to Bird App Settings --> Product Override
+![The Bird App navigation menu with Product Override selected](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/product-override-menu-selectio_8u66uj.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/product-override-menu-selectio_8u66uj.png)
+2. **Add a New Override**
+   - Click **Add Override**.
 
-2. Then click on "Add Override"
+![The Add Override button highlighted in the Product Override section](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-02-03-174518_171gcbk.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-02-03-174518_171gcbk.png)
+3. **Choose Applicability**
+   - Choose whether the override applies to all orders (**Global**), a specific **Delivery Method** (**Pickup**, **Delivery**, or **Shipping**), or a specific **Location** (for stores with multiple locations and different schedules).
 
-3. Select Override Applicability such as Global, or particular delivery method or location(for Multi-location)
+4. **Enter Product SKUs or Tags**
+   - Add the **SKUs** or **Tags** for the products you want to override.
 
-4. Enter the product SKUs or Tags
+![The interface for entering product SKUs or tags](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/tagsku_1ddhb54.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/tagsku_1ddhb54.png)
+5. **Set Lead Time**
+   - Choose **Same Lead Time for All Days (Mon to Sun)** or **Customize Lead Time by Day**.
+   - Enter the lead time in **days**, **hours**, or **minutes**.
+   - Optionally, set the **maximum number of days** customers can order in advance.
 
-* Select the option **Same Lead Time for All Days (Mon to Sun)** or **Customize Lead Time by Day** according to your requirements.
+![Lead time configuration options, including per-day customization](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-083621_1itz2la.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-083621_1itz2la.png)
+6. **Configure Product-Based Availability**
+   - Use **Available Dates** to make products orderable only on selected dates.
+   - Use **Blockout Dates** to prevent orders for products on specific dates.
 
-* Set the lead time in days/hours/minutes according to your requirements.
+![Product-based availability settings, showing available and blockout date options](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-083224_rbz3uu.png)
 
-* Set the maximum available days if you want customers to order ahead of time.
+7. **Save and Preview**
+   - Click **Save** to apply your changes.
+   - Click **Widget Preview** to see how the widget looks with your new settings.
 
-5. **Product Based Availability** :
-* **Available Dates** : make the tagged product exclusively available for selected dates.
-* **Blockout Dates** : block the tagged product for selected dates.
+![Widget preview screen showing the updated product availability](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-083224_rbz3uu.png)
-### Previewing the Widget After Saving Changes
+[Screenshot Required: Showing a completed Product Override configuration with multiple SKUs and custom lead times.]
 
-To ensure your widget configurations appear as intended, you can preview the widget after saving your changes. This allows you to verify that all settings are correctly applied.
+**You have successfully set up product-specific lead times and availability. Your changes are now live in the widget.**
 
-**Steps to Preview:**
+## Key Notes and Best Practices
+- You can create multiple overrides for different **SKUs** or **tags**.
+- If a cart contains products with different overrides, the widget shows only the common available dates.
+- If a day is disabled in your main **Availability Settings**, it cannot be enabled through **Product Override**.
 
-1. After making the desired changes to the Override.
-2. Click **Save** to apply the changes.
-3. After saving, click the **Widget** **Preview** option to view the widget with the updated settings.
-
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
-
-| **NOTES:**
-| You can create multiple product overrides for different SKUs and Tags.
-| If two or more override products are added to the cart together, the common calendar dates will be shown based on the combination of the overrides
-| If a day (for example, Monday) is disabled in the main Availability Settings, it cannot be made available via Override settings.
-
-|| Related Articles: [Hide or Show widget for certain products only](https://help.birdchime.com/en-us/article/hide-or-show-widget-for-certain-products-only-14nf3pv/)
+## Related Articles
+- [Hide or Show widget for certain products only](https://help.birdchime.com/en-us/article/hide-or-show-widget-for-certain-products-only-14nf3pv/)
+- [Configure Availability Settings](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)
+- [Configure Order Preparation Times](https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/)
+- [Block Shipping, Local Delivery, Pickup Using Product Availability](https://help.birdchime.com/en-us/article/block-shipping-local-delivery-pickup-using-product-availability-t1zg9b/)

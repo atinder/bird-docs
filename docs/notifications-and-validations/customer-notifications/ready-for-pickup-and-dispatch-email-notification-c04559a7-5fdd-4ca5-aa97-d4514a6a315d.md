@@ -1,57 +1,74 @@
 ---
 id: c04559a7-5fdd-4ca5-aa97-d4514a6a315d
-title: "Ready for pickup and dispatch email notification"
+title: "Send Ready for Pickup & Delivery Notifications to Customers"
 category: notifications-and-validations
 section: customer-notifications
 slug: ready-for-pickup-and-dispatch-email-notification
 crisp_updated_at: 1750741856000
 crisp_url: https://help.birdchime.com/en-us/article/ready-for-pickup-and-dispatch-email-notification-8o1c1h/
-description: ""
+description: "Learn how to automatically notify customers when orders are ready for pickup, dispatched, or delivered using Bird Pickup & Delivery app or Shopify Orders."
 ---
 
-This guide helps Shopify store owners notify customers instantly when orders are ready for pickup, dispatched, picked up, or delivered improving customer experience and reducing order status inquiries. This can be done via Shopify Orders or the Bird App Orders page.
+**You'll learn how to automatically notify customers when their orders are ready for pickup, dispatched, or delivered.**
 
-![Ready for Pickup Email](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1ifwn96.png)
+This feature sends instant email notifications to customers when you update order status. You can send notifications from either the Bird App dashboard or Shopify Orders section.
 
-* [From Bird App](#1-method-1-from-bird-app-dashboard)
-* [From Shopify](#1-method-2-from-shopify-orders-section)
+![Shows a customer email notification indicating their order is ready for pickup](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1ifwn96.png)
 
-# Method 1: From Bird App Dashboard
+## Method 1: Send Notifications from Bird App Dashboard
 
-### Send a Ready for Pickup, Dispatched/Delivery or Picked Up/Delivered email:
+**Use this method to quickly notify customers about order status changes.**
 
-${frame}[](https://www.youtube.com/embed/D-F6busl8MI)
-1. Go to the orders page in your Bird app.
+${frame}[Demonstrates the complete process of marking orders as ready for pickup in the Bird App dashboard](https://www.youtube.com/embed/D-F6busl8MI)
 
-2. Mark a single order or all the orders that are Ready for pickup, dispatch or already picked up/delivered.
+### Steps to Send Notifications from Bird App:
 
-3. Click on Mark as ready for pickup, Mark as dispatched or Mark as picked up/delivered option accordingly.
+1. **Open your Bird app orders page**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-142753_eds53t.png)
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1xuyjdy.png)
+2. **Select the orders you want to update**
+   - Choose single orders or multiple orders
+   - Select orders that are ready for pickup, dispatched, or already picked up/delivered
 
-Once these steps are completed, a notification email will be sent to the customer, informing them about the status of their order.
+3. **Mark the appropriate status**
+   - Click **Mark as ready for pickup** for pickup orders
+   - Click **Mark as dispatched** for delivery orders  
+   - Click **Mark as picked up/delivered** for completed orders
 
-![Order Picked Up Email](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_9w0lpz.png)
+![Shows the Bird App orders page with order selection options and status marking button for ready for pickup](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-142753_eds53t.png)
 
-# Method 2: From Shopify Orders Section
+![Displays the order status marking interface with different action buttons for pickup and delivery](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1xuyjdy.png)
 
-### Send a Ready for Pickup or Dispatch/Delivery email:
+![Shows the customer email notification confirming their order has been picked up successfully](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_9w0lpz.png)
 
-1. Navigate to the Orders section in your Shopify and open the Order.
+## Method 2: Send Notifications from Shopify Orders
 
-2. Click on More Actions and Bird: Mark Ready option.
+**Use this method when working directly in your Shopify admin.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1iwsic1.png)
+### Steps to Send Notifications from Shopify:
 
-3. A popup will appear showing the order and delivery details.
+1. **Navigate to Shopify Orders**
+   - Go to your Shopify admin
+   - Open the specific order you want to update
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_8lxd9.png)
+2. **Access Bird App actions**
+   - Click **More Actions** in the order details
+   - Select **Bird: Mark Ready** option
 
-4. Click the **Mark ready for pickup** or **Mark ready for delivery button** depending on the delivery method.
+![Shows the Shopify order page with the More Actions menu and Bird: Mark Ready option highlighted](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1iwsic1.png)
 
-5. A notification email will be sent to the customers.
+3. **Review order details**
+   - A popup appears showing order and delivery information
+   - Verify the details are correct
 
-### Related Document:
+![Displays the Bird App popup with order details and delivery method information](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_8lxd9.png)
 
-[Create draft orders with date and time](https://help.birdchime.com/en-us/article/create-draft-order-with-date-and-time-1i8tjop/) – This guide details creating draft orders with specified delivery methods and times.
+4. **Click Mark as ready for pickup** for pickup orders.
+
+**Note:** To mark orders as dispatched or picked up/delivered, you must access orders from the Bird App dashboard.
+
+## Related Articles
+
+- [Create draft orders with date and time](https://help.birdchime.com/en-us/article/create-draft-order-with-date-and-time-1i8tjop/) - Set up draft orders with specific delivery times and methods
+- [Enable order confirmation email with slot date and time](https://help.birdchime.com/en-us/article/enable-order-confirmation-email-with-slot-date-and-time-iju71t/) - Configure order confirmation emails with delivery details
+- [Add Date/Time in packaging slip or invoice](https://help.birdchime.com/en-us/article/add-datetime-in-packaging-slip-or-invoice-m9smdk/) - Include delivery information in order invoices
+- [Set up email branding for professional customer emails](https://help.birdchime.com/en-us/article/set-up-email-branding-for-professional-customer-emails-10v7eid/) - Customize your notification email appearance

@@ -6,27 +6,32 @@ section: getting-started-with-scheduling
 slug: i-have-same-schedule-for-all-store-locations
 crisp_updated_at: 1750153219000
 crisp_url: https://help.birdchime.com/en-us/article/i-have-same-schedule-for-all-store-locations-13ukhrg/
-description: ""
+
 ---
 
-Follow this document if all your locations share the same **Delivery** or **Pickup Schedule**. This ensures consistent operations across one or more locations while simplifying schedule management. For unique schedules per location, refer to [I have different schedules for different store locations](https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/) document.
+# I have same schedule for all store locations
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-074117_m9ctr8.png)
+Set up a unified delivery and pickup schedule that applies to all your store locations. This ensures consistent operations across one or more locations while simplifying schedule management.
 
-## Configure Local Delivery / Store Pickup
+![Screenshot showing the Settings view with the schedule mode checkboxes.](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-074117_m9ctr8.png)
 
-You can choose to offer Local Delivery or Store Pickup for all your locations. Please follow the steps listed below and refer to screenshot:
+---
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-074401_1n49qgu.png)
+## What This Does
 
-## Get started with your configuration.
+Configure a single schedule that applies to all your store locations, enabling:
+- Unified delivery and pickup times across all locations
+- Simplified schedule management
+- Consistent customer experience
+- Streamlined operations for multi-location businesses
 
-1. [Configure Availability](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)
-Enable Local Delivery and Store pickup 
+---
 
-2. [Preparation Time](/en-us/article/configure-order-preparation-times-1b43s8n/)
-This helps you configure the time required to prepare orders and configure day-wise cut-off time. 
+## When to Use This Option
 
-3. [Blockout Dates](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)
-Dates that you want to disable from the calendar so that customers can not select them. 
+Choose this option when:
+- All your locations operate on identical schedules
+- You want to manage one schedule for all locations
+- You have a single-location store
+- You prefer simplified schedule administration
 
