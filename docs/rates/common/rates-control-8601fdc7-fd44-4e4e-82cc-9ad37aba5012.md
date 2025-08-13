@@ -1,43 +1,103 @@
 ---
 id: 8601fdc7-fd44-4e4e-82cc-9ad37aba5012
-title: "Rates control"
+title: "How to Control Pickup, Delivery & Shipping Rates"
 category: rates
 section: common
 slug: rates-control
 crisp_updated_at: 1742900735000
 crisp_url: https://help.birdchime.com/en-us/article/rates-control-jjcrrp/
-description: ""
+description: "Learn how to control pickup, delivery, and shipping rates through Bird app or Shopify admin with advanced multi-condition options."
 ---
 
-Rates for **Pickup, Delivery, and Shipping** can be managed either through the **Bird app** or **Shopify**. Once the **Rates Setup** is completed, Delivery and Shipping rates can be configured in the Bird app or controlled via Shopify.
+**You'll learn how to configure and control rates for pickup, delivery, and shipping through either the Bird app or Shopify admin.**
 
- ${frame}[Bird Rates Guide](https://www.loom.com/embed/0e0c0b29163840cbb2211a55ae76e487?sid=9d1ee5b3-502e-4ba6-93c4-d91f53d1f9be)
-### What is the difference between both options?
+## Overview
 
-| Rates based on | From Shopify Admin | From Bird App |
-| ---- |
-| Price | Yes | Yes |
-| Weight | Yes | Yes |
-| Product | Yes | Yes |
-| Day of week | No | **Yes** |
-| Time of day | No | **Yes** |
-| Urgency | No | **Yes** |
-| Date | No | **Yes** |
-| Multiple Conditions | No | **Yes** |
-**Examples of multi-condition rates via the Bird App**
+**Bird Pickup & Delivery** offers two rate control methods: **Bird app** or **Shopify admin**. Choose based on your complexity needs and desired features.
 
-* If you want to set rates based on cart total and day of pickup, delivery, or shipping.
-* If you're going to set rates based on cart total and time of pickup, delivery, or shipping.
-* If you're going to set rates based on cart total and the weight of pickup, delivery, or shipping.
-* If you're going to set rates based on the cart total and the product of pickup, delivery, or shipping.
+${frame}[Comprehensive guide demonstrating how to set up and control rates in the Bird app with advanced configuration options](https://www.loom.com/embed/0e0c0b29163840cbb2211a55ae76e487?sid=9d1ee5b3-502e-4ba6-93c4-d91f53d1f9be)
 
-|| Note: If the Rates Setup is not completed in the app, rates will be automatically managed via Shopify.
+## Rate Control Options Comparison
 
-### For a detailed rate setup, refer to the following guides:
+| Rate Factor | Shopify Admin | Bird App |
+|-------------|---------------|----------|
+| Price | ✅ Yes | ✅ Yes |
+| Weight | ✅ Yes | ✅ Yes |
+| Product | ✅ Yes | ✅ Yes |
+| Day of week | ❌ No | ✅ **Yes** |
+| Time of day | ❌ No | ✅ **Yes** |
+| Urgency | ❌ No | ✅ **Yes** |
+| Date | ❌ No | ✅ **Yes** |
+| Multiple Conditions | ❌ No | ✅ **Yes** |
 
-1. [Configure pickup rates](https://help.birdchime.com/en-us/article/configure-pickup-rates-1n7gumb/)
-2. [Configure delivery rates](https://help.birdchime.com/en-us/article/configure-delivery-rates-1xbrder/)
-3. [Configure shipping rates](https://help.birdchime.com/en-us/article/configure-shipping-rates-llsy16/)
-4. [Common reasons for rate errors on the checkout page](https://help.birdchime.com/en-us/article/common-reasons-for-rate-errors-on-checkout-page-1iekz2h/)
+## When to Use Bird App Rate Control
 
-Follow [Shopify's help document](https://help.shopify.com/en/manual/shipping/understanding-shipping/shipping-rates) to add the rates in the shipping & delivery section of Shopify admin.
+**Use Bird app rates when you need advanced multi-condition pricing. Examples include:**
+
+- **Cart total + day of week** combinations
+- **Cart total + time of day** variations  
+- **Cart total + weight** calculations
+- **Cart total + specific products** pricing
+
+**Bird app rates provide maximum flexibility for complex pricing scenarios.**
+
+## When to Use Shopify Rate Control
+
+**Use Shopify rates for simple, standard pricing based on:**
+
+- Basic price tiers
+- Weight-based calculations
+- Product-specific rates
+
+**Shopify rates work well for straightforward pricing structures.**
+
+## Setup Requirements
+
+**Complete the Rates Setup in your Bird app first.** Rates automatically default to Shopify control if setup remains incomplete.
+
+## How to Configure Rates
+
+### Bird App Rate Configuration
+
+1. **Navigate to your Bird app dashboard**
+2. **Select the Rates section**
+3. **Follow the Rates setup wizard**
+    - **Choose your delivery method** (pickup, delivery, or shipping)
+    - **Configure your rate conditions** and pricing
+5. **Save your settings**
+
+**That's it! Your rates are now active.**
+
+### Shopify Rate Configuration
+
+1. **Go to Shopify admin → Settings → Shipping and delivery**
+2. **Select your shipping zones**
+3. **Add your rate conditions** and pricing
+4. **Save your configuration**
+
+**Your Shopify rates are now configured.**
+
+## Related Guides
+
+- [Configure pickup rates](https://help.birdchime.com/en-us/article/configure-pickup-rates-1n7gumb/)
+- [Configure delivery rates](https://help.birdchime.com/en-us/article/configure-delivery-rates-1xbrder/)
+- [Configure shipping rates](https://help.birdchime.com/en-us/article/configure-shipping-rates-llsy16/)
+- [Common reasons for rate errors on checkout page](https://help.birdchime.com/en-us/article/common-reasons-for-rate-errors-on-checkout-page-1iekz2h/)
+
+**For Shopify-specific rate setup, see [Shopify's shipping rates documentation](https://help.shopify.com/en/manual/shipping/understanding-shipping/shipping-rates).**
+
+## FAQs
+
+##### Can I switch between Bird app and Shopify rate control?
+Yes, you can switch between control methods. Complete the Rates Setup in Bird app to enable Bird app control, or leave it incomplete to use Shopify rates.
+
+##### Which rate control method is better for my store?
+Use Bird app rates for complex multi-condition pricing (day/time/urgency factors). Use Shopify rates for simple price/weight/product-based pricing.
+
+##### Do I need to configure rates in both systems?
+No, choose one control method. Bird app rates take precedence when Rates Setup is complete. Otherwise, Shopify rates apply automatically.
+
+##### Can I use different control methods for different delivery types?
+Currently, [you must use Bird Rates if you use pickup with other delivery methods](https://help.birdchime.com/en-us/article/why-do-you-need-to-disable-shopify-store-pickup-when-using-birdapp-store-pickup-7a6noz/). For other delivery types, you can use either Bird app or Shopify rate setup.
+
+For more general questions, see our main [FAQs page](https://help.birdchime.com/en-us/category/faqs-1ygmxau/).
