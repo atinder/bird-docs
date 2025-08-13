@@ -6,114 +6,111 @@ section: getting-started-with-scheduling
 slug: i-have-different-schedule-for-different-store-locations
 crisp_updated_at: 1750153171000
 crisp_url: https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/
-description: "Configure unique delivery and pickup schedules for each store location in Bird App. Step-by-step setup guide for multi-location stores."
+
 ---
 
 # I have different schedule for different store locations
 
-Use this guide if your locations operate on different days or hours. This allows you to set unique schedules for each store location, ensuring accurate availability and delivery times. For unified scheduling across all locations, see [I have same schedule for all store locations](https://help.birdchime.com/en-us/article/i-have-same-schedule-for-all-store-locations-13ukhrg/).
+Set up unique delivery, pickup, and shipping schedules for each of your store locations. This allows you to tailor operating hours, preparation times, and product availability for every location in your business.
 
-![Screenshot showing the Settings view with the schedule mode checkboxes](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-072952_4c3tzq.png)
 
----
 
-## Step 1: Choose Your Schedule Mode
+## When to Use This Option
 
-1. In the Bird App dashboard, go to **Settings**.
-2. At the top of the Settings page, select **I have different schedule for different store locations** by clicking the corresponding checkbox. (See screenshot above.)
-3. Click on **Configure locations** to begin setup.
+Choose this option if:
+- Your locations have different operating hours or holidays
+- You want to offer different delivery/pickup methods at each location
+- You need to set up location-specific preparation times, blockout dates, or product availability
 
-![Screenshot showing the Configure locations button](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-073119_1kmhqj3.png)
-
-*Once selected, you'll be able to configure unique schedules for each store location.*
+For a unified schedule, see [I have same schedule for all store locations](https://help.birdchime.com/en-us/article/i-have-same-schedule-for-all-store-locations-13ukhrg/).
 
 ---
 
-## Step 2: Configure a Specific Location
+### Step 1: Select Schedule Mode
 
-**Note:** The list of locations shown here is based on the locations you have created in Shopify. To add a new location, you must first create it in your Shopify admin—new locations cannot be created directly in the Bird App.
+1. Go to **Settings** in Bird App
+2. Select **I have different schedule for different store locations**
 
-1. From the locations list, click on the store location you want to configure.
-2. You can enable either **Local Delivery**, **Store Pickup**, or both for this location.
-3. Click **Edit Settings** next to each enabled method to configure its specific settings.
-
-**Additional options:**  
-- You can **delete** or **duplicate** a location in Bird App.  
-  - Deleting only removes it from Bird App; it remains in Shopify.  
-  - Duplicating creates a Bird App–only copy (not in Shopify) with the **same inventory as the original**. This is useful for advanced setups like postal code–based delivery zones.  
-    See: [Configure Local Delivery Rates Based on Postal Code](https://help.birdchime.com/en-us/article/configure-local-delivery-rates-based-on-postal-code-16da0ew/).
-
-![Screenshot showing the location selection screen](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-073244_1ut1y3u.png)
-
-![Screenshot showing delivery method toggles and edit settings button](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-073445_1b95oox.png)
-
-*You should now see your selected options enabled for this specific location.*
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-072952_4c3tzq.png)
 
 ---
 
-## Step 3: Configure Availability Settings
+### Step 2: Configure Locations
 
-1. In the **Availability Configuration** screen, click **Edit Settings** for Local Delivery or Pickup to set your open hours and rules.
-2. You can set your availability for all days or customize it day by day.
+1. Click **Configure locations** under General
+2. You’ll see a list of all your store locations
+3. Click on a location to manage its schedule, methods, and settings
 
-[Learn how to configure your open hours and availability settings →](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)
-
-*This article is part of the Calendar and Time Configurations section.*
-
-*Now that you've enabled and configured your schedule, customers will see location-specific delivery and pickup options.*
-
-### Local Delivery Postal Codes (Only in Different Schedule Mode)
-
-When you select "I have different schedule for different store locations," an additional **Local delivery pincodes** (postal codes) section appears in the Local Delivery settings. This allows you to:
-
-- Restrict local delivery to specific postal codes for each location
-- Set different delivery areas and rates per location
-
-
-![Screenshot showing Local Delivery Postal Codes configuration](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/localdelivery-edit-settings_n55trt.png)
-
-*This feature is only available when using different schedules for different locations, as it allows you to define specific delivery areas for each store.*
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-073119_1kmhqj3.png)
 
 ---
 
-## Step 4: Set Schedule Details for That Location
+### Step 3: Enable Delivery Methods per Location
 
-For each enabled delivery method, configure these settings:
+1. For each location, enable **Local Delivery** and/or **Store Pickup** as needed
+2. You can enable or disable methods independently for each location
+3. Click **Edit Settings** to configure the schedule for each method
 
-- **Preparation Time & Cut-off Time:**  
-  Set how much time you need to prepare orders and the cut-off time for this location. The cut-off time determines how late in the day customers can place orders for upcoming pickup or delivery dates. Orders placed after the cut-off time will be scheduled for a later date, based on your store's rules. You can set a single value for all days or customize it for each day of the week.  
-  [Learn how to configure Preparation and Cut-off Times →](https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/)
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-073244_1ut1y3u.png)
 
-- **Blockout Dates:**  
-  Mark specific dates as unavailable for pickup or delivery at this location.  
-  [Learn how to block dates →](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)
 
-- **Product Availability:**  
-  Limit availability for certain products for pickup or delivery at this location, based on your business needs. More details and options are available in the linked article.  
-  [Learn about Product Availability →](https://help.birdchime.com/en-us/article/block-shipping-local-delivery-pickup-using-applicable-products-1fzgo08/)
 
-*All these settings are specific to the selected location. You'll need to configure them separately for each location.*
+![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-073445_1b95oox.png)
+
+## Get started with your configuration.
+
+
+
+
+Configure these essential settings for each location:
+
+**1. [Configure Availability](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)**
+- Set location-specific operating hours and time slots for delivery, pickup, and shipping
+
+**2. [Preparation Time & Cut-off Time](https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/)**
+- Set lead times and daily cut-off times for each location
+
+**3. [Blockout Dates](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)**
+- Mark holidays or unavailable dates for each location
+
+**4. [Product Availability](https://help.birdchime.com/en-us/article/block-shipping-local-delivery-pickup-using-applicable-products-1fzgo08/)**
+- Include or exclude specific products for each delivery method and location
 
 ---
 
-## Navigation Tips
+## Verification Checklist
 
-- Each location's availability, preparation time, and blockout date settings are managed independently.
-- If you ever need to switch to unified scheduling for all locations, you can do so at any time from the Settings page.
-- Remember that postal code configuration is only available when using different schedules for different locations.
+✅ Different schedule mode selected  
+✅ All locations reviewed and configured  
+✅ Delivery/pickup/shipping methods enabled per location  
+✅ Availability, preparation, and blockout dates set  
+✅ Product availability rules applied  
 
 ---
 
-## FAQ
+## Frequently Asked Questions
 
-**Q: Can I offer delivery in some locations but not all?**  
-*A: Yes. Simply enable Local Delivery only for the locations where you want to offer delivery services.*
+**Q: Can I switch to same schedule mode later?**
+A: Yes. You can toggle to "I have same schedule for all store locations" at any time in Settings.
 
-**Q: Do I need to set up pickup and delivery separately for each store?**  
-*A: Yes. For each enabled method (pickup or delivery), you'll need to configure separate settings per location to ensure accurate scheduling and availability.*
+**Q: Do I need to configure each location separately?**
+A: Yes. Each location requires individual configuration for delivery methods, schedules, and settings.
 
-**Q: Can I copy settings from one location to another?**  
-*A: Currently, each location's settings need to be configured individually to ensure proper setup for your specific business needs.*
+**Q: Can I set different products for delivery or pickup at each location?**
+A: Yes. Use product availability to include or exclude products for each method and location.
 
-**Q: How do I set different delivery rates for different postal codes?**  
-*A: When using different schedules for different locations, you can configure unique delivery rates for each postal code area. [Learn more about configuring delivery rates →](https://help.birdchime.com/en-us/article/configure-local-delivery-rates-based-on-postal-code-16da0ew/)*
+**Q: How do I set up notifications for each location?**
+A: Add internal email addresses in the location settings to receive order notifications for that location.
+
+---
+
+## Related Articles
+
+- [I have same schedule for all store locations](https://help.birdchime.com/en-us/article/i-have-same-schedule-for-all-store-locations-13ukhrg/) - Unified schedule setup
+- [Enable Bird App Widget in Shopify Theme](/en-us/article/enable-the-app-in-your-theme-450cbp/) - Install the widget after setup
+- [Place a Test Order](/en-us/article/place-a-test-order-13fhz0a/) - Verify your configuration
+- [Bird App Order Management](https://help.birdchime.com/en-us/category/order-management-1l0qumf/) - Manage orders across locations
+
+---
+
+## Keywords
