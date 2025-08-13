@@ -11,15 +11,21 @@ description: "Unlock advanced Shopify delivery & pickup rates with Bird App. Cus
 
 ### The 2-Minute Fix: Just Turn On Bird App Rates
 
-To unlock advanced rate conditions, enable [Bird App rates](https://help.birdchime.com/en-us/article/rates-control-jjcrrp/). This powerful feature lets you customize rates by time, date, or ZIP code. It configures your store's delivery and pickup options in minutes.
+To unlock advanced rate conditions, enable [Bird App rates](https://help.birdchime.com/en-us/article/rates-control-jjcrrp/). Navigate to **Bird App Settings > Rates** in your dashboard to access this feature. This powerful feature lets you customize rates by time, date, or ZIP code. It configures your store's delivery and pickup options in minutes.
 
 | **See the result first:** Visit our [demo store](https://demo-store-pickup-order-date.myshopify.com/cart/add?id=43043081748692&quantity=1) (Password: `birdchime`). Your store can match this advanced checkout experience by enabling Bird App rates.
 
----
+### How to Verify It Worked
+
+After enabling Bird App rates, test these checkpoints to confirm the setup is working:
+
+1. **Add a product to cart** and verify the Bird widget appears with date/time selection
+2. **Complete a test order** and check that only one pickup option appears (not duplicate choices)
+3. **Review your checkout page** to ensure delivery rates display correctly without errors
 
 ### Troubleshooting Rare Issues
 
-If your checkout doesn't match our demo, review these rare cases. **Enabling Bird App rates prevents these issues automatically for most stores**.
+If you see duplicate pickup options, missing delivery rates, or checkout errors, review these rare cases. **Enabling Bird App rates prevents these issues automatically for most stores**.
 
 #### Are you forced to choose store pickup twice (on the cart and at checkout)?
 

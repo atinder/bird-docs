@@ -1,41 +1,64 @@
 ---
 id: 06463782-12e0-48e3-8ad3-bcb9992627d7
-title: "How to Sort and Filter orders in the Bird App"
+title: "How to Sort and Filter Orders in the Bird App"
 category: order-management
 section: general
 slug: how-to-sort-and-filter-orders-in-the-bird-app
 crisp_updated_at: 1747937134000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-sort-and-filter-orders-in-the-bird-app-18rou3t/
-description: ""
+description: "Learn how to efficiently organize and find orders in your Bird Pickup & Delivery dashboard using sorting and filtering options."
 ---
 
-## Sorting and Filtering Orders in the Bird App
+**Organize your orders efficiently using multiple sorting and filtering options in the Bird Pickup & Delivery dashboard.**
 
-Bird Pickup & Delivery app lets you quickly organize orders in your dashboard using multiple sort and filter options:
+The Bird App provides powerful order management tools. Sort by delivery date or creation date. Apply multiple filters simultaneously.
 
-1. **Delivery Date:** Based on upcoming Delivery Dates.
+**Default View:** Orders display in creation date order (newest first) by default.
 
-**1:** In the Bird App, go to **Orders** and select **Sort by Delivery Date** as shown below.
+## Sort Orders by Delivery Date
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-53_14k3sc5.png)
+**Find orders for specific delivery dates or date ranges. Use this for fulfillment planning and delivery scheduling.**
 
-**2:** Click on Date Picker, you can check the orders for a single day or multiple days by selecting the Single Date or Date range option, respectively.
+1. Navigate to **Orders** in your Bird App dashboard
+2. Select **Sort by Delivery Date** from the sorting options
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-55_1pdcayk.png)
+![Shows the Orders page with the "Sort by Delivery Date" option highlighted in the sorting dropdown menu](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-53_14k3sc5.png)
 
-**3:** The Orders with the selected Delivery Date(or date range) will be visible as shown below.
+3. Click the **Date Picker** to select your desired date range
+4. Choose either:
+   - **Single Date** for orders on one specific day
+   - **Date Range** for orders across multiple days
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-54_xwlhu.png)
+![Displays the date picker interface with options for single date or date range selection](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-55_1pdcayk.png)
 
-2. **Order Creation Date:** Sort by when the order was created.
+5. View your filtered orders for the selected date(s)
 
-**1:** In **Orders**, select **Sort by** and choose **Created At** as shown below.
+![Shows the filtered order list displaying only orders for the selected delivery date](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-54_xwlhu.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-56_19mryh8.png)
-The orders will be sorted in their created order (The most recent order will be on top).
+## Sort Orders by Creation Date
 
-3. **Additional Filters: ** Apart from the above sorting and filtering, the orders can be further filtered based on the **Delivery Method**, **Location,** and **Order Status,** and multiple filters can be applied simultaneously.
+**View orders in chronological order based on when they were placed. Use this to see recent orders or track order volume over time.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-57_yua4im.png)
+1. Go to **Orders** in your Bird App
+2. Click **Sort by** and select **Created At**
 
-Related Document: [How to filter orders in Shopify - By Delivery Date, Delivery Method](/en-us/article/how-to-filter-orders-in-shopify-by-delivery-date-delivery-method-1x0uebf/)
+![Shows the sorting dropdown with "Created At" option selected to sort orders by creation date](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-56_19mryh8.png)
+
+3. Orders will display with the most recent orders at the top
+
+## Apply Additional Filters
+
+**Combine multiple filters to narrow down your order search. Use these filters simultaneously with sorting options for precise order management.**
+
+Use these filters simultaneously with sorting options:
+
+- **Delivery Method:** Filter by pickup, local delivery, or shipping
+- **Location:** Filter by specific store locations
+- **Order Status:** Filter by pending, confirmed, or completed orders
+
+![Shows the additional filter options including delivery method, location, and order status](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/image-57_yua4im.png)
+
+## Related Articles
+
+- [How to filter orders in Shopify by delivery date and delivery method](https://help.birdchime.com/en-us/article/how-to-filter-orders-in-shopify-by-delivery-date-delivery-method-1x0uebf/)
+- [Setting up delivery date notifications](https://help.birdchime.com/en-us/article/set-up-email-branding-for-professional-customer-emails-10v7eid/)

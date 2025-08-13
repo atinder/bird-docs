@@ -1,84 +1,118 @@
 ---
 id: 79a445e9-2040-47a9-9284-971c7673f945
-title: "Configure Order Preparation Times"
+title: "How to Configure Order Preparation Time"
 category: calendar-and-time-configuration
 section: global-settings
 slug: configure-order-preparation-times
 crisp_updated_at: 1750741903000
 crisp_url: https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/
-description: ""
+description: "Learn how to set up order preparation times to control when customers can select delivery slots based on your store's processing capabilities."
 ---
 
-This guide helps you set up and customize order preparation times, ensuring customers can only select delivery slots based on your store’s availability.
+**Configure order preparation times to control when customers can select delivery slots based on your store's processing schedule.**
 
-1. **Navigate** to **Bird Settings > Pickup & Delivery** / **Configure Locations** to access the preparation time settings.
+Order preparation times control when customers can select delivery slots. They align with your store's processing capabilities. This prevents overbooking and manages customer expectations effectively.
 
-${frame}[](https://www.youtube.com/embed/3hXp2jyI-eY)
-2. Toggle the **Enable Preparation Time** option to activate this feature.
+${frame}[Demonstrates how to navigate to and configure order preparation time settings in the Bird app dashboard](https://www.youtube.com/embed/3hXp2jyI-eY)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-071225_1r94amt.png)
+## Access Preparation Time Settings
 
-3. **Setting Preparation Time Options**
+To configure your preparation time settings, follow the steps below based on your store setup:
 
-Choose from the following options:
+- If you manage a single schedule for all locations, go to **Bird App Settings > Pickup & Delivery** and access the delivery method settings.
 
-* **Same Preparation Time for All Days:** Use this if your store’s lead time remains constant throughout the week.
+- If you have selected **"I have different schedule for different store locations"**, navigate to **Bird App Settings > Configure Locations > Select a Location**, then access the delivery method settings for that specific location.
 
-* **Customize Preparation Time by Day:** Use this option if you want to define different preparation times for each day of the week.
+## Enable Preparation Time Feature
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-14152_1s7w0kw.png)
+1. Toggle **Enable Preparation Time** to activate the feature
 
-4. **Setting Lead Time**
+![Shows the preparation time toggle switch in the Bird app settings interface](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-071225_1r94amt.png)
 
-Lead time refers to the minimum time required before an order can be fulfilled. For instance:
+## Choose Preparation Time Configuration
 
-* **Example 1: 4 Hours Lead Time**
+Select one of two options:
 
-If an order is placed at 10:00 AM on Monday, the earliest time slot customers can choose is at 2:00 PM on the same day.
+- **Same Preparation Time for All Days:** Use when your processing time remains consistent throughout the week
+- **Customize Preparation Time by Day:** Use when you need different processing times for specific days
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-15141_rnxdwd.png)
+![Displays the two preparation time configuration options - uniform vs. customized by day](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-14152_1s7w0kw.png)
 
-* **Example 2: 1 Day Lead Time**
+## Set Lead Time
 
-If an order is placed on Monday at 11:00 AM, customers will only see time slots available from Tuesday onwards.
+Lead time is the minimum time required before an order can be fulfilled.
 
-* **Example 3: 2 Days Lead Time**
+### Lead Time Examples
 
-Orders placed on Monday will only allow customers to select slots from Wednesday or later.
+**4 Hours Lead Time:**
+- Order placed at 10:00 AM Monday
+- Earliest available slot: 2:00 PM Monday
 
-5. **Understanding Cut-Off Time**
+**1 Day Lead Time:**
+- Order placed Monday at 11:00 AM
+- Available slots: Tuesday onwards
 
-The cut-off time defines when your store stops accepting new orders on any particular day. Orders placed before the cut-off time can follow a shorter lead time, while orders placed after the cut-off will follow a longer lead time, often extending to the next day.
+**2 Days Lead Time:**
+- Order placed Monday
+- Available slots: Wednesday onwards
 
-In the  example below:
+### Understanding Day Boundaries
 
-* **Before Cut-off Time: 1 Day Lead Time**
+The system respects day boundaries when calculating lead times. This ensures consistent scheduling and prevents orders from rolling over to early morning hours.
 
-Orders placed before 6:00 PM will have a lead time of 1 day, which means the customer can only select next day and beyond from the day of ordering.
+**Example with 4-hour lead time:**
+- Order placed at 2:00 PM Monday → Earliest slot: 6:00 PM Monday
+- Order placed at 7:00 PM Monday → Earliest slot: 11:00 PM Monday
+- Order placed at 11:00 PM Monday → Earliest slot: 12:00 AM Tuesday (next day)
 
-* **After Cut-off Time: 2 Days Lead Time**
+This approach provides predictable scheduling and aligns with typical business hours.
 
-Orders placed after 6:00 PM will switch to a lead time of 2 days, preventing customer from placing an order for next day since you have stopped receiving new orders on that particular day.
+![Shows the lead time configuration interface with time input fields](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-15141_rnxdwd.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-15502_5afvyy.png)
+## Configure Cut-Off Time
 
-This setting allows you to control when your store stops accepting new orders on a particular day
+Cut-off time determines when your store stops accepting new orders each day.
 
-| Ensure you configure preparation times for all 7 days if using the "Customize by Day" option.
-| Make sure the lead time set after the cut-off time is longer than the one set before it. This ensures the cut-off time functions correctly.
+### Cut-Off Time Logic
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-15654_199eqrj.png)
-### Previewing the Widget After Saving Changes
+**Before Cut-off Time (6:00 PM):**
+- Lead time: 1 day
+- Customers can select next-day slots
 
-To ensure your widget configurations appear as intended, you can preview the widget after saving your changes. This allows you to verify that all settings are correctly applied.
+**After Cut-off Time (6:00 PM):**
+- Lead time: 2 days
+- Customers can only select slots starting two days from then (e.g., if ordering Sunday after 6:00 PM, the earliest available slot is Tuesday).
 
-**Steps to Preview:**
+![Illustrates the cut-off time configuration with before/after lead time settings](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-15502_5afvyy.png)
 
-1. Navigate to the **App Settings > Pickup & Delivery/Configure locations/Shipping** 
-2. Make the desired changes to your widget configurations.
-3. Click **Save** to apply the changes.
+### Cut-Off Time Rules
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
-4. After saving, click the **Widget** **Preview** option to view the widget with the updated settings.
+**Set the lead time after cut-off to be longer than before cut-off.**
 
-|| **Related Article:** [Enable Same Day/Next Day Delivery for Specific Products](https://help.birdchime.com/en-us/article/enable-same-daynext-day-delivery-for-specific-products-hfb1hm/)
+This ensures you have enough processing time for orders placed after closing.
+
+**Example:**
+- **Before 6:00 PM cut-off:** 1 day lead time
+- **After 6:00 PM cut-off:** 2 days lead time
+
+**Why this works:**
+Orders placed after closing need extra time since your operations have ended for the day.
+
+**Important:** Configure preparation times for all 7 days when using the "Customize by Day" option.
+
+![Shows the complete preparation time configuration with all settings applied](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-15654_199eqrj.png)
+
+## Preview Your Widget Configuration
+
+**Verify your settings work correctly by previewing the widget.**
+
+Click **Widget Preview** to see your updated configuration on the top right corner in the Bird App. You can use this to simulate any date time you want to check your advanced rules.
+
+![Shows the widget preview option in the settings interface for testing configurations](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
+
+## Related Articles
+
+- [Enable Same Day/Next Day Delivery for Specific Products](https://help.birdchime.com/en-us/article/enable-same-daynext-day-delivery-for-specific-products-hfb1hm/)
+- [How to Block Dates from Calendar](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)
+- [Configure Availability Settings](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)
+- [How to Set a Limit for Orders](https://help.birdchime.com/en-us/article/how-to-set-a-limit-for-orders-1dkllfq/)
