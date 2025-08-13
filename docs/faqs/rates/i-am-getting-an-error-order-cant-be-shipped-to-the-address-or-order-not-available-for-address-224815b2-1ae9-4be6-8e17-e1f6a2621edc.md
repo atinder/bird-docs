@@ -1,6 +1,6 @@
 ---
 id: 224815b2-1ae9-4be6-8e17-e1f6a2621edc
-title: "I am getting an error "Order can’t be shipped to the Address” or “Order not available for address""
+title: "I am getting an error Order can’t be shipped to the Address or Order not available for address"
 category: faqs
 section: rates
 slug: i-am-getting-an-error-order-cant-be-shipped-to-the-address-or-order-not-available-for-address
