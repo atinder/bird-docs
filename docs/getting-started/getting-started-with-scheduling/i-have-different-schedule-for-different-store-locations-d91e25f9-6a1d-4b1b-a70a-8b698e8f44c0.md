@@ -6,9 +6,10 @@ section: getting-started-with-scheduling
 slug: i-have-different-schedule-for-different-store-locations
 crisp_updated_at: 1750153171000
 crisp_url: https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/
+description: "Configure unique delivery and pickup schedules for each store location. Set independent operating hours, preparation times, and product availability to optimize operations and maximize efficiency across your business."
 ---
 
-**Configure unique delivery, pickup, and shipping schedules for each store location to optimize operations and improve customer experience.**
+**Configure unique delivery and pickup schedules for each store location to optimize operations and improve customer experience.**
 
 Set independent operating hours, preparation times, and product availability for every location. This approach gives you complete control over how each store handles customer orders and maximizes efficiency across your business.
 

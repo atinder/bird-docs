@@ -6,7 +6,7 @@ section: getting-started-with-scheduling
 slug: i-have-same-schedule-for-all-store-locations
 crisp_updated_at: 1750153219000
 crisp_url: https://help.birdchime.com/en-us/article/i-have-same-schedule-for-all-store-locations-13ukhrg/
-
+description: "Configure one unified delivery and pickup schedule that applies to all your store locations. Simplify operating hours, preparation times, and product availability across your entire business."
 ---
 
 **Set one delivery and pickup schedule for all locations to simplify operations and ensure consistency.**
