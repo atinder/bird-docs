@@ -1,55 +1,88 @@
 ---
 id: 2e8a7465-de39-4c93-b553-1e3cd0051d77
-title: "How to filter orders in Shopify - By Delivery Date, Delivery Method"
+title: "How to Filter Orders by Delivery Date and Method in Shopify"
 category: order-management
 section: general
 slug: how-to-filter-orders-in-shopify---by-delivery-date-delivery-method
 crisp_updated_at: 1747937102000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-filter-orders-in-shopify-by-delivery-date-delivery-method-1x0uebf/
-description: ""
+description: "Learn how to filter and organize your Shopify orders by delivery date and method using Bird Pickup & Delivery's automatic order tagging system"
 ---
 
-## Filtering Orders in Shopify
+**Filter your orders by delivery dates and methods directly within Shopify admin for efficient organization.**
 
-1. From the Shopify app, go to Orders > All orders. Tap on the search and filter icon. Click on **Add Filter** and select "Tagged With" from the options.
+Bird Pickup & Delivery automatically tags orders with delivery information. Enable **Order Tagging** to unlock powerful filtering capabilities in your Shopify order management system.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/order2_1osqr1v.png)
+## Prerequisites
 
-Add the entire date in the search box of **"Tagged with"** to filter orders based on delivery date.
+Turn on order tagging before filtering:
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/order-tag_12zg7da.png)
+1. Go to **Bird App Settings > Order Management**
+2. Enable **Order Tagging**
 
-Orders for the desired date will be filtered and shown in the box.
+From now on, all new orders will get tags automatically for easy filtering.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/order-list_rhz0u4.png)
+## Filter Orders by Delivery Date
 
-2. Alternatively, From the Shopify app, go to Orders > All orders. Tap on the search and filter icon. Enter the delivery month within the **" "** to filter orders by delivery month in the search box.
+### Method 1: Filter by Specific Date
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/orders1_1stk7an.png)
+1. Navigate to **Orders > All orders** in your Shopify admin
+2. Click the **Search and filter** icon
+3. Select **Add filter** 
+4. Choose **Tagged with** from the dropdown options
 
-### You can filter orders by Delivery Method in Shopify:
+![Shows the Shopify orders interface with the Add Filter dropdown menu open, highlighting the Tagged With option](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/order2_1osqr1v.png)
 
-1. From the Shopify app, go to Orders > All orders. Tap on the search and filter icon. Click on **Add Filter** and select "Delivery Method" from the options.
+5. Select the delivery date tag under **Tagged with**. You can type to search, then select the suggested tag.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/dm_v3z8vf.png)
+![Displays the Tagged with a sample date selected for filtering orders](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/order-tag_12zg7da.png)
 
-Select the Delivery Method of orders for which you want to filter the orders.
+All orders scheduled for that delivery date display immediately.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/dmm_1pkbcr6.png)
+![Shows the filtered order results displaying only orders matching the specified delivery date](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/order-list_rhz0u4.png)
 
-2. Alternatively, From the Shopify app, go to Orders > All orders. Tap on the search and filter icon. Click on **Add Filter** and select "Tagged With" from the options.
+### Method 2: Filter by Delivery Month
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/order2_1osqr1v.png)
+1. Navigate to **Orders > All orders** in your Shopify admin
+2. Click the **Search and filter** icon
+3. In the search box, type the month name (e.g., December or December 2024) and press Enter, or select it when it appears as a suggestion.
 
-Add the Delivery method name in the search box of **"Tagged with"** to filter orders based on Delivery Method.
+![Shows the search box with a month search query entered to filter orders by delivery month](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/orders1_1stk7an.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/pickup_13kaalx.png)
+## Filter Orders by Delivery Method
 
-Orders for the desired delivery method will be filtered and shown in the box.
+### Method 1: Use Delivery Method Filter
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/pickup1_7t78w.png)
+1. Navigate to **Orders > All orders** in your Shopify admin
+2. Click the **Search and filter** icon
+3. Select **Add filter**
+4. Choose **Delivery method** from the dropdown
 
-###### Related Document:
+![Displays the Add Filter menu with the Delivery Method option highlighted for selection](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/dm_v3z8vf.png)
 
-[How to Sort and Filter Orders in the Bird App
-](https://help.birdchime.com/en-us/article/how-to-sort-and-filter-orders-in-the-bird-app-18rou3t/)
+5. Select your delivery method: **Local Delivery**, **Store Pickup**, or **Shipping**
+
+![Shows the delivery method selection dropdown with various delivery options available](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/dmm_1pkbcr6.png)
+
+Orders filter instantly by your selected delivery method.
+
+### Method 2: Use Tagged With Filter
+
+1. Navigate to **Orders > All orders** in your Shopify admin
+2. Click the **Search and filter** icon
+3. Select **Add filter**
+4. Choose **Tagged with** from the dropdown
+
+![Shows the filter dropdown menu with Tagged With option available for selection](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/order2_1osqr1v.png)
+
+5. Select the delivery method tag in **Tagged with** (pickup, delivery, or shipping). You can type to search, then select the suggested tag.
+
+![Displays the Tagged with search field with "pickup" selected as the filter method](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/pickup_13kaalx.png)
+
+All orders using that delivery method display immediately.
+
+![Shows the filtered results displaying only orders that match the specified delivery method](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/pickup1_7t78w.png)
+
+## Related Articles
+
+- [How to Sort and Filter Orders in the Bird App](https://help.birdchime.com/en-us/article/how-to-sort-and-filter-orders-in-the-bird-app-18rou3t/)

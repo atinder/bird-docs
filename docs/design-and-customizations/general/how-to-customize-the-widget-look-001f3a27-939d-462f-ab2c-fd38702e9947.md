@@ -1,87 +1,135 @@
 ---
 id: 001f3a27-939d-462f-ab2c-fd38702e9947
-title: "How to customize the widget look?"
+title: "Complete Guide to Customizing Your Bird Pickup & Delivery Widget Design"
 category: design-and-customizations
 section: general
 slug: how-to-customize-the-widget-look
 crisp_updated_at: 1749544225000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-customize-the-widget-look-1t5c07x/
-description: ""
+description: "Learn how to customize the appearance of your Bird Pickup & Delivery widget to match your store's design and branding."
 ---
 
-1. Navigate to **Bird App Settings > Widget Design** to change the background color, and click on the color palette as shown below.
+**Customize your Bird Pickup & Delivery widget appearance to match your store's design.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/colorofthewidget_157p4d7.png)
+## Access Widget Design Settings
 
-2. Select the day from which you want to start a week, Monday or Sunday, as shown below.
+1. Go to **Shopify Admin**
+2. In the left sidebar, locate **Apps**
+3. Find and click **Bird Pickup & Delivery**
+4. Click **Settings** for the app
+5. Click the **Widget Design** section
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-21-173741_315wpx.png)
+**Note:** Always click **Save** after making changes to apply them.
 
-3. Set the default delivery method as shown below.
+## Basic Widget Customization
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/defaultdeliverymethod_1l3txt.png)
+### Change Widget Background Color
 
-4. If you want to keep the collapsible calendar, keep the checkbox enabled as shown below.
+1. In **Widget Design** settings, locate the background color option
+2. Click the color palette icon next to background color
+3. Select your preferred color from the color picker
+4. Click **Save** to apply changes
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-21-174200_18ztpny.png)
+**Tip:** Use your brand's hex colors (e.g., #FF6B35) or choose from Shopify's color palette. Ensure sufficient contrast for accessibility.
 
-**Result**
+![Widget Design settings page showing the background color picker field](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/colorofthewidget_157p4d7.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/collapsible-calander_16nogfv.png)
+### Set Week Start Day
 
-# What else can you style?
+1. In **Widget Design** settings, locate the week start option
+2. Choose between Monday or Sunday as your week's first day
+3. Click **Save** to apply
 
-1. You can style the **Delivery Method**
+**What this does:** Controls which day appears first in your calendar view. Choose Monday if your business week starts Monday, or Sunday for traditional calendar layout.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-133900_15m64id.png)
+![Week start day dropdown showing Monday and Sunday options](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-21-173741_315wpx.png)
 
-Result: 
+### Configure Default Delivery Method
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_t6ngjm.png)
+1. Find the default delivery method setting in **Widget Design**
+2. Select your preferred default option
+3. Click **Save** to apply
 
-2. You can style the **Calendar**
+**What this does:** Sets which delivery option (shipping, local delivery, or pickup) is pre-selected when customers first see the widget.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_u7fiyh.png)
+![Default delivery method dropdown showing available delivery options](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/defaultdeliverymethod_1l3txt.png)
 
-Result:
+### Enable Collapsible Calendar
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_91o87u.png)
+1. Locate the collapsible calendar checkbox in **Widget Design**
+2. Keep the checkbox enabled for collapsible functionality
+3. Click **Save** to apply
 
-3. You can style the **Input Field**
+**What this does:** Allows customers to expand/collapse the calendar to save space on your cart page. When collapsed, only the date picker shows.
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_136bm4q.png)
+![Collapsible calendar checkbox in widget design settings](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-21-174200_18ztpny.png)
 
-Result:
+![Example of collapsed calendar widget showing the date picker](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/collapsible-calander_16nogfv.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1wh0fzg.png)
+## Advanced Styling Options
 
-4. You can style the **Widget header, footer and error**
+### Customize Delivery Method Appearance
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_tdo7wj.png)
+Style delivery method buttons and text to match your brand colors.
 
-Result:
+![Delivery method styling panel showing button colors, text colors, and border options](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-133900_15m64id.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/headerfootererror_19im1sv.png)
+![Customized delivery method buttons with applied colors](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_t6ngjm.png)
 
-5. You can style the **Pickup location styles**
+### Style Calendar Elements
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_skf2a.png)
+Customize calendar colors, borders, and text color to match your checkout form.
 
-Result:
+![Calendar styling options showing background colors, border colors, and text color pickers](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_u7fiyh.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_46af5k.png)
+![Final customized calendar with applied styling](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_91o87u.png)
 
-**You can enter you own custom CSS**
+### Customize Input Fields
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-134238_1trxnep.png)
-### Previewing the Widget After Saving Changes
+Style date and time input fields to match your form design.
 
-To ensure your widget appear as intended, you can preview the widget after saving your changes. This allows you to verify that all settings are correctly applied.
+![Input field styling options showing background colors, border colors, and text color settings](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_136bm4q.png)
 
-**Steps to Preview:**
+![Customized input fields with applied styling and brand colors](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1wh0fzg.png)
 
-1. After making the desired changes click **Save** to apply the changes.
-2. After saving, click the **Widget** **Preview** option to view the widget with the updated settings.
+### Style Widget Header, Footer, and Error Messages
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
-**Related Document:** [How to change the widget Language & Labels?](https://help.birdchime.com/en-us/article/how-to-change-the-widget-language-labels-11stcld/)
+Customize the widget's header, footer, and error message appearance.
+
+![Header, footer, and error message styling configuration showing color and text options](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_tdo7wj.png)
+
+![Customized header, footer, and error message styling with brand colors](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/headerfootererror_19im1sv.png)
+
+### Customize Pickup Location Styles
+
+Style pickup location elements to match your store's visual identity.
+
+![Pickup location styling options showing background colors, border colors, and text color settings](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_skf2a.png)
+
+![Customized pickup location styling with applied brand design](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_46af5k.png)
+
+## Custom CSS Integration
+
+**Add your own custom CSS for complete design control.**
+
+**Important:** Test custom CSS on a staging environment first. Incorrect CSS can break your widget display or cause layout issues.
+
+Enter custom CSS code to achieve advanced styling that goes beyond our built-in options.
+
+![Custom CSS input field where you can enter your own styling code](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-134238_1trxnep.png)
+
+## Preview and Test Your Customizations
+
+Use the Widget Preview feature to see your changes before they go live on your store.
+
+1. Make your desired design changes
+2. Click **Save** to apply changes
+3. Click **Widget Preview** to view the updated widget
+4. Verify all settings display correctly
+
+![Widget Preview button that shows your customizations before publishing](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
+
+## Related Articles
+
+- [How to change the widget Language & Labels?](https://help.birdchime.com/en-us/article/how-to-change-the-widget-language-labels-11stcld/)
+- [Manual widget placement in themes](https://help.birdchime.com/en-us/article/manual-widget-placement-1iq0zmb/)
