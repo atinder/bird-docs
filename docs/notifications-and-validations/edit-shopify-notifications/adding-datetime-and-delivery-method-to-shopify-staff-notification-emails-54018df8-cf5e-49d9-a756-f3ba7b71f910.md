@@ -6,34 +6,37 @@ section: edit-shopify-notifications
 slug: adding-datetime-and-delivery-method-to-shopify-staff-notification-emails
 crisp_updated_at: 1746159339000
 crisp_url: https://help.birdchime.com/en-us/article/adding-datetime-and-delivery-method-to-shopify-staff-notification-emails-ozlh06/
-description: ""
+description: "Learn how to add delivery date, time, and method information to your Shopify staff notification emails for better order management."
 ---
 
-When a new order is placed, it’s essential that staff members receive an email with all the necessary details, including the customer’s selected slot date, time, and delivery method.
+**You'll learn how to display delivery date, time, and method in your Shopify staff notification emails for complete order visibility.**
 
+When customers place orders with delivery scheduling, your staff needs immediate access to all delivery details. This guide shows you how to modify Shopify's staff notification template to include Bird Pickup & Delivery information.
 
-1. **Access Staff Notification Settings:**
+## Access Staff Notification Settings
 
-* Go to **Shopify Admin → Settings → Notifications → Staff Notifications.**
+**Navigate to your Shopify notification settings to begin customization.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_wmbkha.png)
+1. Go to **Shopify Admin → Settings → Notifications → Staff Notifications**
 
-* Under **New Order**, click on the **Edit Code** button.
+![Shows the Shopify admin navigation path to reach the Staff Notifications section](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_wmbkha.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_qjg7cr.png)
+2. Click **Edit Code**
 
-2. **Modify the New Order Notification Template:**
+![Displays the Edit Code button that allows customization of the new order notification template](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_qjg7cr.png)
 
-* Insert the Bird App’s code snippet for slot date, time, and method into the existing template. Make sure to place the code in a visible section, such as above the order summary table.
+**Alternative:** Navigate via Bird App → Settings → Notifications → Staff notifications → New order notification email.
 
-Below code you can edit as per your store language.
+## Add Delivery Information to Email Template
+
+**Insert the Bird App code snippet to display delivery details in your staff emails.**
+
+Copy and paste this code above your order summary table:
 
 ```html
 {% raw %}
 {% 
-
   ###################################
-
   # Below code you can edit as per your store language
   ###################################
 %}
@@ -139,15 +142,37 @@ Below code you can edit as per your store language.
 {% endraw %}
 ```
 
-We recommend to paste the entire code above the Order Summary table as shown below. You have the right to paste the code at any place.
+**Place the code above your order summary table for optimal visibility.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_i4s4v9.png)
+![Shows where to position the Bird App code snippet in relation to the order summary table in the email template](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_i4s4v9.png)
 
-3. **Save and Test the Template:**
+## Customize for Your Language
 
-* Save your changes and place a test order to ensure that the slot date, time, and method are displayed correctly in the email.
+**Modify the translation arrays to match your store's language.**
 
-![Staff Notification Email with Bird App Details](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_12nnw3u.png)
+Edit these lines in the code:
 
+- `translated_method`: Change "Delivery,Pick Up,Shipping" to your language
+- `translated_days`: Change "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" to your language
 
-**Related Documents: ** [Enable Internal Staff Notifications via BirdApp](https://help.birdchime.com/en-us/article/enable-internal-staff-notifications-via-birdapp-1kp1gtc/?bust=1729251041430)
+## Test Your Configuration
+
+**Verify the delivery information displays correctly in staff emails.**
+
+1. Save your template changes
+2. Place a test order with delivery scheduling
+3. Check the staff notification email
+
+Your staff will now receive emails showing:
+- Delivery method (Delivery, Pick Up, or Shipping)
+- Pickup location (if applicable)
+- Delivery date and time
+- Day of the week
+
+![The final result showing delivery method, date, time, and day information in the staff notification email](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_12nnw3u.png)
+
+## Related Articles
+
+- [Enable Internal Staff Notifications via BirdApp](https://help.birdchime.com/en-us/article/enable-internal-staff-notifications-via-birdapp-1kp1gtc/)
+- [Add Date/Time to Customer Dashboard](https://help.birdchime.com/en-us/article/add-delivery-datetime-in-customer-dashboard-d7g9gd/)
+- [Configure Email Branding](https://help.birdchime.com/en-us/article/set-up-email-branding-for-professional-customer-emails-10v7eid/)
