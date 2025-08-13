@@ -1,38 +1,69 @@
 ---
 id: cc55b09a-1ea9-4f16-9cb9-de75dd16eada
-title: "Display product wise available delivery method in the cart?"
+title: "Display Product-Wise Available Delivery Methods in Cart"
 category: advanced-settings
 section: general
 slug: display-product-wise-available-delivery-method-in-the-cart
 crisp_updated_at: 1730790125000
 crisp_url: https://help.birdchime.com/en-us/article/display-product-wise-available-delivery-method-in-the-cart-h7rzfe/
-description: ""
+description: "Learn how to show available delivery methods for each product directly in your cart to improve customer experience and reduce checkout confusion."
 ---
 
-**End Result : **
+**You'll display available delivery methods for each product in your cart, helping customers make informed decisions before checkout.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/imagejvlw0q_8rmra4.png)
+This feature shows customers which delivery options are available for each product, reducing support questions and improving the shopping experience.
 
-1. Go to the products section, open a product, and enter the delivery method tags for example
+## What You'll Accomplish
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-09-at-85809_1ces4vj.png)
+Your cart will display delivery method indicators like "Pickup Available" or "Local Delivery Available" next to each product, based on the product tags you've configured.
 
-2. Go to the theme customiser. Click on edit code.
+![Cart page showing delivery method indicators next to product](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/imagejvlw0q_8rmra4.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-02-10-at-10417_1hkruva.png)
+## Setup Process
 
-3. A new window will open after clicking on the edit code button as shown below.
+### Step 1: Add Delivery Method Tags to Products
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-02-10-at-11648_yjl28j.png)
+1. Navigate to **Products** in your Shopify admin
+2. Open the product you want to configure
+3. Add delivery method tags in the **Tags** field:
+   - `pick up` for pickup availability
+   - `local delivery` for local delivery availability  
+   - `Courier` for shipping availability
 
-4. Look for the cart page in the search files box. The cart page name will vary in some themes for ex. in some themes you will see that as cart.js or in some cart.liquid.js or cart-template.liquid
+![Product edit page showing tags field with delivery method tags entered](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-09-at-85809_1ces4vj.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-02-14-at-11511_cqyeth.png)
+### Step 2: Access Theme Customizer
 
-5. Now click on the cart template.liquid page then add below snippet code above  or  of cart_details
+1. Go to **Online Store** → **Themes**
+2. Click **•••** on your active theme
+3. Click **Edit code** in the menu that pops up
 
-```javascript
-{% raw %}
+![Theme customizer interface showing ••• button](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-02-10-at-10417_1hkruva.png)
+
+### Step 3: Locate Cart Template
+
+1. The theme editor window will open
+2. Use the **Search files** box to find your cart template
+3. Look for files named:
+   - `cart.liquid`
+   - `cart.js`
+   - `cart-template.liquid`
+   - `cart.liquid.js`
+
+![Theme editor window showing file structure and search functionality](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-02-10-at-11648_yjl28j.png)
+
+![Search results showing cart template files available for editing.](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-02-14-at-11511_cqyeth.png)
+
+### Step 4: Add Delivery Method Code
+
+1. Click on your cart template file
+2. Find the cart details section (varies by theme)
+3. Add this code snippet **before** the checkout section or cart totals
+4. Click **Save** to apply your changes
+
+**Need help?** [Contact our support team](https://go.crisp.chat/chat/embed/?website_id=9a669714-af96-4a70-bf92-ea0b2ade5ab0) for assistance with theme-specific placement.
+
+```liquid
 {% if item.product.tags contains "pick up" %}
          <p style="color:green"><strong>Pickup Available</strong></p>
 {% endif %}
@@ -42,11 +73,44 @@ description: ""
 {% if item.product.tags contains "Courier" %}
          <p style="color:green"><strong>Shipping Available</strong></p>
 {% endif %}
-{% endraw %}
 ```
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-09-at-11513_cq0gn0.png)
+![Code editor showing the delivery method snippet added to the cart template](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-03-09-at-11513_cq0gn0.png)
 
-###### Related Document:
+**That's it!** Your cart will now display available delivery methods for each product based on their tags.
 
-* [Change cart type](https://help.birdchime.com/en-us/article/change-cart-type-1g2elmy/) – This guide explains configuring the app to be used on the cart page and customizing the display.
+## How It Works
+
+The code checks each product's tags and displays the appropriate delivery method indicator:
+- Products tagged with `pick up` show "Pickup Available"
+- Products tagged with `local delivery` show "Local Delivery Available"  
+- Products tagged with `Courier` show "Shipping Available"
+
+## Customization Options
+
+You can modify the display by:
+- Changing the text labels in the code
+- Adjusting the color by modifying `color:green`
+- Adding additional delivery method tags as needed
+
+## FAQs
+
+##### Can I use different tag names?
+Yes, you can modify the tag names in the code to match your existing product tags. Just update the `contains` values in the liquid code.
+
+##### Will this affect my existing cart functionality?
+No, this code only adds display elements and doesn't interfere with your cart's core functionality or Bird Pickup & Delivery app features.
+
+##### Can I show multiple delivery methods for one product?
+Yes, if a product has multiple delivery method tags, all applicable indicators will display.
+
+##### What if I want to change the styling?
+You can modify the inline CSS in the `<p>` tags or add custom CSS classes to your theme for more advanced styling.
+
+For more general questions, see our main [FAQs page](https://help.birdchime.com/en-us/category/faqs-1ygmxau/).
+
+## Related Articles
+
+- [Change Cart Type](https://help.birdchime.com/en-us/article/change-cart-type-1g2elmy/) - Configure the app for cart page use and customize display options
+- [How to Customize the Widget Look](https://help.birdchime.com/en-us/article/how-to-customize-the-widget-look-1t5c07x/) - Style your delivery widget appearance
+- [Manual Widget Placement](https://help.birdchime.com/en-us/article/manual-widget-placement-1iq0zmb/) - Place the widget exactly where you want it
