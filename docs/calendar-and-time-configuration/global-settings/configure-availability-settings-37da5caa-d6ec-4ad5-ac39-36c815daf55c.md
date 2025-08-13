@@ -1,52 +1,79 @@
 ---
 id: 37da5caa-d6ec-4ad5-ac39-36c815daf55c
-title: "Configure Availability Settings"
+title: "Configure Delivery & Pickup Availability Settings"
 category: calendar-and-time-configuration
 section: global-settings
 slug: configure-availability-settings
 crisp_updated_at: 1750742041000
 crisp_url: https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/
-description: ""
+description: "Learn how to configure your delivery and pickup availability settings to control when customers can schedule orders."
 ---
 
-Navigate to the **App Settings > Pickup & Delivery/Configure locations/Shipping** and configure the app widget calendar for the delivery method you desire.
+**Configure your delivery and pickup availability to control when customers can place orders with specific dates and times.**
 
-${frame}[](https://www.youtube.com/embed/zJLHrl1smU4)
-| Set your available days of service using **"Custom Availability by days"** and configure your **"Date & time/time slot(s)"** using available options. Otherwise, choose **Same Availability for All days (Mon to Sun)** if you want to follow the same schedule on all days.
+## Access Availability Settings
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/configure-avalibility_1jf3ime.png)
+To configure your availability settings, go to **Bird App Settings > Pickup & Delivery** and access the delivery method settings.
 
-### Customize Date / Time Schedule & Max Orders limit.
+If you have selected **"I have different schedule for different store locations"**, navigate to **Bird App Settings > Configure Locations > Select a Location** and then access the delivery method settings for that specific location.
 
-Select **options that are necessary for your customers to select before checkout**. Also, set your pace with **setting max orders limit by day or time/time slot(s)**, once it exceeds the limit, the **respective day or time/time slot(s) will be disabled**.
+${frame}[Step-by-step tutorial showing how to access and configure availability setting](https://www.youtube.com/embed/zJLHrl1smU4)
 
-* Select the **"Only Date"** option and configure Date-based Schedule as shown below.
+## Set Your Service Schedule
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/sunday-disabled_152uufb.png)
+Choose between two availability options:
 
-* Select the **"Date & time"** option and configure the Date & time based Schedule as shown below.
+- **Customize Availability by Day**: Set different schedules for each day of the week
+- **Same Availability for All days (Mon to Sun)**: Use identical schedule for every day
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/dateandtimeslection_pv5eqg.png)
+![Availability configuration interface with custom days or same schedule options](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/configure-avalibility_1jf3ime.png)
 
-* Select the **"Date & time range"** option and configure the Date & Time range based schedule as shown below.
+## Configure Date and Time Options
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/configure-avalibilityv2_1a7hcz8.png)
+Select the scheduling option that best fits your business needs. Each option controls what customers must choose before checkout.
 
-* Select the **"No Date & time"** option to disable the calendar.
+### Date-Only Scheduling
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/noselections_1uuir02.png)
+Choose **"Only Date"** to let customers select delivery/pickup dates without specific times.
 
-### Previewing the Widget After Saving Changes
+![Date-only configuration example with Sunday disabled](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/sunday-disabled_152uufb.png)
 
-To ensure your widget configurations appear as intended, you can preview the widget after saving your changes. This allows you to verify that all settings are correctly applied.
+### Date and Time Scheduling
 
-**Steps to Preview:**
+Choose **"Date & time"** to offer specific time slots for each date.
 
-1. Navigate to the **App Settings > Pickup & Delivery/Configure locations/Shipping** 
-2. Make the desired changes to your widget configurations.
-3. Click **Save** to apply the changes.
+![Date and time selection interface with available time slots](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/dateandtimeslection_pv5eqg.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
-4. After saving, click the **Widget** **Preview** option to view the widget with the updated settings.
+### Date and Time Range Scheduling
 
-**Related Document:** [How to block dates from calendar](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)
+Choose **"Date & time range"** to offer flexible time windows instead of fixed slots.
+
+![Time range configuration with flexible time windows](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/configure-avalibilityv2_1a7hcz8.png)
+
+### Disable Calendar
+
+Choose **"No Date & time"** to turn off the calendar widget completely.
+
+![Disabled calendar state with no date/time selection](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/noselections_1uuir02.png)
+
+## Set Maximum Order Limits
+
+Control your order capacity by setting daily or time slot limits. When limits are reached, those options automatically disable for customers.
+
+![Maximum orders per day and per time slot fields](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/orderlimit_1dso3u7.png)
+
+## Preview Your Widget
+
+Verify your configuration appears correctly before going live.
+
+1. Make your desired changes
+2. Click **Save** to apply settings
+3. Click **Widget Preview** to see the customer-facing widget
+
+![Shows the widget preview button location for testing configuration changes at the top left](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
+
+## Related Articles
+
+- [How to set a limit for orders](https://help.birdchime.com/en-us/article/how-to-set-a-limit-for-orders-1dkllfq/)
+- [How to block dates from calendar](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)
+- [Configure order preparation times](https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/)

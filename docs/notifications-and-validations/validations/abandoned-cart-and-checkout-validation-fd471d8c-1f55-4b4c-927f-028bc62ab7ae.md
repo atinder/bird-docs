@@ -1,41 +1,57 @@
 ---
 id: fd471d8c-1f55-4b4c-927f-028bc62ab7ae
-title: "Abandoned Cart and Checkout Validation"
+title: "Validate and Expire Stale Delivery/Pickup Time Selections"
 category: notifications-and-validations
 section: validations
 slug: abandoned-cart-and-checkout-validation
 crisp_updated_at: 1740503265000
 crisp_url: https://help.birdchime.com/en-us/article/abandoned-cart-and-checkout-validation-ikfjdc/
-description: "Abandoned Cart and Checkout Validation Bird Pickup and Delivery App"
+description: "Validate and expire stale delivery/pickup time selections to prevent scheduling conflicts in Bird Pickup and Delivery App"
 ---
 
-**
-For bakeries and physical stores, managing order timing is important. If customers take too long to complete checkout, it can confuse and disrupt preparation schedules. This feature validates the selection, and the customer needs to re-select the date and time.
+**Prevent order scheduling conflicts by automatically expiring outdated date/time selections when customers take too long to complete checkout.**
 
-Customers benefit because they won’t accidentally place an order with outdated date/time sections, reducing mistakes and delays. This is especially helpful for fresh food orders and in-store pickups.
+For bakeries and physical stores, managing order timing is crucial. When customers spend too much time in checkout, their selected delivery or pickup times may become unavailable. This creates confusion and disrupts your preparation schedules.
 
-By enabling this feature in the Bird App, stores can avoid abandoned carts and keep order schedules accurate. 
-  
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfhmqOSY37_E_xPop22iawZomrX_Q-wPgk0BmUCGJn2kkNR6Txgb_d0Qel3ZQ_IlDNQm4LiKj8YNMs_y3Up2RT9-u15faf9ol0I31J3NIIycR-Y_jZdp-T1SpyoqBZEnEJFoPRaTg?key=AO4VAtycPw6OLj7nman5v-Rr)
+The Abandoned Cart and Checkout Validation feature automatically expires outdated selections. Customers must re-select valid dates and times before completing their order. This prevents scheduling conflicts and ensures accurate order preparation.
 
-## Steps to Enable
+[Placeholder for old screenshot]
 
-1. Go to the Bird App Settings.
-    
-2. Navigate to Validations > Cart and Checkout Validation.
+## What This Feature Does
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/validation_1yjco8s.png)
+- **Expires outdated selections** when customers take too long to checkout
+- **Forces re-selection** of valid delivery/pickup times
+- **Prevents scheduling conflicts** in your preparation workflow
+- **Reduces order mistakes** and delivery delays
 
-3. Check the box for Enable selections expiry. You can also select the expiry time limit from the dropdown as shown below.
+## Enable Selection Expiry
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1lnuf03.png)
+1. **Navigate to Bird App Settings**
+2. **Go to Validations > Cart and Checkout Validation**
 
-## Customizing the Error Message
+![Shows the Bird App validation settings page with the Cart and Checkout Validation section highlighted](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/validation_1yjco8s.png)
 
-You can configure the error message displayed to customers when their selections expire:
+3. **Check "Enable selections expiry"**
+4. **Select your preferred expiry time limit** from the dropdown menu
 
-1. Go to the Bird App Settings > Text & Languages.
-    
-2. Edit the error message text for the field labeled as “Selections expiry validation error” as needed.
+![Displays the expiry time configuration interface with the dropdown menu for selecting time limits](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1lnuf03.png)
 
-Refer to the [label customization guide](https://help.birdchime.com/en-us/article/how-to-change-the-widget-language-labels-11stcld/) for assistance.
+**That's it!** Your store now automatically validates date/time selections during checkout.
+
+## Customize the Error Message
+
+**Tailor the message customers see when their selections expire:**
+
+1. **Go to Bird App Settings > Text & Languages**
+2. **Find "Selections expiry validation error"**
+3. **Edit the message text** to match your brand voice
+
+[Placeholder for new screenshot: Showing the Text & Languages page with the error message field highlighted.]
+
+**You're done!** Customers will see your customized message when selections expire.
+
+## Related Articles
+
+- [How to Change Widget Language Labels](https://help.birdchime.com/en-us/article/how-to-change-the-widget-language-labels-11stcld/)
+- [Configure Availability Settings](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/)
+- [How to Set Order Limits](https://help.birdchime.com/en-us/article/how-to-set-a-limit-for-orders-1dkllfq/)

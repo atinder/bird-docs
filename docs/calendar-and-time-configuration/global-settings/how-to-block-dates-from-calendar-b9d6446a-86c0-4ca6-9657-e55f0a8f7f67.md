@@ -1,53 +1,101 @@
 ---
 id: b9d6446a-86c0-4ca6-9657-e55f0a8f7f67
-title: "How to block dates from calendar?"
+title: "How to block dates from Bird Pickup & Delivery Calendar"
 category: calendar-and-time-configuration
 section: global-settings
 slug: how-to-block-dates-from-calendar
 crisp_updated_at: 1750741766000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/
-description: ""
+description: "Learn how to block specific dates from your delivery calendar to prevent customers from selecting unavailable days for pickup, local delivery, or shipping."
 ---
 
-Consider the following Scenarios:
+**Block specific dates from your delivery calendar to prevent customer selection of unavailable days.**
 
-1. Your store is open some days of the week but not others.
-2. You do not offer local delivery on some occasions.
+Use date blocking when your store closes on certain days. You can also pause delivery services temporarily. This feature prevents customers from selecting blocked dates for pickup, local delivery, or shipping.
 
-In the above scenarios, you can block such days so that customers cannot select them for store pickup, local delivery, or shipment. 
+${youtube}[Demonstrates the complete process of blocking dates from the calendar in the Bird app settings](q9Vo7u_PtNQ)
 
-${youtube}[](q9Vo7u_PtNQ)
-To configure it, follow the steps below:
+## Access Blockout Date Settings
 
-1. Go to Bird App Settings
-2. Click on Pickup & Delivery > Edit Settings
-3. Scroll to **Blockout dates** settings within configure availability
+**Choose the correct navigation path based on your store's schedule setup.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-084923_lh2ixe.png)
+### For Stores with Same Schedule (All Locations)
 
-4. Now select the date and time range and click on add button.
+If all your locations share the same delivery and pickup schedule:
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-085019_1fslt1n.png)
+1. Navigate to **Bird App Settings**
+2. Click **Pickup & Delivery > Edit Settings**
+3. Scroll to **Blockout dates** within configure availability
 
-Now you can see which date has been blocked in the list. You can modify this settings anytime. 
+### For Stores with Different Schedules (Multiple Locations)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-085155_4mlqjn.png)
+If each location has its own unique schedule:
 
-Result : 
+1. Go to **Bird App Settings**
+2. Click **Configure locations**
+3. Choose your specific location from the list
+4. Enable the delivery method and click **Edit Settings**
+5. Scroll to **Blockout dates** within configure availability
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-085639_yl8x2s.png)
+![Shows the Bird app settings page with blockout dates configuration area](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-084923_lh2ixe.png)
 
-### Previewing the Widget After Saving Changes
+## Add Blocked Dates
 
-To ensure your widget configurations appear as intended, you can preview the widget after saving your changes. This allows you to verify that all settings are correctly applied.
+**Select specific dates and times to block from customer selection.**
 
-**Steps to Preview:**
+1. Choose your blocking method:
+   - **Single Date** tab - Block one specific date
+   - **Date Range** tab - Block a range of consecutive dates
 
-1. Navigate to the **App Settings > Pickup & Delivery/Configure locations/Shipping** 
-2. Scroll to **Blockout dates** settings and make the desired changes.
-3. Click **Save** to apply the changes.
+2. **Select your date(s):**
+   - For single dates: Click on the desired date in the calendar
+   - For date ranges: Click the start date, then the end date in the calendar
+   - Use the left/right arrows to navigate between months
 
-![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
-4. After saving, click the **Widget** **Preview** option to view the widget with the updated settings.
+3. **Set time restrictions (optional):**
+   - **Start Time:** Click the dropdown and select when the block begins
+   - **End Time:** Click the dropdown and select when the block ends
+   - Leave both empty to block the entire day
 
-|| Related Document:  [Product Override](https://help.birdchime.com/en-us/article/product-override-g2yfl9/)
+4. Click **Add** to confirm the block
+
+![Displays the date and time range selection interface with the Add button to confirm blocked periods](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-085019_1fslt1n.png)
+
+## Important Notes
+
+- **Blocked dates only prevent new bookings.** Existing orders on blocked dates will not be affected. Consider your current order volume before blocking dates to avoid scheduling conflicts.
+
+- **Changes take effect immediately** for new customer selections.
+
+## Review Blocked Dates
+
+**View and manage your blocked date list for easy modification.**
+
+Your blocked dates appear in a list format. You can edit or remove these blocks anytime.
+
+![Shows the list of blocked dates with options to modify or remove existing blocks](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-085155_4mlqjn.png)
+
+## Test and Verify Changes
+
+**Preview your widget to ensure blocked dates display correctly to customers.**
+
+After adding your blocked dates, test the configuration. Verify everything works as expected.
+
+1. Click **Save** to apply your blockout date changes
+2. Click **Widget Preview** to see your updated calendar
+
+![Shows the widget preview option available after saving blockout date changes](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
+
+**Expected Result:** Blocked dates display as unavailable in your delivery calendar widget.
+
+![Demonstrates the customer-facing calendar widget with blocked dates clearly marked as unavailable](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-085639_yl8x2s.png)
+
+That's it! Your blocked dates now prevent customer selection of unavailable delivery times.
+
+## Related Articles
+
+- [Product Override](https://help.birdchime.com/en-us/article/product-override-g2yfl9/) - Set different availability rules for specific products
+- [Configure Availability Settings](https://help.birdchime.com/en-us/article/configure-availability-settings-199dozz/) - Set up your store's general availability
+- [How to Set the Maximum Available Days](https://help.birdchime.com/en-us/article/how-to-set-the-maximum-available-days-1u2xflh/) - Limit how far ahead customers can book
+- [Same Schedule for All Locations](https://help.birdchime.com/en-us/article/i-have-same-schedule-for-all-store-locations-13ukhrg/) - Configure unified schedules across locations
+- [Different Schedules per Location](https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/) - Set up location-specific schedules

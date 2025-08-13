@@ -1,37 +1,62 @@
 ---
 id: 9e0812c9-2eca-4b5d-a605-29d8b74232a6
-title: "How to add a minimum order value validation message?"
+title: "Add Minimum Order Value Message to Cart Page"
 category: notifications-and-validations
 section: validations
 slug: how-to-add-a-minimum-order-value-validation-message
 crisp_updated_at: 1738579451000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-add-a-minimum-order-value-validation-message-uihm3w/
-description: ""
+description: "Set minimum order value validation messages in Bird Pickup & Delivery. Prevent customers from checking out until cart meets your required spend threshold for each delivery method."
 ---
 
-1. Go to **Bird App Settings > Pickup & Delivery / Configure Locations** (In case 'I have different schedule for different store locations' is selected)
+**You will create a validation message that prevents customers from checking out until their cart meets your minimum order requirements.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/pickupdeliveryeditlocation_1bw6lml.png)
+Minimum order validation prevents unprofitable orders by requiring customers to meet your spend threshold before checkout. This feature reduces delivery costs, improves order economics, and ensures sustainable service levels across all fulfillment methods.
 
-2. Select the location you want to configure (Incase of I have different schedule for different store locations is selected)
+## Configure Minimum Order Validation
 
-3. Choose the delivery method for which you want to set up the Minimum Order value validation and click **Edit Settings**
+### Step 1: Access Delivery Settings
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/enabledisabled-deliverypickup_jxbfrn.png)
+1. Navigate to **Bird App Settings**
+2. Select **Pickup & Delivery / Configure Locations**
+3. Choose your target location (if using multiple locations)
 
-4. Input the **Minimum Order value** as shown below
+![Bird App main settings screen - location configuration interface](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/pickupdeliveryeditlocation_1bw6lml.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-24-031913_1pktkr9.png)
+### Step 2: Select Delivery Method
 
-** Note:**
-* You need to set the minimum order value for all delivery methods separately.
+1. Choose your delivery method
+2. Click **Edit Settings**
 
-* The customer will not be able to proceed to checkout until the cart value is greater than the set minimum order value.
+![Delivery method selection screen with Edit Settings buttons](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/enabledisabled-deliverypickup_jxbfrn.png)
 
-**Result :**
+### Step 3: Set Minimum Order Value
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-04-20-at-11950_1sz9sir.png)
+1. Locate the **Minimum Order Value** field
+2. Enter your required minimum amount (in your store's base currency, decimals allowed)
+3. Save your settings
 
-**Related Articles:**
+![Minimum order value input field in delivery method settings](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-24-031913_1pktkr9.png)
 
-| [How to set a limit for orders?](https://help.birdchime.com/en-us/article/how-to-set-a-limit-for-orders-1dkllfq/)
+**Configuration complete.** Your minimum order validation is now active for this delivery method.
+
+## Important Configuration Notes
+
+**Configure each delivery method independently** to optimize profitability across all fulfillment options:
+- Local delivery
+- Store pickup  
+- Shipping
+
+**Checkout is blocked** until customers meet your minimum order threshold, ensuring every transaction supports your business goals.
+
+## Customer Experience
+
+Customers receive clear guidance when their cart falls below your minimum threshold, encouraging them to add products rather than abandoning their purchase.
+
+![Customer-facing validation message when cart is below minimum](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-04-20-at-11950_1sz9sir.png)
+
+## Related Articles
+
+- [Set order limits and capacity controls](https://help.birdchime.com/en-us/article/how-to-set-a-limit-for-orders-1dkllfq/)
+- [Configure delivery rates and pricing](https://help.birdchime.com/en-us/article/configure-delivery-rates-1xbrder/)
+- [Block dates and manage availability](https://help.birdchime.com/en-us/article/how-to-block-dates-from-calendar-tllghq/)
