@@ -6,6 +6,7 @@ section: customer-notifications
 slug: add-datetime-to-draft-order-invoice
 crisp_updated_at: 1737999840000
 crisp_url: https://help.birdchime.com/en-us/article/add-datetime-to-draft-order-invoice-pmdpbi/
+description: ""
 ---
 
 # How to add the date/time on the draft order invoice?

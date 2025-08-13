@@ -6,6 +6,7 @@ section: validations
 slug: how-to-add-a-minimum-order-value-validation-message
 crisp_updated_at: 1738579451000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-add-a-minimum-order-value-validation-message-uihm3w/
+description: ""
 ---
 
 1. Go to **Bird App Settings > Pickup & Delivery / Configure Locations** (In case 'I have different schedule for different store locations' is selected)

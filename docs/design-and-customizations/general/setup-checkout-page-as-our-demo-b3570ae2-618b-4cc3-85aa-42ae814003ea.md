@@ -6,6 +6,7 @@ section: general
 slug: setup-checkout-page-as-our-demo
 crisp_updated_at: 1719213327000
 crisp_url: https://help.birdchime.com/en-us/article/setup-checkout-page-as-our-demo-1xddwhq/
+description: ""
 ---
 
 Follow the 3 steps below in order to configure the checkout page as shown in [our demo store](https://demo-store-pickup-order-date.myshopify.com/cart/add?id=43043081748692&quantity=1)

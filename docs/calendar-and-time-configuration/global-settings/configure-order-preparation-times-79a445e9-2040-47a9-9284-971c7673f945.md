@@ -4,16 +4,16 @@ title: "Configure Order Preparation Times"
 category: calendar-and-time-configuration
 section: global-settings
 slug: configure-order-preparation-times
-crisp_updated_at: 1737999888000
+crisp_updated_at: 1750741903000
 crisp_url: https://help.birdchime.com/en-us/article/configure-order-preparation-times-1b43s8n/
+description: ""
 ---
 
 This guide helps you set up and customize order preparation times, ensuring customers can only select delivery slots based on your store’s availability.
 
 1. **Navigate** to **Bird Settings > Pickup & Delivery** / **Configure Locations** to access the preparation time settings.
 
-${frame}[Preparation Times](https://www.loom.com/embed/d20654510bb649ecb2ddc6bcfa107167?sid=a35cef9c-60ee-4a39-b56b-d77b6b292848)
-
+${frame}[](https://www.youtube.com/embed/3hXp2jyI-eY)
 2. Toggle the **Enable Preparation Time** option to activate this feature.
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-071225_1r94amt.png)
@@ -64,8 +64,21 @@ Orders placed after 6:00 PM will switch to a lead time of 2 days, preventing cus
 
 This setting allows you to control when your store stops accepting new orders on a particular day
 
-| 1. Ensure you configure preparation times for all 7 days if using the "Customize by Day" option.
-| 2. Make sure the lead time set after the cut-off time is longer than the one set before it. This ensures the cut-off time functions correctly.
+| Ensure you configure preparation times for all 7 days if using the "Customize by Day" option.
+| Make sure the lead time set after the cut-off time is longer than the one set before it. This ensures the cut-off time functions correctly.
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-05-at-15654_199eqrj.png)
+### Previewing the Widget After Saving Changes
+
+To ensure your widget configurations appear as intended, you can preview the widget after saving your changes. This allows you to verify that all settings are correctly applied.
+
+**Steps to Preview:**
+
+1. Navigate to the **App Settings > Pickup & Delivery/Configure locations/Shipping** 
+2. Make the desired changes to your widget configurations.
+3. Click **Save** to apply the changes.
+
+![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
+4. After saving, click the **Widget** **Preview** option to view the widget with the updated settings.
+
 || **Related Article:** [Enable Same Day/Next Day Delivery for Specific Products](https://help.birdchime.com/en-us/article/enable-same-daynext-day-delivery-for-specific-products-hfb1hm/)

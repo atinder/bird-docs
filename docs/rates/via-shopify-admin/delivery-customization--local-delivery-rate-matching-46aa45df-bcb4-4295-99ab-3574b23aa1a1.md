@@ -6,6 +6,7 @@ section: via-shopify-admin
 slug: delivery-customization--local-delivery-rate-matching
 crisp_updated_at: 1736510313000
 crisp_url: 
+description: ""
 ---
 
 ### Your customers may see multiple rates in checkout incase customer address qualifies for both Local delivery and shipping

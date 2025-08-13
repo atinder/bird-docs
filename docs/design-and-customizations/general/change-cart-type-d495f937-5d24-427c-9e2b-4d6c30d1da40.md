@@ -6,6 +6,7 @@ section: general
 slug: change-cart-type
 crisp_updated_at: 1730789578000
 crisp_url: https://help.birdchime.com/en-us/article/change-cart-type-1g2elmy/
+description: ""
 ---
 
 App is best suited to be used in the cart page. It offers wide varieties of features and stability. To configure the app to be use on cart page, configure the following in your theme.

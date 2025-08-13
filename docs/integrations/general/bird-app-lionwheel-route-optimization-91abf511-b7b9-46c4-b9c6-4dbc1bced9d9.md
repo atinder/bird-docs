@@ -6,6 +6,7 @@ section: general
 slug: bird-app-lionwheel-route-optimization
 crisp_updated_at: 1704111298000
 crisp_url: https://help.birdchime.com/en-us/article/bird-app-lionwheel-route-optimization-5jis2/
+description: ""
 ---
 
 [LionWheel](https://www.lionwheel.com/local-delivery-shopify) Local Delivery Route helps you optimize your routes and assign orders to your drivers with features like estimated delivery time, a driver app, proof of delivery requests, SMS notifications and ETA.

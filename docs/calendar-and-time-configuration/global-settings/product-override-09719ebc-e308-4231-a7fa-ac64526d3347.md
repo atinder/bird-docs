@@ -4,8 +4,9 @@ title: "Product Override"
 category: calendar-and-time-configuration
 section: global-settings
 slug: product-override
-crisp_updated_at: 1743074012000
+crisp_updated_at: 1750763460000
 crisp_url: https://help.birdchime.com/en-us/article/product-override-g2yfl9/
+description: ""
 ---
 
 ### Setting Different Lead/Available Times for Specific Products
@@ -21,7 +22,7 @@ Additionally, you can refine availability by:
 * **Blockout Dates**: Prevent orders on certain dates.
 * **Available Dates**: Specify dates when a product can be ordered.
 
- ${frame}[ Schedule Override: Product Based Availability ](https://www.loom.com/embed/31a89fe58def47c1a8addeb43a69ea69?sid=f80e0aab-95a2-4c02-bdde-e0242fced43c) 
+${youtube}[](0gBbvBphOkg)
 
 1. Go to Bird App Settings --> Product Override
 
@@ -50,10 +51,21 @@ Additionally, you can refine availability by:
 * **Blockout Dates** : block the tagged product for selected dates.
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-083224_rbz3uu.png)
+### Previewing the Widget After Saving Changes
+
+To ensure your widget configurations appear as intended, you can preview the widget after saving your changes. This allows you to verify that all settings are correctly applied.
+
+**Steps to Preview:**
+
+1. After making the desired changes to the Override.
+2. Click **Save** to apply the changes.
+3. After saving, click the **Widget** **Preview** option to view the widget with the updated settings.
+
+![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
 
 | **NOTES:**
 | You can create multiple product overrides for different SKUs and Tags.
 | If two or more override products are added to the cart together, the common calendar dates will be shown based on the combination of the overrides
-| If a day(Example Monday) is disabled in the main Availability Settings it cannot be made available via Override settings.
+| If a day (for example, Monday) is disabled in the main Availability Settings, it cannot be made available via Override settings.
 
-|| Related Articles: [Hide or Show widget for certain products only](https://help.birdchime.com/en-us/article/hide-or-show-widget-for-certain-products-only-14nf3pv/?bust=1709814859482)
+|| Related Articles: [Hide or Show widget for certain products only](https://help.birdchime.com/en-us/article/hide-or-show-widget-for-certain-products-only-14nf3pv/)

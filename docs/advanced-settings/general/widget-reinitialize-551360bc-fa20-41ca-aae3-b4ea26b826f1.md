@@ -6,6 +6,7 @@ section: general
 slug: widget-reinitialize
 crisp_updated_at: 1738055321000
 crisp_url: https://help.birdchime.com/en-us/article/widget-reinitialize-ouobmi/
+description: ""
 ---
 
 .| This is somewhat technical. Feel free to ask us for help if you get stuck.

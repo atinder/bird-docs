@@ -4,8 +4,9 @@ title: "Ready for pickup and dispatch email notification"
 category: notifications-and-validations
 section: customer-notifications
 slug: ready-for-pickup-and-dispatch-email-notification
-crisp_updated_at: 1740574045000
+crisp_updated_at: 1750741856000
 crisp_url: https://help.birdchime.com/en-us/article/ready-for-pickup-and-dispatch-email-notification-8o1c1h/
+description: ""
 ---
 
 This guide helps Shopify store owners notify customers instantly when orders are ready for pickup, dispatched, picked up, or delivered improving customer experience and reducing order status inquiries. This can be done via Shopify Orders or the Bird App Orders page.
@@ -19,8 +20,7 @@ This guide helps Shopify store owners notify customers instantly when orders are
 
 ### Send a Ready for Pickup, Dispatched/Delivery or Picked Up/Delivered email:
 
-${frame}[Configure Availability](https://www.loom.com/embed/d2b40028c9744a3786078a17fe843234?sid=595f11b2-c9a9-4b71-971f-4e355e46e912)
-
+${frame}[](https://www.youtube.com/embed/D-F6busl8MI)
 1. Go to the orders page in your Bird app.
 
 2. Mark a single order or all the orders that are Ready for pickup, dispatch or already picked up/delivered.

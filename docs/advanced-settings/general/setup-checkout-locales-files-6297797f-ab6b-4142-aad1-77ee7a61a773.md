@@ -6,6 +6,7 @@ section: general
 slug: setup-checkout-locales-files
 crisp_updated_at: 1738596196000
 crisp_url: https://help.birdchime.com/en-us/article/setup-checkout-locales-files-1cw3r7h/
+description: ""
 ---
 
 # Why set up checkout locales?

@@ -4,8 +4,9 @@ title: "How to customize the widget look?"
 category: design-and-customizations
 section: general
 slug: how-to-customize-the-widget-look
-crisp_updated_at: 1739115429000
+crisp_updated_at: 1749544225000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-customize-the-widget-look-1t5c07x/
+description: ""
 ---
 
 1. Navigate to **Bird App Settings > Widget Design** to change the background color, and click on the color palette as shown below.
@@ -73,3 +74,14 @@ Result:
 **You can enter you own custom CSS**
 
 ![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-134238_1trxnep.png)
+### Previewing the Widget After Saving Changes
+
+To ensure your widget appear as intended, you can preview the widget after saving your changes. This allows you to verify that all settings are correctly applied.
+
+**Steps to Preview:**
+
+1. After making the desired changes click **Save** to apply the changes.
+2. After saving, click the **Widget** **Preview** option to view the widget with the updated settings.
+
+![](https://storage.crisp.chat/users/helpdesk/website/-/c/a/8/2/ca826b447482b000/screenshot-2025-06-04-at-11365_1foxsqn.png)
+**Related Document:** [How to change the widget Language & Labels?](https://help.birdchime.com/en-us/article/how-to-change-the-widget-language-labels-11stcld/)

@@ -6,6 +6,7 @@ section: general
 slug: shopify-plus-checkout-integration
 crisp_updated_at: 1730790057000
 crisp_url: https://help.birdchime.com/en-us/article/shopify-plus-checkout-integration-1q0psg2/
+description: ""
 ---
 
 This is specifically created for the Shopify Plus customers. Kindly watch this video for demo of our Checkout Extension:

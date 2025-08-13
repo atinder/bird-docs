@@ -123,6 +123,9 @@ def write_article(category_slug, section_slug, article)
   # Write article to markdown file
   file_path = File.join(dir, "#{slugify(article['title'])}-#{article['article_id']}.md")
 
+  # Safely escape double quotes in description
+  description = article['description'].to_s.gsub('"', '\\"')
+
   content = <<~MARKDOWN
     ---
     id: #{article['article_id']}
@@ -132,6 +135,7 @@ def write_article(category_slug, section_slug, article)
     slug: #{slugify(article['title'])}
     crisp_updated_at: #{article['updated_at']}
     crisp_url: #{article['url']}
+    description: "#{description}"
     ---
 
     #{content}

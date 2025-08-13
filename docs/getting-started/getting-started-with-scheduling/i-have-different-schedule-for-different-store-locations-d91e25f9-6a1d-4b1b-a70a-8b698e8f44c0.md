@@ -4,9 +4,9 @@ title: "I have different schedule for different store locations"
 category: getting-started
 section: getting-started-with-scheduling
 slug: i-have-different-schedule-for-different-store-locations
-crisp_updated_at: 1736245720000
+crisp_updated_at: 1750153171000
 crisp_url: https://help.birdchime.com/en-us/article/i-have-different-schedule-for-different-store-locations-1f6j2p0/
-meta_description: "Configure unique delivery and pickup schedules for each store location in Bird App. Step-by-step setup guide for multi-location stores."
+description: "Configure unique delivery and pickup schedules for each store location in Bird App. Step-by-step setup guide for multi-location stores."
 ---
 
 # I have different schedule for different store locations
@@ -70,8 +70,6 @@ When you select "I have different schedule for different store locations," an ad
 - Set different delivery areas and rates per location
 
 
-
-
 ![Screenshot showing Local Delivery Postal Codes configuration](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/localdelivery-edit-settings_n55trt.png)
 
 *This feature is only available when using different schedules for different locations, as it allows you to define specific delivery areas for each store.*
@@ -119,5 +117,3 @@ For each enabled delivery method, configure these settings:
 
 **Q: How do I set different delivery rates for different postal codes?**  
 *A: When using different schedules for different locations, you can configure unique delivery rates for each postal code area. [Learn more about configuring delivery rates →](https://help.birdchime.com/en-us/article/configure-local-delivery-rates-based-on-postal-code-16da0ew/)*
-
----
