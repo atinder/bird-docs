@@ -1,51 +1,61 @@
 ---
 id: 2b404c60-a5ac-4fbb-8d4d-77a832d83c1c
-title: "Bulk Add tags to products"
+title: "How to Bulk Add Tags to Products in Shopify"
 category: advanced-settings
 section: general
 slug: bulk-add-tags-to-products
 crisp_updated_at: 1730790097000
 crisp_url: https://help.birdchime.com/en-us/article/bulk-add-tags-to-products-12xc905/
-description: ""
+description: "Learn how to efficiently add tags to multiple products at once in Shopify to enable advanced Bird Pickup & Delivery features."
 ---
 
-###### Bulk add tags to products in Shopify
+**You'll learn how to efficiently tag multiple products simultaneously to unlock advanced Bird Pickup & Delivery features.**
 
-We may need to group multiple products with the same tag for a variety of reasons:
-* Restrict or enable shipping ex. particular products cannot be shipped
-* Set specific preparation time
-* Restrict availability of specific products
-and more... 
+Tags help you manage multiple products for specific behaviors in your Bird Pickup & Delivery app. Use them to control shipping availability, set preparation times, or restrict delivery options across multiple products at once.
 
-In such scenarios we need to configure the same tag for all the products that need to be grouped. Find an illustrative example below: 
+## How to Bulk Add Tags
 
-1. Select all products and uncheck those products which we don't want to group.
-2. Click on **...**
-3. Click on Add Tag
+### Step 1: Select Products
+1. Go to your Shopify **Products** page
+2. Select all products you want to tag
+3. Uncheck any products that shouldn't receive the tag
+4. Click the **...** menu button
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-08-04-at-31823_d2ntmo.png)
+![Shows the product selection interface with the three-dot menu button highlighted for bulk actions](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-08-04-at-31823_d2ntmo.png)
 
-1. Write Tag name in search box
-2. Select the Tag name
-3. Click on Save
+### Step 2: Add the Tag
+1. Click **Add tags** from the dropdown menu
+2. Type your tag name in the search box
+3. Select the existing tag or create a new one
+4. Click **Save**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-08-04-at-32135_cur6sm.png)
+![Shows the tag addition interface with the search box and save button for applying tags to selected products](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2023-08-04-at-32135_cur6sm.png)
 
-4. If tag doesn't exist you can add a new Tag and click on save
+### Step 3: Create New Tags (If Needed)
+If your tag doesn't exist:
+1. Type the new tag name
+2. Click **Add new tag**
+3. Click **Save**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1bnr7oe.png)
+![Shows the new tag creation interface with the option to add a custom tag name](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1bnr7oe.png)
 
-Finally, you can verify Tag is added to the product page. 
+### Step 4: Verify Tag Application
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1ws15p0.png)
+Go to any tagged product's admin page and look for the tag in the Tags field below the product title.
 
-###### Important Use cases
+![Shows a product page with the newly added tag displayed in the product information section](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1ws15p0.png)
 
-1. [Display product wise available delivery method in the cart ](https://help.birdchime.com/en-us/article/display-product-wise-available-delivery-method-in-the-cart-h7rzfe/)
-2. [Configure product overrides using tags](https://help.birdchime.com/en-us/article/product-override-g2yfl9/)
+## Key Use Cases
 
-|| **Note: Tags are not case sensitive; for example shippable and Shippable are the same tag**
+Bulk tagging enables these powerful Bird Pickup & Delivery features:
 
-###### Related Document:
+- **[Display product-wise available delivery message in cart](https://help.birdchime.com/en-us/article/display-product-wise-available-delivery-methods-in-cart-h7rzfe/)**
+- **[Set custom settings for specific product groups](https://help.birdchime.com/en-us/article/product-override-g2yfl9/)**
 
-* [How to mark the product as a physical product?](https://help.birdchime.com/en-us/article/how-to-mark-the-product-as-a-physical-product-1rdiqi/) – This guide explains tagging products as physical items, useful for bulk tagging scenarios.
+## Important Notes
+
+**Tags are not case-sensitive.** `shippable` and `Shippable` function identically.
+
+## Related Articles
+
+- **[How to mark products as physical products](https://help.birdchime.com/en-us/article/how-to-mark-the-product-as-a-physical-product-1rdiqi/)**

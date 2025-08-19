@@ -1,60 +1,74 @@
 ---
 id: f694d412-0063-4882-8e07-e611bb6999b5
-title: "How to change the date and time after the order has been placed?"
+title: "Update Order Delivery Date & Time After Placement"
 category: order-management
 section: general
 slug: how-to-change-the-date-and-time-after-the-order-has-been-placed
 crisp_updated_at: 1740489716000
 crisp_url: https://help.birdchime.com/en-us/article/how-to-change-the-date-and-time-after-the-order-has-been-placed-1ik7t39/
-description: ""
+description: "Modify delivery dates and times for existing orders using Bird App or Shopify Admin. Includes step-by-step instructions for both methods with automatic customer email updates."
 ---
 
-Follow this document to change the delivery date and time after placing an order, access the order in the Bird App, update the details, and notify the customer.
+**You'll learn how to modify delivery dates and times for existing orders using two methods.**
 
-* [Via Bird App](#3-via-bird-app)
+This guide shows you how to update order delivery details after placement. You can use the Bird App for direct control or Shopify Admin for convenience. Both methods automatically notify customers of changes.
 
-* [Via Shopify Admin](#3-via-shopify-admin)
+**Works for all orders** - regardless of status or fulfillment stage.
 
-### Via Bird App
+## When to Use Each Method
 
-1. To change the date and time of the order go to the Orders section in the app.
+- **Bird App**: Use when you want direct control and immediate access to all Bird-specific features
+- **Shopify Admin**: Use when you prefer to stay within Shopify's familiar interface
 
-2. If the order date and time are not recorded then click on the pencil icon on the order line as shown below.
+## Via Bird App
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-14-165351_12panyb.png)
+**Update order details directly in the Bird App for immediate control.**
 
-3. If the order and time have been recorded then click on the date to edit the order date as shown below.
+1. **Navigate to Orders** in the Bird App dashboard
+2. **Locate the target order** in your orders list
+3. **Edit unrecorded orders** by clicking the pencil icon on the order line
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-130158_144zn3n.png)
+![Shows the pencil icon for editing orders without recorded date/time in the Bird App orders section](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2025-01-14-165351_12panyb.png)
 
-4. A new window will open on the same page. Edit the shipping method, date, and time for the respective order and click on the submit button. Select the option **Send notification to customer** to notify the customer about the changes.
+4. **Edit recorded orders** by clicking directly on the existing date
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/edit-date-and-time_34h7z2.png)
+![Shows where to click to edit order delivery date detail in the Bird App](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-130158_144zn3n.png)
 
-5. After submitting reload the page to see the changes.
+5. **Update order details** in the popup window:
+   - Modify shipping method
+   - Change delivery date
+   - Adjust delivery time
+   - Enable **Send notification to customer** if needed
+   - Click **Submit**
 
-6. The changes will be reflected on the same page.
+![Shows the edit popup with fields for shipping method, date, time, and customer notification option](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/edit-date-and-time_34h7z2.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-130620_mi6szm.png)
+6. **Reload the page** to see your changes reflected
+7. **Verify updates** appear on the orders page
 
-### Via Shopify Admin
+![Shows the updated order details displayed after successful modification](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/screenshot-2024-12-16-130620_mi6szm.png)
 
-1. Navigate to the Orders section in your Shopify and open the Order.
+## Via Shopify Admin
 
-2. Click on More Actions and select Bird: Update Date/Time.
+**Update orders directly from Shopify Admin for seamless integration.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1p95nil.png)
+1. **Open Shopify Admin** and navigate to Orders
+2. **Select the target order** from your orders list
+3. **Access Bird options** by clicking More Actions → **Bird: Update Date/Time**
 
-3. A popup will appear showing the delivery method, date, and time
-4. Update the details and click **Submit**
+![Shows the More Actions menu with Bird: Update Date/Time option highlighted](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1p95nil.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/edit-date-and-time_10ghiwb.png)
-5. Select the option **Send notification to customer** to notify the customer about the changes.
+4. **Review current details** in the popup showing delivery method, date, and time
+5. **Modify delivery details** as needed and click **Submit**
 
-6. The order details will be modified and Order Updated email will be sent to the customer.
+![Shows the edit popup in Shopify Admin with fields for updating delivery details](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/edit-date-and-time_10ghiwb.png)
 
-![Order Updated Email](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_rikiw2.png)
+6. **Enable customer notification** by selecting **Send notification to customer**
+7. **Confirm changes** - the system automatically updates the order and sends an Order Updated email
 
-|| **Related Documents:**
-|| [Add Date/Time to draft order Invoice](https://help.birdchime.com/en-us/article/add-datetime-to-draft-order-invoice-pmdpbi/)
-|| [How to customize the email templates](https://help.birdchime.com/en-us/article/how-to-customize-the-email-templates-kezxwj/)
+![Shows the Order Updated email template that customers receive after date/time modifications](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_rikiw2.png)
+
+## Related Articles
+
+- [Add Date/Time to draft order Invoice](https://help.birdchime.com/en-us/article/add-datetime-to-draft-order-invoice-pmdpbi/)
+- [How to customize the email templates](https://help.birdchime.com/en-us/article/how-to-customize-the-email-templates-kezxwj/)
