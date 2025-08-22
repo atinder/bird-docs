@@ -1,38 +1,60 @@
 ---
 id: a0d25de1-ea53-4e6b-a150-4a3d882dea85
-title: "Working with subscription apps"
+title: "How to Integrate Bird Pickup & Delivery with Subscription Apps"
 category: integrations
 section: general
 slug: working-with-subscription-apps
 crisp_updated_at: 1740460338000
 crisp_url: https://help.birdchime.com/en-us/article/working-with-subscription-apps-1sze0s7/
-description: ""
+description: "Complete guide to integrate Bird Pickup & Delivery with subscription apps. Configure CCS rates, automate recurring orders with Shopify Flow, and manage delivery scheduling for subscription businesses."
 ---
 
-The following are the action items to take when using our app with any subscription apps.
+**Integrate Bird Pickup & Delivery with your subscription apps to automate delivery scheduling for recurring orders.**
 
-1. Configuring rates
+This guide shows you how to configure rates and manage recurring orders when using subscription apps with Bird Pickup & Delivery.
 
-One option is to configure all the rates via Shopify.
-If you set the rate via the Bird app, you must use CCS (carrier-calculated shipping API).
+## Configure Rates for Subscription Apps
 
-|| Note: In case the rates are created via Weight, the weights in Kgs will be converted to grams automatically when CCS is enabled so you need to convert accordingly.
+**Set up shipping rates that work seamlessly with your subscription app's recurring orders.**
 
-You need to check if CCS is supported in your current Shopify plan.
+You have two options for configuring rates:
 
-| Starter | Basic | Shopify | Advance | Plus |
-| ---- |
-| No | No | Can be enabled | Yes | Yes |
+### Option 1: Configure Rates via Shopify Admin
 
-If it is supported, you can use the following option in our app to utilize it.
+Use Shopify's built-in rate configuration for subscription orders. This approach works with basic rules but offers limited automation for recurring orders.
 
-![Bird Rates with CCS](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_4fungg.png)
+### Option 2: Use Bird App with CCS (Recommended)
 
-2. Updating tags or meta fields for recurring orders You can utilize the Shopify Flow app to update the recurring orders and attach useful tags or even update the metafields in the order.
+Enable Carrier-Calculated Shipping (CCS) in the Bird app for dynamic rate calculation.
 
-Writing a Shopify flow totally depends on the subscription app that you are using and your specific business requirements.
+**Important:** CCS automatically converts weights from kilograms to grams. Adjust your weight-based rates accordingly. This ensures accurate delivery calculations for all subscription order weights.
 
-Related Articles: 
+CCS support varies by Shopify plan:
 
-1. [Attach Delivery Date In order Metafield using Shopify Flow](https://help.birdchime.com/en-us/article/attach-delivery-date-in-order-metafield-using-shopify-flow-14l1gfc/)
-2. [How to track orders on google calendar?](https://help.birdchime.com/en-us/article/how-to-track-orders-on-google-calendar-7p8ous/) – This guide helps in tracking orders on Google Calendar.
+| Plan | CCS Support |
+|------|-------------|
+| Starter | No |
+| Basic | No |
+| Shopify | Can be enabled |
+| Advanced | Yes |
+| Plus | Yes |
+
+#### Enable CCS in Bird App
+
+1. Open your Bird app dashboard
+2. Navigate to **Rates**
+3. Enable **Carrier-Calculated Shipping** under **Rates Engine**
+4. Configure your rate rules
+
+![Bird app dashboard showing CCS configuration option under Rates setting](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_4fungg.png)
+
+## Manage Recurring Order Tags and Metafields
+
+**Automate recurring order management using Shopify Flow integration.**
+
+Use Shopify Flow to automatically update tags and metafields for subscription orders, including delivery date tracking for recurring orders. For an example of adding delivery dates to order metafields, see [Attach Delivery Date to Order Metafields Using Shopify Flow](https://help.birdchime.com/en-us/article/attach-delivery-date-in-order-metafield-using-shopify-flow-14l1gfc/).
+
+
+## Related Articles
+
+- [Sync recurring orders with Google Calendar](https://help.birdchime.com/en-us/article/how-to-track-orders-on-google-calendar-7p8ous/)
