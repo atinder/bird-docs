@@ -1,26 +1,39 @@
 ---
 id: 0f474ba1-f624-4e42-8694-1ab3e6341126
-title: "Add delivery date/time in customer dashboard"
+title: "Display delivery date and time in Shopify customer dashboard"
 category: design-and-customizations
 section: general
 slug: add-delivery-datetime-in-customer-dashboard
 crisp_updated_at: 1701699716000
 crisp_url: https://help.birdchime.com/en-us/article/add-delivery-datetime-in-customer-dashboard-d7g9gd/
-description: ""
+description: "Customize your Shopify customer dashboard to show delivery scheduling information in order lists and individual order pages. Edit Liquid templates to display delivery dates and times prominently."
 ---
 
-In order to show delivery date and time in customer dashboard you will need to edit 2 files described below.
+**Display delivery date and time information directly in your customer dashboard for better order visibility.**
 
-* **Customers/account.liquid**
+This customization shows customers their scheduled delivery details in both the order list and individual order views. You'll edit two Liquid template files to add this functionality.
 
-Add an additional column in the table header (thead tag) at the end along with other columns
+[PLACEHOLDER Screenshot: Add relevant screenshots]
+
+## Edit the Order List Template
+
+**Advanced Customization:** This requires theme editing experience. Always backup your theme before making changes.
+
+**Modify `customers/account.liquid` to show delivery information in the orders table.**
+
+### Add Table Header
+
+Add this column header to your table's `<thead>` section:
 
 ```html
 <th id="ColumnDate" scope="col" role="columnheader">Delivery Date / Time</th>
 ```
-Add the following the in table body (tbody tag) at then end along with other columns
 
-```html
+### Add Table Data
+
+Insert this code in your table's `<tbody>` section:
+
+```liquid
 {% raw %}
 <td>
 	{% if order.attributes['Delivery Date'] %}
@@ -33,11 +46,13 @@ Add the following the in table body (tbody tag) at then end along with other col
 {% endraw %}
 ```
 
-* **Customers/order.liquid**
+## Edit the Individual Order Template
 
-Add the following code near order date at the top
+**Modify `customers/order.liquid` to display delivery details prominently.**
 
-```html
+Add this code near the order date section at the top of the page:
+
+```liquid
 {% raw %}
 {%- if order.attributes['Delivery Date'] -%}
   <p>Order Delivery Date: <span style="color:green;font-weight:bold">{{ order.attributes['Delivery Date'] }}</span></p>
@@ -48,6 +63,9 @@ Add the following code near order date at the top
 {% endraw %}
 ```
 
-### Need Help?
+**That's it! Your customer dashboard now displays delivery scheduling information.**
 
-If you are facing issues with the setup like the slot picker not appearing or the slots not working as per your requirement. We provide setup assistance for free. Please ping us via **in-app chat bubble** or mail us at support@birdchime.com for setup assistance.
+## Related Articles
+
+- [Customize widget appearance](https://help.birdchime.com/en-us/article/how-to-customize-the-widget-look-1t5c07x/)
+- [Manual widget placement](https://help.birdchime.com/en-us/article/manual-widget-placement-1iq0zmb/)

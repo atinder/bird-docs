@@ -1,31 +1,52 @@
 ---
 id: f1aaa9f3-8fb7-4952-af74-637538cb76b8
-title: "Hide Shopify Estimated Delivery from Order Confirmation Email"
+title: "Remove Shopify Estimated Delivery from Order Confirmation Email Template"
 category: notifications-and-validations
 section: general
 slug: hide-shopify-estimated-delivery-from-order-confirmation-email
 crisp_updated_at: 1751334130000
 crisp_url: https://help.birdchime.com/en-us/article/hide-shopify-estimated-delivery-from-order-confirmation-email-1vq7vfc/
-description: ""
+description: "Step-by-step guide to edit your order confirmation email template and remove Shopify's default estimated delivery date. Prevents customer confusion when using Bird Pickup & Delivery scheduling. Includes code editing instructions for Mac and Windows."
 ---
 
-This document will help you hide the Estimated Delivery date from the Order Confirmation email incase the Shopify in-built pickup is enabled. The order confirmation email will not show the default Estimated Delivery date that can cause confusion to the customer.
+**Remove Shopify's default estimated delivery date from order confirmation emails to eliminate customer confusion.**
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_guwewr.png)
+Shopify's built-in pickup shows default estimated delivery dates in order confirmation emails. This confuses customers who selected specific dates through Bird Pickup & Delivery. Hide this conflicting information to provide clear, accurate scheduling details.
 
-1. Go to Bird App > Settings > Notifications > Edit order confirmation email
+## How to Hide Estimated Delivery Date
 
-2. Search for "Estimated delivery" in the email template code
+Follow these steps to clean up your order confirmation email template:
 
-3. Remove or comment the highlighted code by selecting the code and pressing **" ⌘ + / "** for Mac and **" Ctrl + / "** keys for Windows as shown in the screenshot below
+### Step 1: Access Email Template Settings
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1jtsolp.png)
+1. Navigate to **Bird App > Settings > Notifications**
+2. Click **Edit order confirmation email**
+3. Locate the email template code editor
 
-4. The updated Order Confirmation Email will look like this:
+![Shows the Bird App settings navigation path to access order confirmation email templates](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_guwewr.png)
 
-![](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_vwmuo2.png)
+### Step 2: Find and Remove Estimated Delivery Code
 
-After following the above steps you can [place a test order](https://help.birdchime.com/en-us/article/place-a-test-order-13fhz0a/) or resend the order confirmation email from an existing order by visiting the order timeline in your Shopify to view the changes.
+1. Search for **"Estimated delivery"** in the email template code
+2. Select the highlighted code block containing estimated delivery information
+3. Remove or comment out the code using keyboard shortcuts:
+   - **Mac:** Press **⌘ + /** 
+   - **Windows:** Press **Ctrl + /**
 
+![Demonstrates the code selection and commenting process to remove estimated delivery information](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_1jtsolp.png)
 
-| **Related Document:** [Enable order confirmation email with slot date and time](https://help.birdchime.com/en-us/article/enable-order-confirmation-email-with-slot-date-and-time-iju71t/)
+### Step 3: Verify the Updated Template
+
+Your updated order confirmation email will now display without the conflicting estimated delivery date:
+
+![Shows the final email template without the estimated delivery date](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_vwmuo2.png)
+
+## Test Your Changes
+
+After completing these steps, verify your changes work correctly by placing a test order to see the updated email format.
+
+## Related Articles
+
+- [Enable order confirmation email with slot date and time](https://help.birdchime.com/en-us/article/enable-order-confirmation-email-with-slot-date-and-time-iju71t/)
+- [How to customize the email templates](https://help.birdchime.com/en-us/article/how-to-customize-email-templates-kezxwj/)
+- [Add datetime to draft order invoice](https://help.birdchime.com/en-us/article/add-datetime-to-draft-order-invoice-pmdpbi/)

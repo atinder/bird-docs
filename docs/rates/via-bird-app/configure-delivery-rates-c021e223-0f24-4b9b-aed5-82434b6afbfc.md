@@ -9,13 +9,11 @@ crisp_url: https://help.birdchime.com/en-us/article/configure-delivery-rates-1xb
 description: "Learn how to set up flexible delivery rates based on price, weight, time, and other conditions using the Bird Pickup & Delivery app."
 ---
 
-# Configure Delivery Rates
-
 **Set up custom delivery rates that automatically adjust based on order conditions, location, and timing.**
 
 ${frame}[Demonstrates how to configure postal code-based delivery rates through the Bird App interface](https://www.loom.com/embed/cfede30a353842f99bb07be98bd66ccc?sid=16125e85-444a-4226-802a-bec455f98c8a)
 
-Configure delivery rates for single or multiple locations with flexible pricing rules.
+Configure delivery rates for single or multiple locations. Use flexible pricing rules for customization.
 
 ## Single Location Setup
 
@@ -30,7 +28,7 @@ Configure delivery rates for single or multiple locations with flexible pricing 
 
 **Set location-specific rates for precise control over delivery pricing.**
 
-Add rates individually for each location to customize pricing per area.
+Add rates individually for each location. Customize pricing per area.
 
 ![Interface for configuring distance-based or postal code delivery rates](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/rt3_52qynq.png)
 
@@ -78,7 +76,7 @@ Charge premium rates for urgent deliveries.
 
 **Example:** Same-day (0 days) or next-day (1 day) delivery
 
-![Demonstrates rush delivery ("urgency") rate setup with min/max day ranges](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_m4i8hs.png =600x411)
+![Demonstrates rush delivery rate setup with min/max day ranges](https://storage.crisp.chat/users/helpdesk/website/ca826b447482b000/image_m4i8hs.png =600x411)
 
 #### Time-Based Rates
 
@@ -104,38 +102,28 @@ Click **Add condition** to combine multiple pricing factors.
 
 ## Condition Value Guidelines
 
-- **Price:** Set minimum and maximum order values
-- **Weight:** Configure weight ranges in grams
-- **Day:** Specify start and end days of the week
-- **SKU:** Add product-specific rate configurations
-- **Urgency:** Define minimum and maximum rush delivery days
-- **Time:** Set delivery time slot ranges
-- **Date:** Choose calendar date ranges
-- **Multiple:** Combine any of the above conditions
+- **Price:** Set minimum and maximum order values.
+- **Weight:** Configure weight ranges in grams.
+- **Day:** Specify start and end days of the week.
+- **SKU:** Add product-specific rate configurations.
+- **Urgency:** Define minimum and maximum rush delivery days.
+- **Time:** Set delivery time slot ranges.
+- **Date:** Choose calendar date ranges.
+- **Multiple:** Combine any of the above conditions.
 
-## Rate Management
+## Common Mistakes to Avoid
 
-**Modify your rates anytime to match changing business needs.**
+- **Overlapping conditions:** Don't set conflicting date ranges or time slots.
+- **Missing minimums:** Always set a minimum value for price/weight conditions.
+- **Test your rates:** Check that rates apply correctly.
 
-Update rate configurations, conditions, and pricing as your delivery requirements evolve.
+## Advanced Configuration Tips
+
+- **Location-specific rates:** You can configure different rates for each location by adding rates individually. This approach differs from using uniform rates across all locations. Refer to [this article](https://help.birdchime.com/en-us/article/configure-local-delivery-rates-based-on-postal-code-16da0ew/) for more information.
+- **Rush delivery pricing:** Use the Rush Delivery condition type and set minimum days to 0 (same day) and maximum days to 1 (next day) with your premium rate.
+- **Complex pricing rules:** Combine multiple conditions by clicking "Add condition." Mix price, weight, day, time, and other factors for sophisticated pricing strategies.
 
 ## Related Configuration Guides
 
 - [Configure pickup rates](https://help.birdchime.com/en-us/article/configure-pickup-rates-1n7gumb/)
 - [Configure shipping rates](https://help.birdchime.com/en-us/article/configure-shipping-rates-llsy16/)
-
-## FAQs
-
-##### Can I set different rates for different locations?
-Yes, you can configure location-specific rates by adding rates individually for each location instead of using uniform rates.
-
-##### How do I charge extra for rush deliveries?
-Use the Urgency condition type and set minimum days to 0 (same day) and maximum days to 1 (next day) with your premium rate.
-
-##### Can I combine multiple pricing conditions?
-Yes, click "Add condition" to combine price, weight, day, time, and other factors for complex pricing rules.
-
-##### How often can I update my delivery rates?
-You can modify rates anytime through the Bird App dashboard to match your changing business needs.
-
-For more general questions, see our main [FAQs page](https://help.birdchime.com/en-us/category/faqs-1ygmxau/).

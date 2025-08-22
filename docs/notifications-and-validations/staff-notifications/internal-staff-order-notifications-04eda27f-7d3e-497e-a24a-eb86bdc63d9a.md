@@ -9,6 +9,8 @@ crisp_url: https://help.birdchime.com/en-us/article/internal-staff-order-notific
 description: ""
 ---
 
+<!-- REDUNDANT, 1:1 COPY OF https://help.birdchime.com/en-us/article/enable-internal-staff-notifications-via-birdapp-1kp1gtc/ the other one has been modified in place of this -->
+
 To ensure smooth order management, it's important for staff to receive email notifications with key order details, including the customer's selected date, time, and delivery method.
 
 Here’s how to enable internal staff notifications:
